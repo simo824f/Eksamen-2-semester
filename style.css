@@ -1,0 +1,84 @@
+/*Dropwon menuen på telefon*/
+/*for at lave denne er denne kilde brugt https://www.youtube.com/watch?v=bO9qHAhXbVA*/
+a {
+    color: var(--sort);
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: var(--grå);
+    position: absolute;
+    width: 100%;
+    margin-top: 70px;
+    z-index: 2;
+}
+
+header ul a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    background-color: var(--mørkegrå);
+}
+
+header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s;
+}
+
+header .menu_icon {
+    padding: 28px 20px;
+    position: relative;
+    /*den her skal være relavtiv så vi på barnet kan bruge absalut og på den måde rykke rundt på tingene*/
+    float: right;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/*Styler de tre linjer de giver burgermenu iconet */
+header .menu_icon .nav_icon {
+    background-color: var(--mørkegrå);
+    display: block;
+    height: 3px;
+    width: 20px;
+    position: absolute;
+}
+
+header .menu_icon .nav_icon:before {
+    background-color: var(--mørkegrå);
+    content: "";
+    /*Man laver en tom content for at have noget at style på*/
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 5px;
+}
+
+header .menu_icon .nav_icon:after {
+    background-color: var(--mørkegrå);
+    content: "";
+    /*Man laver en tom content for at have noget at style på*/
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: -5px;
+}
+
+header .menu_btn {
+    display: none;
+}
+
+header .menu_btn:checked~.menu {
+    max-height: 240px;
+}
+
+/*style af nav SLUT*/
