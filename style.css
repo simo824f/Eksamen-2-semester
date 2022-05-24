@@ -82,3 +82,41 @@ header .menu_btn:checked~.menu {
 }
 
 /*style af brugermenu SLUT*/
+
+
+
+
+
+
+
+
+@media screen and (min-width: 720px) {
+
+    /*Nav start*/
+    header li {
+        float: left;
+    }
+
+    header li a {
+        padding: 20px 30px;
+    }
+
+    header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+        margin-left: 900px;
+        margin-top: 10px;
+    }
+
+    header .menu_icon {
+        display: none;
+    }
+
+    header ul {
+        background-color: var(--cream);
+        width: 400px;
+    }
+
+    /*Nav SLUT*/
+}
