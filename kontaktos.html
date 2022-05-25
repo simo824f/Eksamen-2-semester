@@ -27,26 +27,23 @@
             <!--Burger menu - slut-->
         <div class="nav_billet_button"><a href="">Køb Billeter</a></div>
     </header>
-    <main> <!--indeholder sociale links & kontaktformular-->
-        <h1>Kontakt os</h1>
+    <main> 
+        <h1>Kontakt os</h1><!--herunder laves de forskellige måder at kontakte siden på-->
         <div class="kontakt_container">
             <div class="kontakt_mail"><a href="mailto:formand@toerningspillet.dk"><img src="kontakt-billeder/icon-mail.svg" alt="Icon af e-mail"></a></div><p>På Mail</p>
             <div class="kontakt_facebook"><a href="https://www.facebook.com/teaterogmusikgruppentm"><img src="/kontakt-billeder/icon-facebook.svg" alt="Icon af Facebook"></a></div><p>På Facebook</p>
             <div class="kontakt_insta"><a href="#"><img src="/kontakt-billeder/icon-instagram.svg" alt="Icon af Instagram"></a></div><p>På Instagram</p>
         </div>
-        <div class="formular_container">
-            <form action="action_page.php">
-                <label class="fornavn">Fornavn:</label>
-                <input type="text" name="fornavn" placeholder="dit fornavn her..">
-
-                <label class="efternavn">Efternavn:</label>
-                <input type="text" name="efternavn" placeholder="dit efternavn her..">  
-                
-                <label>Besked</label>
-                <textarea name="subject" placeholder="din besked her.."></textarea> 
-                <div class="sendbesked_button"><input type="submit" value="Submit"></div>
+        <div class="formular_container"><!--herunder laves kontaktformularen-->
+            <form action="#">
+                <input type="text" name="Fulde-Navn" placeholder="Dit fulde navn her">
+                <input type="text" name="E-mail" placeholder="Din e-mail her">
+                <textarea name="Besked" id="" placeholder="Din besked her"></textarea>
+                <div class="formular_button"><a href="#">Send besked</a></div>
             </form>
-        </div>
+            <h2>Find os her</h2>
+            <iframe src="https://maps.google.com/maps?q=T%C3%B8rningvej%206,%206500%20Vojens&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe> <!--her er input til google maps: kode fra https://google-map-generator.com/#enter d.25-05/22-->
+            <div class="adresse_pin"><a href="#"><img src="/kontakt-billeder/adresse-pin.svg" alt="Icon af lokation"></a></div><p class="pin_txt1">Sønderjylland</p><p class="pin_txt2">Tørningevej 6, 6500 Vojens</p>
     </main>
 
     <footer>
