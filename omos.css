@@ -165,6 +165,22 @@ ul a {
 
 /*HER SLUTTER FÆLLES STYLING*/
 
+
+
+/*Alt med bestyrelsen & Hvem er vi? styles herunder*/
+.omos-billede {
+    margin-top: 1rem;
+}
+.formand_container {
+    background-color:#F0E9DA ;
+}
+.sygegruppe_container {
+    background-color:#F0E9DA ;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
 /*herunder styles den lille streg der kører under enkelte overskrifter*/
 .box{
     background-color: #810029;
@@ -172,12 +188,4 @@ ul a {
     width: 150px;
     margin-left: auto;
     margin-right: auto;
-}
-
-/*Alt med bestyrelsen styles herunder*/
-.formand_container {
-    background-color:#F0E9DA ;
-}
-.sygegruppe_container {
-    background-color:#F0E9DA ;
 }
