@@ -1,3 +1,18 @@
+@font-face {
+    font-family:Roboto_brød;
+    src: url(Font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto_overskrift;
+    src: url(Font/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+/*Dette er generalt for alt på siden*/
+*{
+    font-family: Roboto_brød;
+}
+
 body {
     margin: 0;
     margin-top: 1rem;
@@ -5,6 +20,9 @@ body {
     margin-right: 1rem;
     height: 100%;
 }
+
+/*FÆLLES STYLING STARTER HER*/
+
 /*forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
 header {
     display: flex;
@@ -30,6 +48,7 @@ header {
     text-decoration: none;
     color: white;
 }
+/*NAV SLUT*/
 
 /*Dropwon menuen på telefon*/
 /*for at lave denne er denne kilde brugt https://www.youtube.com/watch?v=bO9qHAhXbVA*/
@@ -44,7 +63,7 @@ header ul {
     background-color: #810029;
     position: absolute;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 90px;
     z-index: 2;
 }
 header ul a {
@@ -52,9 +71,7 @@ header ul a {
     padding: 20px;
     text-decoration: none;
 }
-header ul a:hover {
-    background-color: grey;
-}
+
 header .menu {
     clear: both;
     max-height: 0;
@@ -67,6 +84,7 @@ header .menu_icon {
     cursor: pointer;
     margin-right: 20px;
 }
+
 
 /*forneden styler de tre linjer de giver burgermenu iconet*/
 header .menu_icon .nav_icon {
@@ -96,19 +114,66 @@ header .menu_icon .nav_icon:after {
     top: -12px;
 
 }
-
 header .menu_btn {
     display: none;
 }
 header .menu_btn:checked~.menu {
     max-height: 240px;
 }
+/*BURGER MENU SLUT*/
+
+
+/*FOOTER TIL FÆLLES BRUG*/
+footer { 
+    background-color: lightgrey;
+    
+}
+.footer_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+footer p {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: bold;
+}
+.footer_links {
+    margin-top: 2rem;
+    font-size: 20px;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+.footer_facebook {
+    margin-top: 2rem;
+}
+ul a {
+    text-decoration: underline;
+    margin-left: 1rem;
+}
+/*FOOTER SLUT*/
+
+/*HER SLUTTER FÆLLES STYLING*/
+
+
+
 
 
 /*for neden er alt relateret til kontakt os siden*/
 h1 {
     text-align: center;
     margin-bottom: 0.2rem;
+    font-family: Roboto_overskrift;
 }
 .box{
     background-color: #810029;
@@ -138,7 +203,6 @@ form {
     margin-bottom: 10rem;
 }
 .formular_button {
-    color: white;
     border: none;
     border-radius: 0.2rem;
     background-color: #810029;
@@ -151,6 +215,7 @@ form {
 .formular_button a {
     text-decoration: none;
     justify-content: center;
+    color: white;
 }
 input {
     width: 60%;
@@ -172,6 +237,7 @@ textarea {
 /*under er alt vedrørende google maps billedet og linket*/
 h2 {
     text-align: center;
+    margin-bottom: 0.2rem;
 }
 iframe {
     width: 100%;
@@ -190,25 +256,3 @@ iframe {
     margin-bottom: 7rem;
 }
 
-/*forneden er alt relateret til fooeteren*/
-footer { 
-    background-color: lightgrey;
-    height: 7rem; 
-}
-.footer_container {
-    display: flex;
-    justify-content: space-evenly;
-
-}
-footer a {
-    color: black;
-    text-decoration: none;
-}
-footer ul {
-    list-style-type: none;
-    margin: 0;
-}
-footer p {
-    text-align: center;
-    margin-top: 2rem;
-}
