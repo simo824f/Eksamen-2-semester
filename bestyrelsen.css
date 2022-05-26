@@ -1,0 +1,167 @@
+@font-face {
+    font-family:Roboto_brød;
+    src: url(Font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto_overskrift;
+    src: url(Font/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+/*Dette er generalt for alt på siden*/
+*{
+    font-family: Roboto_brød;
+}
+
+body {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 100%;
+}
+
+/*FÆLLES STYLING STARTER HER*/
+
+/*forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
+header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2.5rem;
+}
+.nav_logo img {
+    width: 50%;
+    height: auto;
+}
+.nav_billet_button {
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #810029;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    height: 1.5rem;
+    width: 10rem;
+    margin-left: 2rem;
+}
+.nav_billet_button a {
+    text-decoration: none;
+    color: white;
+}
+/*NAV SLUT*/
+
+/*Dropwon menuen på telefon*/
+/*for at lave denne er denne kilde brugt https://www.youtube.com/watch?v=bO9qHAhXbVA*/
+a {
+    color: white;
+    text-align: center;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #810029;
+    position: absolute;
+    width: 100%;
+    margin-top: 90px;
+    z-index: 2;
+}
+header ul a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .5s;
+}
+header .menu_icon {
+    padding: 28px 20px;
+    position: relative; /*den her skal være relavtiv så vi på barnet kan bruge absolut og på den måde rykke rundt på tingene*/
+    float: right;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+/*forneden styler de tre linjer de giver burgermenu iconet*/
+header .menu_icon .nav_icon {
+    background-color: black;
+    display: block;
+    height: 6px;
+    width: 35px;
+    position: absolute;
+}
+header .menu_icon .nav_icon:before {
+    background-color: black;
+    content: ""; /*Man laver en tom content for at have noget at style på*/
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 12px;
+    
+}
+header .menu_icon .nav_icon:after {
+    background-color: black;
+    content: ""; /*Man laver en tom content for at have noget at style på*/
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: -12px;
+
+}
+header .menu_btn {
+    display: none;
+}
+header .menu_btn:checked~.menu {
+    max-height: 240px;
+}
+/*BURGER MENU SLUT*/
+
+
+/*FOOTER TIL FÆLLES BRUG*/
+footer { 
+    background-color: lightgrey;
+    
+}
+.footer_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+footer p {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: bold;
+}
+.footer_links {
+    margin-top: 2rem;
+    font-size: 20px;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+.footer_facebook {
+    margin-top: 2rem;
+}
+ul a {
+    text-decoration: underline;
+    margin-left: 1rem;
+}
+/*FOOTER SLUT*/
+
+/*HER SLUTTER FÆLLES STYLING*/
+
