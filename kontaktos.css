@@ -66,7 +66,6 @@ header .menu_icon {
     float: right;
     cursor: pointer;
     margin-right: 20px;
-    margin-top: 10px;
 }
 
 /*forneden styler de tre linjer de giver burgermenu iconet*/
@@ -109,7 +108,15 @@ header .menu_btn:checked~.menu {
 /*for neden er alt relateret til kontakt os siden*/
 h1 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.2rem;
+}
+.box{
+    background-color: #810029;
+    height: 3px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
 }
 .kontakt_container a{
     display: flex;
