@@ -16,9 +16,12 @@
 body {
     margin: 0;
     margin-top: 1rem;
+    height: 100%;
+}
+
+p, h1, h2 {
     margin-left: 1rem;
     margin-right: 1rem;
-    height: 100%;
 }
 
 /*FÆLLES STYLING STARTER HER*/
@@ -169,23 +172,90 @@ ul a {
 
 /*Alt med bestyrelsen & Hvem er vi? styles herunder*/
 .omos-billede {
-    margin-top: 1rem;
+    text-align: center;
+    margin-top: 20px;
 }
-.formand_container {
+.bestyrelsen_container {
     background-color:#F0E9DA ;
 }
+
+.bestyrelsen_container h1{
+    margin-top: 30px;
+}
+
+.forman_container {
+    background-color: #F0E9DA;
+}
+
+.kassere_container {
+    background-color: white;
+}
+
 .sygegruppe_container {
     background-color:#F0E9DA ;
 }
-h1 {
-    text-align: center;
-    margin-bottom: 0.2rem;
+
+.kulisser_container {
+    background-color: white;
 }
+
+.formand_billede, .kassere_billede, .sygegruppe_billede, .kulisser_billede {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
+
 /*herunder styles den lille streg der kører under enkelte overskrifter*/
 .box{
     background-color: #810029;
     height: 3px;
     width: 150px;
-    margin-left: auto;
+    margin-left: 1rem;
     margin-right: auto;
+}
+
+
+@media screen and (min-width: 760px){
+
+    .box {
+        margin-left: 120px;
+        margin-bottom: 30px;
+    }
+
+    .box_damer, .box_mænd {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        background-color: #F0E9DA;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .box_mænd{
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .kassere_container, .kulisser_container {
+        background-color: #F0E9DA;
+    }
+
+    .forman_container, .kassere_container, .sygegruppe_container, .kulisser_container {
+        margin: 5px;
+    }  
+
+    p, h1, h2 {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+   .bestyrelsen_container h1 {
+       padding-top: 30px;
+       
+   }
+}
+
+@media screen and (min-width: 992px) {
+
 }
