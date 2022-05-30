@@ -22,6 +22,7 @@ p, h1, h2, h3, a {
     margin-right: 16px;
 }
 
+
 /*FÆLLES STYLING STARTER HER*/
 
 /*Forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
@@ -218,16 +219,18 @@ footer p {
 
 
 /*Alt med bestyrelsen & Hvem er vi? styles herunder*/
-.omos-billede {
-    text-align: center;
-    width: 100%;
-    height: auto;
+.hvemervi_container .omos-billede{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     margin-top: 20px;
 }
 
-  .formand_billede, .kassere_billede, .sygegruppe_billede, .kulisser_billede {
-        width: 50%;
-        height: auto;
+.formand_billede, .kassere_billede, .sygegruppe_billede, .kulisser_billede {
+    width: 50%;
+    height: auto;
+    filter: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.8));
     }
 
 .bestyrelsen_container {
@@ -270,7 +273,16 @@ footer p {
 
 
 /*herunder styles den lille streg der kører under enkelte overskrifter*/
-.box{
+
+.box_omos{
+    background-color: #810029;
+    height: 3px;
+    width: 100px;
+    margin-left: 16px;
+    margin-right: auto;
+}
+
+.box_bestyrelse{
     background-color: #810029;
     height: 3px;
     width: 150px;
@@ -281,8 +293,8 @@ footer p {
 
 @media screen and (min-width: 760px){
 
-    .box {
-        margin-left: 120px;
+    .box_omos, .box_bestyrelse {
+        margin-left: 50px;
         margin-bottom: 30px;
     }
 
@@ -313,7 +325,7 @@ footer p {
         height: auto;
     }
 
-    p, h1, h2 {
+    p, h1, h2, h3 {
         margin-left: 50px;
         margin-right: 50px;
     }
@@ -347,8 +359,10 @@ footer p {
 @media screen and (min-width: 1200px) {
 
     p, h1, h2 {
-        margin-left: 120px;
-        margin-right: 120px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
+
+
 
 }
