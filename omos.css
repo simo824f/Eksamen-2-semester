@@ -225,6 +225,11 @@ footer p {
     margin-top: 20px;
 }
 
+  .formand_billede, .kassere_billede, .sygegruppe_billede, .kulisser_billede {
+        width: 50%;
+        height: auto;
+    }
+
 .bestyrelsen_container {
     background-color:#F0E9DA;
     padding-top: 2px;
