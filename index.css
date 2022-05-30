@@ -1,0 +1,621 @@
+@font-face {
+    font-family: Roboto_brød;
+    src: url(Font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto_overskrift;
+    src: url(Font/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+/*Dette er generalt for alt på siden*/
+* {
+    font-family: Roboto_brød;
+}
+
+/*FÆLLES STYLE START*/
+
+body{
+    margin: 0%;
+}
+
+body p {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/*forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
+header {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: drop-shadow(8px 8px 6px rgba(0,0,0,0.8));
+}
+
+.nav_logo img {
+    width: 30%;
+    height: auto;
+    margin: 5px;
+}
+
+.nav_billet_button {
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #810029;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    height: 1rem;
+    width: 10rem;
+    margin: 9px;
+    margin-top: 16px;
+}
+
+.nav_billet_button a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Dropwon menuen på telefon*/
+/*for at lave denne er denne kilde brugt https://www.youtube.com/watch?v=bO9qHAhXbVA*/
+a {
+    color: white;
+    text-align: center;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #810029;
+    position: absolute;
+    width: 100%;
+    margin-top: 80px;
+    z-index: 2;
+}
+
+header ul a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    background-color:#8100294f;
+}
+
+header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .5s;
+}
+
+header .menu_icon {
+    padding: 28px 20px;
+    position: relative;
+    /*den her skal være relavtiv så vi på barnet kan bruge absolut og på den måde rykke rundt på tingene*/
+    float: right;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/*forneden styler de tre linjer de giver burgermenu iconet*/
+header .menu_icon .nav_icon {
+    background-color: black;
+    display: block;
+    height: 6px;
+    width: 35px;
+    position: absolute;
+}
+
+header .menu_icon .nav_icon:before {
+    background-color: black;
+    content: "";
+    /*Man laver en tom content for at have noget at style på*/
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 12px;
+
+}
+
+header .menu_icon .nav_icon:after {
+    background-color: black;
+    content: "";
+    /*Man laver en tom content for at have noget at style på*/
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: -12px;
+
+}
+
+header .menu_btn {
+    display: none;
+}
+
+header .menu_btn:checked~.menu {
+    max-height: 240px;
+}
+
+
+/*forneden er alt relateret til fooeteren*/
+.facebookIkon {
+    width: 70px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #F9F6F0;
+    text-align: center;
+}
+
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+    padding-left: 0px;
+}
+
+footer li {
+    padding: 5px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.footerLinks {
+    margin-top: 20px;
+}
+
+.footerBundtekst {
+    font-size: 10px;
+}
+
+.overskriftfooter {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/*FÆLLES STYLE SLUT*/
+
+
+/*Styling af body*/
+/*Styling af intro */
+/*style af slideshow START */
+.billede_slide {
+    width: 100%;
+}
+
+.slideshowBeholder {
+    position: relative;
+    margin: auto;
+    margin-top: 1px;
+}
+
+.tilbage,
+.næste {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.næste {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.tilbage:hover,
+.næste:hover {
+    background-color: #810029;
+}
+
+.nummertekst {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*style af slideshow SLUT */
+
+/*styling af intro START*/
+
+.intro {
+    text-align: center;
+}
+
+.teatermasker {
+    width: 150px;
+    text-align: center;
+}
+
+.overskrift {
+    font-size: 55px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: Roboto_overskrift;
+}
+
+.udnertekst {
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Roboto_overskrift;
+}
+
+.adresse {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.box {
+    background-color: #810029;
+    height: 3px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*styling af intro SLUT*/
+
+/*Styling af køb billet START*/
+
+.købBillet {
+    text-align: center;
+    background-color: #F0E9DA;
+}
+
+.overskrift_købBillet {
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 65px;
+    font-family: Roboto_overskrift;
+}
+
+.online_ikon {
+    width: 100px;
+    margin-bottom: 0px;
+}
+
+.online {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.online_beskrivelse {
+    font-size: 15px;
+    margin-top: 0px;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.iDøren_ikon {
+    width: 100px;
+    margin-bottom: 0px;
+}
+
+.idøren {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.idøren_beskrivelse {
+    font-size: 15px;
+    margin-top: 0px;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Styling af køb billet SLUT*/
+
+/*Bliv frivillig START*/
+.blivFrivillig {
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.BlivSkuespiller a{
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.frivilligimg {
+    width: 350px;
+    height: 450px;
+    position: relative;
+}
+
+.frivilligTekst {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 1550px;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: Roboto_overskrift;
+}
+
+.box_frivillig {
+    background-color: #FFFFFF;
+    height: 3px;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 1620px;
+}
+
+.frivillig_overall,
+.skuespiller_overall {
+    display: flex;
+    justify-content: center;
+}
+
+/*Bliv frivillig SLUT*/
+
+/*Bliv skuespiller START*/
+.BlivSkuespiller {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.skuespillerimg {
+    width: 350px;
+    height: 450px;
+    position: relative;
+}
+
+.skuespillerTekst {
+    position: absolute;
+    top: 2056px;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: Roboto_overskrift;
+}
+
+.box_skuespiller {
+    background-color: #FFFFFF;
+    height: 3px;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 2130px;
+}
+
+/*Bliv frivillig SLUT*/
+
+/*Sponsorer START*/
+
+.Sponsorer{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+
+@media screen and (min-width: 720px) {
+
+    /*Nav start*/
+    header {
+        justify-content: space-between;
+    }
+
+    header li {
+        float: left;
+    }
+
+    header li a {
+        padding: 20px 30px;
+        color: black;
+    }
+
+    header .menu {
+        clear: none;
+        float: center;
+        max-height: none;
+        margin-left: 150px;
+        margin-top: 32px;
+    }
+
+    header .menu_icon {
+        display: none;
+    }
+
+    header ul {
+        width: 400px;
+        background-color: white;
+    }
+
+    .menu a {
+        padding: 15px;
+    }
+
+    .nav_logo {
+        margin-left: 5px;
+    }
+
+    .nav_billet_button {
+        margin-top: 30px;
+    }
+
+    /*Nav SLUT*/
+
+    /*Styling af afnsittet hvor man køber billetter START*/
+    .købIkoner {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .online_ikon,
+    .iDøren_ikon {
+        width: 200px;
+    }
+
+    .online,
+    .idøren {
+        font-size: 40px;
+    }
+
+    .online_beskrivelse,
+    .idøren_beskrivelse {
+        font-size: 20px;
+    }
+
+    /*Styling af afnsittet hvor man køber billetter SLUt*/
+
+
+    /*Stylign af frivillige og skuespiller START*/
+    .forsidebokse {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+    }
+
+    .frivilligTekst {
+        margin-top: 400px;
+    }
+
+    .box_frivillig {
+        margin-top: 370px;
+    }
+
+    .skuespillerTekst {
+        margin-top: -105px;
+    }
+
+    .box_skuespiller {
+        margin-top: -139px;
+    }
+
+    /*Stylign af frivillige og skuespiller SLUT*/
+
+
+    /*Footer styling START*/
+    .footer_container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footerAdresse {
+        display: none;
+    }
+
+    .facebookIkon {
+        width: 100px;
+    }
+
+    .footerLinks {
+        text-align: left;
+    }
+
+    /*Footer styling SLUT*/
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    /*header styling START*/
+
+    header{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav_logo{
+        width: 150px;
+        margin: 20px;
+    }
+
+    .menu {
+        font-size: 20px;
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+        background-color: none;
+        padding-left: 200px;
+    }
+
+    .menu ul{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .nav_billet_button {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .nav_billet_button a {
+        margin: auto;
+    }
+
+    /*header styling SLUT*/
+
+    /*Styling slideshow START*/
+    img.billede_slide {
+        width: 100%;
+        object-fit: cover;
+        height: 400px;
+        bottom: 0;
+    }
+
+    .næste,
+    .tilbage {
+        padding: 40px;
+    }
+
+    .nummertekst {
+        font-size: 20px;
+    }
+
+    /*Styling slideshow SLUT*/
+
+    .teatermasker {
+        width: 100px;
+        padding: 0%;
+        margin-bottom: 1px;
+    }
+
+    .overskrift{
+        font-size: 50px;
+    }
+
+    .udnertekst{
+        font-size: 30px;
+
+    }
+    
+
+
+
+}

@@ -1,131 +1,146 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Teater og Musikgruppen Tørning Mølle">
-    <meta name="keywords" content="Teater og forestillinger, Juleteater, Juleforestillinger, Tørningspillet, Teatergruppe, ">
+    <meta name="keywords"
+        content="Teater og forestillinger, Juleteater, Juleforestillinger, Tørningspillet, Teatergruppe, ">
     <title>Tørningspillet</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style-kopi.css">
+    <script defer src="script-kopi.js"></script>
 </head>
 
 <header>
-      <!--Burger menu - start-->
-      <!--for at lave menuen er denne kilde brugt https://www.youtube.com/watch?v=sjrp1FEHnyA-->
-  <input type="checkbox" class="menu_btn" id="menu_btn">
-      <!--dette er det der gør man kan åbe og lukke menuen-->
-  <label for="menu_btn" class="menu_icon"><span class="nav_icon"></span> </label>
-      <!--Span er det man designer de tre burgermenu linjer på-->
-  <ul class="menu">
-      <li><a href="index.html">Forside</a></li>
-      <li><a href="#">Forestillinger</a></li>
-      <li><a href="omos.html">Om os</a></li>
-      <li><a href="kontaktos.html">Kontakt os </a></li>
-  </ul>
-      <!--Burger menu - slut-->
-  <div class="nav_billet_button"><a href="">Køb Billeter</a></div>
+    <div class="nav_logo"><a href="index-kopi.html"><img src="billeder/logo_mobil.png" alt="Tørningspillets Logo"></a></div>
+    <!--Burger menu - start-->
+    <!--for at lave menuen er denne kilde brugt https://www.youtube.com/watch?v=sjrp1FEHnyA-->
+    <input type="checkbox" class="menu_btn" id="menu_btn">
+    <!--dette er det der gør man kan åbe og lukke menuen-->
+    <label for="menu_btn" class="menu_icon"><span class="nav_icon"></span> </label>
+    <!--Span er det man designer de tre burgermenu linjer på-->
+    <ul class="menu">
+        <li><a href="#">Forside</a></li>
+        <li><a href="#">Forestillinger</a></li>
+        <li><a href="#">Om os</a></li>
+        <li><a href="#">Kontakt os </a></li>
+    </ul>
+    <!--Burger menu - slut-->
+    <div class="nav_billet_button"><a href="">Køb Billeter</a></div>
 </header>
+
 <body>
- <!--slideshow-->
- <div class="slideshowBeholder">
-    <!--Billederne i slide -->
-    <div class="slide">
-      <div class="nummertekst">1 / 3</div>
-      <img class="billede_slide" src="Billeder/slide_1.jpg">
+    <!--slideshow-->
+    <div class="slideshowBeholder">
+        <!--Billederne i slide -->
+        <div class="slide">
+            <div class="nummertekst">1 / 3</div>
+            <img class="billede_slide" src="Billeder/slide_1.jpg">
+        </div>
+
+        <div class="slide">
+            <div class="nummertekst">2 / 3</div>
+            <img class="billede_slide" src="Billeder/slide_2.jpg">
+        </div>
+
+        <div class="slide">
+            <div class="nummertekst">3 / 3</div>
+            <img class="billede_slide" src="Billeder/slide_3.jpg">
+        </div>
+
+        <!--frem og tilbage knapperne på billederne i slide -->
+        <a class="tilbage" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="næste" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <div class="slide">
-      <div class="nummertekst">2 / 3</div>
-      <img class="billede_slide" src="Billeder/slide_2.jpg">
+    <div class="intro">
+        <img class="teatermasker" src="Billeder/teatermasker.png" alt="teatermasker">
+
+        <div class="tekst_intro">
+            <p class="overskrift">Velkommen til</p>
+            <p class="udnertekst">Trøning mølle</p>
+            <p class="adresse">Vi ses på Tørningvej 6, 6500 vojns</p>
+        </div>
+
+        <div class="box"></div>
     </div>
 
-    <div class="slide">
-      <div class="nummertekst">3 / 3</div>
-      <img class="billede_slide" src="Billeder/slide_3.jpg">
+    <div class="købBillet">
+        <p class="overskrift_købBillet">Køb din billet</p>
+
+        <div class="købIkoner">
+            <div class="Købonline">
+                <img class="online_ikon" src="Billeder/online stor_1.png" alt="Køb online">
+                <p class="online">Online</p>
+                <p class="online_beskrivelse">Nem og hurtig betjening gennem vores hjemmeside</p>
+            </div>
+
+            <div class="KøbiDøren">
+                <img class="iDøren_ikon" src="Billeder/i døren stor_2.png" alt="Køb i døren">
+                <p class="idøren">I døren</p>
+                <p class="idøren_beskrivelse">Køb og køb din billet i døren når du skal til forstillingen</p>
+            </div>
+        </div>
     </div>
 
-    <!--frem og tilbage knapperne på billederne i slide -->
-    <a class="tilbage" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="næste" onclick="plusSlides(1)">&#10095;</a>
-  </div>
- </div>
+    <div class="forsidebokse">
+        <div class="blivFrivillig">
+            <a href=""> <img class="frivilligimg" src="Billeder/blivfrivillig.jpg" alt="Bliv frivillig"></a>
 
- <div class="intro">
-    <img class="teatermasker" src="Billeder/teatermasker.png" alt="teatermasker">
+            <div class="frivillig_overall">
+                <p class="frivilligTekst">Bliv frivillig</p>
 
-    <div class="tekst_intro">
-        <p class="overskrift">Velkommen til</p>
-        <p class="udnertekst">Trøning mølle</p>
-        <p class="adresse">Vi ses på Tørningvej 6, 6500 vojns</p>
+                <div class="box_frivillig"></div>
+            </div>
+        </div>
+
+        <div class="BlivSkuespiller">
+            <a href=""> <img class="skuespillerimg" src="Billeder/blivskuespiller.jpg" alt="Bliv skuespiller"></a>
+
+            <div class="skuespiller_overall">
+                <p class="skuespillerTekst">Bliv skuespiller</p>
+
+                <div class="box_skuespiller"></div>
+            </div>
+        </div>
     </div>
 
-    <div class="box"></div>
-</div>
-
-<div class="købBillet">
-    <p class="overskrift_købBillet">Køb din billet</p>
-
-    <div class="Købonline">
-        <img class="online_ikon" src="Billeder/online stor_1.png" alt="Køb online">
-        <p class="online">Online</p>
-        <p class="online_beskrivelse">Nem og hurtig betjening gennem vores hjemmeside</p>
-    </div>
-
-    <div class="KøbiDøren">
-        <img class="iDøren_ikon" src="Billeder/i døren stor_2.png" alt="Køb i døren">
-        <p class="idøren">I døren</p>
-        <p class="idøren_beskrivelse">Køb og køb din billet i døren når du skal til forstillingen</p>
-    </div>
-</div>
-
-<div class="blivFrivillig">
-    <a href=""> <img class="frivilligimg" src="Billeder/blivfrivillig.jpg" alt="Bliv frivillig"></a>
-   
-    <div class="frivillig_overall">
-        <p class="frivilligTekst">Bliv frivillig</p>
-
-        <div class="box_frivillig"></div>
-    </div>
-</div>
-
-<div class="BlivSkuespiller">
-    <a href=""> <img class="skuespillerimg" src="Billeder/blivskuespiller.jpg" alt="Bliv skuespiller"></a>
-   
-    <div class="skuespiller_overall">
-        <p class="skuespillerTekst">Bliv skuespiller</p>
-
-        <div class="box_skuespiller"></div>
-    </div>
-</div>
+    <img class="Sponsorer" src="billeder/sponsore.png" alt="Sponsorer">
 
 
+    <footer>
+        <div class="footer_container">
+            <div class="social_footer_facebook">
+                <a href="https://www.facebook.com/teaterogmusikgruppentm/"><img src="Billeder/facebook.png"
+                        alt="FacebookIcon" class="facebookIkon"></a>
+            </div>
 
-
-  <footer>
-    <div class="footer_container">
-        <div class="social_footer_facebook"><a href="https://www.facebook.com/teaterogmusikgruppentm/"><img src="billeder/icon_facebook.png" alt="FacebookIcon"></a></div>
-
-        <ul>
-            <li>
-                <div>Andre scener:</div>
-                <div><a href="">Forsøgsscenen</a></div>
-                <div><a href="">DATS</a></div>
-                <div><a href="">Gram Friluftsspil</a></div>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <div>Links:</div>
-                <div><a href="">Bestyrelsen</a></div>
-                <div><a href="">Sponsor</a></div>
-                <div><a href="">Tørning Mølle</a></div>
-            </li>
-        </ul>
-    </div>
-    <p>Copyright 2022</p>
-</footer>
+            <div class="footerAdresse">
+                <p class="overskriftfooter">Tørningspillet</p>
+                <p>Tørningvej 6, 6500 vojns</p>
+            </div>
+            <div class="footerLinks">
+                <ul>
+                    <li class="overskriftfooter">Andre scener:</li>
+                    <li><a href="">Forsøgsscenen</a></li>
+                    <li><a href="">DATS</a></li>
+                    <li><a href="">Gram Friluftsspil</a></li>
+                </ul>
+            </div>
+            <div class="footerLinks">
+                <ul>
+                    <li class="overskriftfooter">Links:</li>
+                    <li><a href="">Bestyrelsen</a></li>
+                    <li><a href="">Sponsor</a></li>
+                    <li><a href="">Tørning Mølle</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footerBundtekst">ⓒ 2022 Tørningspillet</p>
+    </footer>
 
 </body>
+
 </html>
