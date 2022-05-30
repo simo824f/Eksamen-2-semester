@@ -28,7 +28,7 @@ body p {
 header {
     display: flex;
     justify-content: space-evenly;
-    box-shadow: drop-shadow(8px 8px 6px rgba(0,0,0,0.8));
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
 }
 
 .nav_logo img {
@@ -69,7 +69,7 @@ header ul {
     background-color: #810029;
     position: absolute;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 77px;
     z-index: 2;
 }
 
@@ -77,6 +77,7 @@ header ul a {
     display: block;
     padding: 20px;
     text-decoration: none;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
 }
 
 header ul a:hover {
@@ -90,13 +91,14 @@ header .menu {
 }
 
 header .menu_icon {
-    padding: 28px 20px;
+    padding: 25px 20px;
     position: relative;
     /*den her skal være relavtiv så vi på barnet kan bruge absolut og på den måde rykke rundt på tingene*/
     float: right;
     cursor: pointer;
-    margin-right: 20px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*forneden styler de tre linjer de giver burgermenu iconet*/
@@ -492,7 +494,7 @@ footer p {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 10px;
     
   }
   
@@ -506,9 +508,10 @@ footer p {
   }
   
   .column img {
-    margin-top: 8px;
+    margin-top: 12px;
     vertical-align: middle;
-    width: 100%;
+    width: 97%;
+    filter: drop-shadow(8px 8px 6px rgba(34, 34, 34, 0.8));
   }
 
  .fullImg{
@@ -546,11 +549,12 @@ footer p {
  /* her slutter koden til 2001 forestillinger */
 
 
-@media screen and (min-width: 720px) {
+ @media screen and (min-width: 760px) {
 
     /*Nav start*/
     header {
         justify-content: space-between;
+        box-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
     }
 
     header li {
@@ -561,14 +565,19 @@ footer p {
         padding: 20px 30px;
         color: black;
     }
+    header ul a{
+        display: inline;
+        box-shadow:none;
+    }
 
     header .menu {
         clear: none;
-        float: center;
         max-height: none;
-        margin-left: 150px;
-        margin-top: 32px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 55%;
     }
+    
 
     header .menu_icon {
         display: none;
@@ -576,19 +585,33 @@ footer p {
 
     header ul {
         width: 400px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
+        position: inherit;
+    }
+    .menu {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu a {
+        padding: 10px 5px 10px 5px;
+        font-size: 120%;
     }
 
-    .menu a {
-        padding: 15px;
-    }
 
     .nav_logo {
-        margin-left: 5px;
+        display: flex;
+        width: 100px;
+        height: auto;
+        justify-content: center;
     }
-
+    .nav_logo img {
+    width: 70%;
+    }
     .nav_billet_button {
-        margin-top: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     /*Nav SLUT*/
@@ -601,17 +624,20 @@ footer p {
     }
 
     .online_ikon,
-    .iDøren_ikon {
+    .iDøren_ikon, 
+    .mail_ikon {
         width: 200px;
     }
 
     .online,
-    .idøren {
+    .idøren,
+    .mail {
         font-size: 40px;
     }
 
     .online_beskrivelse,
-    .idøren_beskrivelse {
+    .idøren_beskrivelse,
+    .mail_beskrivelse {
         font-size: 20px;
     }
 
@@ -665,27 +691,53 @@ footer p {
 
     /*Footer styling SLUT*/
 
-    /*style på 2001*/
-.column {
+     /*style på 2001*/
+ .column {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
-  }  
+  } 
+
+  .box{
+    background-color: #810029;
+    height: 3px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    
+}
+ h1 {
+    margin-bottom: 0.2rem;
+    text-align:start;
+    margin-left: 50px;
+}
 }
 
 
 @media screen and (min-width: 1200px) {
-
+   
     /*header styling START*/
-
-    header{
-        margin-top: 10px;
-        margin-bottom: 10px;
+    
+    header .menu{
+        align-content: center;
+        margin-left: 0px;
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    header ul a{
+        display: inline;
+    }
+    header ul {
+        position: inherit;
     }
 
     .nav_logo{
-        width: 150px;
-        margin: 20px;
+        width: 170px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .menu {
@@ -693,23 +745,30 @@ footer p {
         width: 700px;
         display: flex;
         justify-content: space-between;
-        background-color: none;
-        padding-left: 200px;
+        align-items: center;
+    }
+
+    .menu a {
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .menu ul{
         margin-bottom: 10px;
-        margin-top: 10px;
     }
+    
 
     .nav_billet_button {
+        display: flex;
         padding: 20px;
         font-size: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        align-items: center;
+        justify-content: center;
     }
 
-    .nav_billet_button a {
-        margin: auto;
-    }
+   
 
     /*header styling SLUT*/
 
@@ -733,7 +792,7 @@ footer p {
     /*Styling slideshow SLUT*/
 
     .teatermasker {
-        width: 100px;
+        width: 150px;
         padding: 0%;
         margin-bottom: 1px;
     }
@@ -747,13 +806,30 @@ footer p {
 
     }
     
- /* kode til 2001 forstillinger */
 
- .column {
-    -ms-flex: 25%;
-    flex: 25%;
-    max-width: 25%;
-  }  
+    /*Styling Frivillig og skuespiller bokse START*/
+    .frivilligTekst {
+        margin-top: 300px;
+    }
 
+    .box_frivillig {
+        margin-top: 270px;
+    }
+
+    .skuespillerTekst {
+        margin-top: -210px;
+    }
+
+    .box_skuespiller {
+        margin-top: -240px;
+    }
+
+     /*Styling Frivillig og skuespiller bokse SLUT*/
+
+     .column {
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 25%;
+      }  
 
 }
