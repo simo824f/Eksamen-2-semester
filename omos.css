@@ -359,10 +359,20 @@ footer p {
 @media screen and (min-width: 1200px) {
 
     p, h1, h2 {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 135px;
+        margin-right: 135px;
     }
 
+
+    .box_omos, .box_bestyrelse {
+        margin-left: 135px;
+        margin-bottom: 35px;
+    }
+
+    
+    
+  
+    
 
 
 }
