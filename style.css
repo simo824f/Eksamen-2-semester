@@ -355,12 +355,174 @@ footer p {
 
 /*Bliv frivillig SLUT*/
 
+/* starten på tidliger forstillinger (Heino) */
+.imgGallery{
+    width: 80%;
+    margin: 10px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 16px;
+    justify-content: center;
+
+}
+ .imgGallery img{
+    width:  150px;
+    height: 150px;
+    object-fit: cover;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    filter: drop-shadow(8px 8px 6px rgba(34, 34, 34, 0.8));
+ }
+
+ .fullImg{
+     width: 100%;
+     height: 100vh;
+     background: rgb(0,0,0,0.9);
+     position: fixed;
+     top: 0;
+     left: 0;
+     display: none;
+     align-items: center;
+     justify-content: center;
+    z-index: 10;
+ }
+
+ .fullImg img{
+    width: 90%;
+    max-width: 300px;
+
+ }
+
+ .fullImg span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+ }
+
+ .container {
+    position: relative;
+    max-width: 300px; /* Maximum width */
+    margin: 0 auto;
+    width:  150px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 93%; /* Full width */
+  padding: 5px; /* Some padding */
+  cursor: pointer;
+}
+.content h1{
+    margin-top: 0%;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+.content a {
+    font-family: Roboto_brød;
+    text-decoration: none;
+}
+
+ .box{
+    background-color: #810029;
+    height: 3px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+ h1 {
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+/* her slutter tidlider forstillinger */
+
+/* her starter koden til 2001 forestillinger (heino)*/
+
+* {
+    box-sizing: border-box;
+  }  
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .box{
+    background-color: #810029;
+    height: 3px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+h1 {
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
 
 
 
+ .fullImg{
+     width: 100%;
+     height: 100vh;
+     background: rgb(0,0,0,0.9);
+     position: fixed;
+     top: 0;
+     left: 0;
+     display: none;
+     align-items: center;
+     justify-content: center;
+    z-index: 10;
+ }
 
+ .fullImg img{
+    width: 90%;
+    max-width: 300px;
+    
 
+ }
 
+ .fullImg span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+ }
+ .imgGallery img{
+    cursor: pointer;
+ }
+
+ /* her slutter koden til 2001 forestillinger */
 
 
 
