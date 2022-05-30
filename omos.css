@@ -15,13 +15,10 @@
 
 body {
     margin: 0;
-    margin-top: 1rem;
-    height: 100%;
 }
 
 p, h1, h2 {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 0, 16px, 0, 16px;
 }
 
 /*FÆLLES STYLING STARTER HER*/
@@ -173,6 +170,8 @@ ul a {
 /*Alt med bestyrelsen & Hvem er vi? styles herunder*/
 .omos-billede {
     text-align: center;
+    width: 100%;
+    height: auto;
     margin-top: 20px;
 }
 .bestyrelsen_container {
@@ -201,7 +200,7 @@ ul a {
 
 .formand_billede, .kassere_billede, .sygegruppe_billede, .kulisser_billede {
     text-align: center;
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
 }
 
@@ -211,7 +210,7 @@ ul a {
     background-color: #810029;
     height: 3px;
     width: 150px;
-    margin-left: 1rem;
+    margin-left: 16px;
     margin-right: auto;
 }
 
@@ -244,6 +243,11 @@ ul a {
     .forman_container, .kassere_container, .sygegruppe_container, .kulisser_container {
         margin: 5px;
     }  
+
+    .formand_billede, .kassere_billede, .sygegruppe_billede, .kulisser_billede {
+        width: 50%;
+        height: auto;
+    }
 
     p, h1, h2 {
         margin-left: 120px;
