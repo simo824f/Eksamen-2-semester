@@ -16,9 +16,10 @@
 body {
     margin: 0;
     margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    height: 100%;
+}
+body p h1 h2 h3 {
+    margin-right: 16px;
+    margin-left: 16px;
 }
 
 /*FÆLLES STYLING STARTER HER*/
@@ -28,9 +29,11 @@ header {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 2.5rem;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 .nav_logo img {
-    width: 50%;
+    width: 30%;
     height: auto;
 }
 .nav_billet_button {
@@ -40,9 +43,8 @@ header {
     text-decoration: none;
     text-align: center;
     padding: 1rem;
-    height: 1.5rem;
+    height: 1rem;
     width: 10rem;
-    margin-left: 2rem;
 }
 .nav_billet_button a {
     text-decoration: none;
@@ -82,7 +84,7 @@ header .menu_icon {
     position: relative; /*den her skal være relavtiv så vi på barnet kan bruge absolut og på den måde rykke rundt på tingene*/
     float: right;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 
@@ -124,42 +126,50 @@ header .menu_btn:checked~.menu {
 
 
 /*FOOTER TIL FÆLLES BRUG*/
-footer { 
-    background-color: lightgrey;
-    
+.facebookIkon {
+    width: 70px;
+    padding: 20px;
+    margin-top: 40px;
 }
-.footer_container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2rem;
+
+footer {
+    margin-top: 40px;
+    background-color: #F9F6F0;
+    text-align: center;
 }
+
+
 footer a {
     color: black;
     text-decoration: none;
 }
+
 footer ul {
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 0px;
 }
+
+footer li {
+    padding: 5px;
+}
+
 footer p {
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 0;
-    font-style: italic;
-    font-weight: bold;
 }
-.footer_links {
-    margin-top: 2rem;
+
+.footerLinks {
+    margin-top: 20px;
+}
+
+.footerBundtekst {
+    font-size: 10px;
+    margin-bottom: 0px;
+}
+
+.overskriftfooter {
+    font-weight: bolder;
     font-size: 20px;
-    padding-bottom: 1rem;
-    font-weight: bold;
-}
-.footer_facebook {
-    margin-top: 2rem;
-}
-ul a {
-    text-decoration: underline;
-    margin-left: 1rem;
 }
 /*FOOTER SLUT*/
 
@@ -221,8 +231,9 @@ input {
     width: 60%;
     height: 2rem;
     margin-bottom: 2rem;
-    border-style: hidden;
-    border-bottom: solid 0.1rem;
+    border: solid rgba(0, 0, 0, 0.082);
+    border-radius: 0.4rem;
+    padding-left: 0.8rem;
 }
 
 textarea {
@@ -231,7 +242,10 @@ textarea {
     height: 7rem;
     border-style: none;
     margin-bottom: 1rem;
-    border: solid 0.1rem;
+    border: solid 0.1rem rgba(0, 0, 0, 0.082);
+    padding-left: 0.8rem;
+    padding-top: 0.6rem;
+
 }
 
 /*under er alt vedrørende google maps billedet og linket*/
@@ -256,3 +270,110 @@ iframe {
     margin-bottom: 7rem;
 }
 
+@media screen and (min-width:760px){
+        /*Nav start*/
+    header {
+        justify-content: space-between;
+    }
+
+    header li {
+        float: left;
+    }
+
+    header li a {
+        padding: 20px 30px;
+        color: black;
+    }
+
+    header .menu {
+        clear: none;
+        float: center;
+        max-height: none;
+        margin-left: 150px;
+        margin-top: 32px;
+    }
+
+    header .menu_icon {
+        display: none;
+    }
+
+    header ul {
+        width: 400px;
+        background-color: white;
+    }
+
+    .menu a {
+        padding: 15px;
+    }
+
+    .nav_logo {
+        margin-left: 5px;
+    }
+
+    .nav_billet_button {
+        margin-top: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+
+    /*Nav SLUT*/
+    
+    /*Footer styling START*/
+    .footer_container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footerAdresse {
+        display: none;
+    }
+
+    .facebookIkon {
+        width: 100px;
+    }
+
+    .footerLinks {
+        text-align: left;
+    }
+
+    /*Footer styling SLUT*/
+}
+
+@media screen and (min-width:1200px){
+    /*header styling START*/
+
+    header{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav_logo{
+        width: 150px;
+        margin: 20px;
+    }
+
+    .menu {
+        font-size: 20px;
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+        background-color: none;
+    }
+
+    .menu ul{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .nav_billet_button {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .nav_billet_button a {
+        margin: auto;
+    }
+
+    /*header styling SLUT*/
+}
