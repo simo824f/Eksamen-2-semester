@@ -17,13 +17,14 @@ body {
     margin: 0;
 }
 
-p, h1, h2 {
-    margin: 0, 16px, 0, 16px;
+p, h1, h2, h3, a {
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 /*FÆLLES STYLING STARTER HER*/
 
-/*forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
+/*Forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
 header {
     display: flex;
     justify-content: space-evenly;
@@ -52,10 +53,43 @@ header {
 
 /*Dropwon menuen på telefon*/
 /*for at lave denne er denne kilde brugt https://www.youtube.com/watch?v=bO9qHAhXbVA*/
+header {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: drop-shadow(8px 8px 6px rgba(0,0,0,0.8));
+}
+
+.nav_logo img {
+    width: 30%;
+    height: auto;
+    margin: 5px;
+}
+
+.nav_billet_button {
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #810029;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    height: 1rem;
+    width: 10rem;
+    margin: 9px;
+    margin-top: 16px;
+}
+
+.nav_billet_button a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Dropwon menuen på telefon*/
+/*for at lave denne er denne kilde brugt https://www.youtube.com/watch?v=bO9qHAhXbVA*/
 a {
     color: white;
     text-align: center;
 }
+
 header ul {
     padding: 0;
     list-style: none;
@@ -63,13 +97,18 @@ header ul {
     background-color: #810029;
     position: absolute;
     width: 100%;
-    margin-top: 90px;
+    margin-top: 80px;
     z-index: 2;
 }
+
 header ul a {
     display: block;
     padding: 20px;
     text-decoration: none;
+}
+
+header ul a:hover {
+    background-color:#8100294f;
 }
 
 header .menu {
@@ -77,14 +116,16 @@ header .menu {
     max-height: 0;
     transition: max-height .5s;
 }
+
 header .menu_icon {
     padding: 28px 20px;
-    position: relative; /*den her skal være relavtiv så vi på barnet kan bruge absolut og på den måde rykke rundt på tingene*/
+    position: relative;
+    /*den her skal være relavtiv så vi på barnet kan bruge absolut og på den måde rykke rundt på tingene*/
     float: right;
     cursor: pointer;
     margin-right: 20px;
+    margin-top: 10px;
 }
-
 
 /*forneden styler de tre linjer de giver burgermenu iconet*/
 header .menu_icon .nav_icon {
@@ -94,19 +135,23 @@ header .menu_icon .nav_icon {
     width: 35px;
     position: absolute;
 }
+
 header .menu_icon .nav_icon:before {
     background-color: black;
-    content: ""; /*Man laver en tom content for at have noget at style på*/
+    content: "";
+    /*Man laver en tom content for at have noget at style på*/
     display: block;
     height: 100%;
     position: absolute;
     width: 100%;
     top: 12px;
-    
+
 }
+
 header .menu_icon .nav_icon:after {
     background-color: black;
-    content: ""; /*Man laver en tom content for at have noget at style på*/
+    content: "";
+    /*Man laver en tom content for at have noget at style på*/
     display: block;
     height: 100%;
     position: absolute;
@@ -114,52 +159,57 @@ header .menu_icon .nav_icon:after {
     top: -12px;
 
 }
+
 header .menu_btn {
     display: none;
 }
+
 header .menu_btn:checked~.menu {
     max-height: 240px;
 }
-/*BURGER MENU SLUT*/
 
+/*Forneden er alt relateret til fooeteren*/
+.facebookIkon {
+    width: 70px;
+    padding: 20px;
+    margin-top: 40px;
+}
 
-/*FOOTER TIL FÆLLES BRUG*/
-footer { 
-    background-color: lightgrey;
-    
+footer {
+    background-color: #F9F6F0;
+    text-align: center;
 }
-.footer_container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2rem;
-}
+
 footer a {
     color: black;
     text-decoration: none;
 }
+
 footer ul {
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 0px;
 }
+
+footer li {
+    padding: 5px;
+}
+
 footer p {
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 0;
-    font-style: italic;
-    font-weight: bold;
 }
-.footer_links {
-    margin-top: 2rem;
+
+.footerLinks {
+    margin-top: 20px;
+}
+
+.footerBundtekst {
+    font-size: 10px;
+}
+
+.overskriftfooter {
+    font-weight: bolder;
     font-size: 20px;
-    padding-bottom: 1rem;
-    font-weight: bold;
-}
-.footer_facebook {
-    margin-top: 2rem;
-}
-ul a {
-    text-decoration: underline;
-    margin-left: 1rem;
 }
 /*FOOTER SLUT*/
 
@@ -174,8 +224,11 @@ ul a {
     height: auto;
     margin-top: 20px;
 }
+
 .bestyrelsen_container {
-    background-color:#F0E9DA ;
+    background-color:#F0E9DA;
+    padding-top: 2px;
+    margin-top: 30px;
 }
 
 .bestyrelsen_container h1{
@@ -183,25 +236,31 @@ ul a {
 }
 
 .forman_container {
+    text-align: center;
     background-color: #F0E9DA;
+    padding-top: 5px;
+    padding-bottom: 20px;
 }
 
 .kassere_container {
+    text-align: center;
     background-color: white;
+    padding-top: 5px;
+    padding-bottom: 20px;
 }
 
 .sygegruppe_container {
-    background-color:#F0E9DA ;
+    text-align: center;
+    background-color:#F0E9DA;
+    padding-top: 5px;
+    padding-bottom: 20px;
 }
 
 .kulisser_container {
-    background-color: white;
-}
-
-.formand_billede, .kassere_billede, .sygegruppe_billede, .kulisser_billede {
     text-align: center;
-    max-width: 70%;
-    height: auto;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 20px;
 }
 
 
@@ -222,16 +281,16 @@ ul a {
         margin-bottom: 30px;
     }
 
-    .box_damer, .box_mænd {
+    .box_one, .box_two {
         text-align: center;
         display: flex;
         flex-direction: row;
         background-color: #F0E9DA;
-        margin-left: 120px;
-        margin-right: 120px;
+        margin-left: 90px;
+        margin-right: 90px;
     }
 
-    .box_mænd{
+    .box_two{
         margin-top: 30px;
         padding-bottom: 30px;
     }
@@ -250,16 +309,41 @@ ul a {
     }
 
     p, h1, h2 {
-        margin-left: 120px;
-        margin-right: 120px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
    .bestyrelsen_container h1 {
        padding-top: 30px;
        
    }
+
+     /*Footer styling START*/
+     .footer_container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footerAdresse {
+        display: none;
+    }
+
+    .facebookIkon {
+        width: 100px;
+    }
+
+    .footerLinks {
+        text-align: left;
+    }
+
+    /*Footer styling SLUT*/
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+
+    p, h1, h2 {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
 
 }
