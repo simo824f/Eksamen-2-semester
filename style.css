@@ -375,34 +375,6 @@ footer p {
     filter: drop-shadow(8px 8px 6px rgba(34, 34, 34, 0.8));
  }
 
- .fullImg{
-     width: 100%;
-     height: 100vh;
-     background: rgb(0,0,0,0.9);
-     position: fixed;
-     top: 0;
-     left: 0;
-     display: none;
-     align-items: center;
-     justify-content: center;
-    z-index: 10;
- }
-
- .fullImg img{
-    width: 90%;
-    max-width: 300px;
-
- }
-
- .fullImg span{
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
- }
-
  .container {
     position: relative;
     max-width: 300px; /* Maximum width */
@@ -555,7 +527,16 @@ h1 {
     }
 
     /*Nav SLUT*/
+
+    /* kode til 2001 forstillinger */
+
+    .column {
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 25%;
+      }  
 }
+
 
 
 
