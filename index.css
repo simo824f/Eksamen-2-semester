@@ -461,14 +461,18 @@ footer p {
         padding: 20px 30px;
         color: black;
     }
+    header ul a{
+        display: inline;
+    }
 
     header .menu {
         clear: none;
-        float: center;
         max-height: none;
-        margin-left: 150px;
-        margin-top: 32px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 55%;
     }
+    
 
     header .menu_icon {
         display: none;
@@ -477,18 +481,32 @@ footer p {
     header ul {
         width: 400px;
         background-color: rgb(255, 255, 255);
+        position: inherit;
+    }
+    .menu {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu a {
+        padding: 10px 5px 10px 5px;
+        font-size: 120%;
     }
 
-    .menu a {
-        padding: 15px;
-    }
 
     .nav_logo {
-        margin-left: 5px;
+        display: flex;
+        width: 100px;
+        height: auto;
+        justify-content: center;
     }
-
+    .nav_logo img {
+    width: 70%;
+    }
     .nav_billet_button {
-        margin-top: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     /*Nav SLUT*/
@@ -583,10 +601,6 @@ footer p {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    header{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
     header ul a{
         display: inline;
     }
@@ -595,7 +609,7 @@ footer p {
     }
 
     .nav_logo{
-        width: 200px;
+        width: 170px;
         margin-top: auto;
         margin-bottom: auto;
     }
