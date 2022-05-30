@@ -574,9 +574,24 @@ footer p {
 
     /*header styling START*/
 
+   
+    /*header styling START*/
+    header .menu{
+        align-content: center;
+        margin-left: 0px;
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     header{
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    header ul a{
+        display: inline;
+    }
+    header ul {
+        position: inherit;
     }
 
     .nav_logo{
@@ -590,7 +605,7 @@ footer p {
         width: 700px;
         display: flex;
         justify-content: space-between;
-        padding-left: 200px;
+        align-items: center;
     }
 
     .menu a {
@@ -601,17 +616,19 @@ footer p {
     .menu ul{
         margin-bottom: 10px;
     }
+    
 
     .nav_billet_button {
+        display: flex;
         padding: 20px;
         font-size: 20px;
         margin-top: auto;
         margin-bottom: auto;
+        align-items: center;
+        justify-content: center;
     }
 
-    .nav_billet_button a {
-        margin: auto;
-    }
+   
 
     /*header styling SLUT*/
 
