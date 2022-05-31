@@ -41,5 +41,17 @@ function slideshowBeholder(n) {
   dots[slideIndex-1].className += " active";
 }
 
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImages = document.getElementById("fullImages");
 
+function openFullImg(pic) {
+  fullImgBox.style.display = "flex";
+  fullImages.src = pic;
+
+}
+
+function closeFullImg() {
+  fullImgBox.style.display = "none";
+
+}
 
