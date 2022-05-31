@@ -15,7 +15,7 @@
 
 /*FÆLLES STYLE START*/
 
-body{
+body {
     margin: 0%;
 }
 
@@ -81,7 +81,7 @@ header ul a {
 }
 
 header ul a:hover {
-    background-color:#8100294f;
+    background-color: #8100294f;
 }
 
 header .menu {
@@ -342,7 +342,7 @@ footer p {
     box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2)
 }
 
-.BlivSkuespiller a{
+.BlivSkuespiller a {
     box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2)
 }
 
@@ -414,7 +414,7 @@ footer p {
 
 /*Sponsorer START*/
 
-.Sponsorer{
+.Sponsorer {
     width: 100%;
     height: auto;
     margin-top: 50px;
@@ -423,56 +423,68 @@ footer p {
 }
 
 /* starten på tidliger forstillinger (Heino) */
-.imgGallery{
+.imgGallery {
     width: 80%;
     margin: 10px auto 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     grid-gap: 16px;
     justify-content: center;
 
 }
- .imgGallery img{
-    width:  150px;
+
+.imgGallery img {
+    width: 150px;
     height: 150px;
     object-fit: cover;
     display: flex;
     cursor: pointer;
     justify-content: center;
     filter: drop-shadow(8px 8px 6px rgba(34, 34, 34, 0.8));
- }
+}
 
- .container {
+.container {
     position: relative;
-    max-width: 300px; /* Maximum width */
+    max-width: 300px;
+    /* Maximum width */
     margin: 0 auto;
-    width:  150px;
+    width: 150px;
     display: flex;
     cursor: pointer;
     justify-content: center;
 }
 
 .container .content {
-  position: absolute; /* Position the background text */
-  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
-  width: 93%; /* Full width */
-  padding: 5px; /* Some padding */
-  cursor: pointer;
+    position: absolute;
+    /* Position the background text */
+    bottom: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    /* Grey text */
+    width: 93%;
+    /* Full width */
+    padding: 5px;
+    /* Some padding */
+    cursor: pointer;
 }
-.content h1{
+
+.content h1 {
     margin-top: 0%;
     margin-bottom: 0.2rem;
     text-align: center;
 }
+
 .content a {
     font-family: Roboto_brød;
     text-decoration: none;
 }
 
- .box{
+.box {
     background-color: #810029;
     height: 3px;
     width: 150px;
@@ -480,7 +492,8 @@ footer p {
     margin-right: auto;
     margin-bottom: 1rem;
 }
- h1 {
+
+h1 {
     margin-bottom: 0.2rem;
     text-align: center;
 }
@@ -488,68 +501,67 @@ footer p {
 /* her slutter tidlider forstillinger */
 
 /* her starter koden til 2001 forestillinger (heino)*/
-  
-  .row {
-    display: -ms-flexbox; /* IE10 */
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap;
+    /* IE10 */
     flex-wrap: wrap;
     padding: 0 10px;
-    
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
     padding: 0 4px;
     box-sizing: border-box;
-  }
-  
-  .column img {
+}
+
+.column img {
     margin-top: 12px;
     vertical-align: middle;
     width: 97%;
     filter: drop-shadow(8px 8px 6px rgba(34, 34, 34, 0.8));
-  }
+}
 
- .fullImg{
-     width: 100%;
-     height: 100vh;
-     background: rgb(0,0,0,0.9);
-     position: fixed;
-     top: 0;
-     left: 0;
-     display: none;
-     align-items: center;
-     justify-content: center;
+.fullImg {
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
     z-index: 10;
- }
+}
 
- .fullImg img{
+.fullImg img {
     width: 90%;
     max-width: 300px;
-    
 
- }
 
- .fullImg span{
+}
+
+.fullImg span {
     position: absolute;
     top: 5%;
     right: 5%;
     font-size: 30px;
     color: white;
     cursor: pointer;
- }
- .imgGallery img{
-    cursor: pointer;
- }
+}
 
- /* her slutter koden til 2001 forestillinger */
+/* her slutter koden til 2001 forestillinger */
 
 
- @media screen and (min-width: 760px) {
+@media screen and (min-width: 760px) {
 
     /*Nav start*/
     header {
@@ -565,9 +577,10 @@ footer p {
         padding: 20px 30px;
         color: black;
     }
-    header ul a{
+
+    header ul a {
         display: inline;
-        box-shadow:none;
+        box-shadow: none;
     }
 
     header .menu {
@@ -577,7 +590,7 @@ footer p {
         margin-bottom: auto;
         width: 55%;
     }
-    
+
 
     header .menu_icon {
         display: none;
@@ -588,12 +601,14 @@ footer p {
         background-color: rgb(255, 255, 255);
         position: inherit;
     }
+
     .menu {
         display: flex;
         align-content: center;
         align-items: center;
         justify-content: space-between;
     }
+
     .menu a {
         padding: 10px 5px 10px 5px;
         font-size: 120%;
@@ -606,9 +621,11 @@ footer p {
         height: auto;
         justify-content: center;
     }
+
     .nav_logo img {
-    width: 70%;
+        width: 70%;
     }
+
     .nav_billet_button {
         margin-top: auto;
         margin-bottom: auto;
@@ -624,7 +641,7 @@ footer p {
     }
 
     .online_ikon,
-    .iDøren_ikon, 
+    .iDøren_ikon,
     .mail_ikon {
         width: 200px;
     }
@@ -691,50 +708,73 @@ footer p {
 
     /*Footer styling SLUT*/
 
-     /*style på 2001*/
- .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  } 
+    /*style på 2001*/
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
 
-  .box{
-    background-color: #810029;
-    height: 3px;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
+    /* styling på overskiften og rød linje under starter her */
+
+    .headline {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .headline h1{
+        padding-left: 50px;
+    }
+    .box{
+        margin-left: 80px;
+    }
+/*  slutter her */
+
+/* start på style til billeder på tidliger forestilligger */
+
+.imgGallery img {
+    width: 280px;
+    height: 280px;
+}
+
+.container .content{
+    width: 180%;
+    height: 25%;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
 }
- h1 {
-    margin-bottom: 0.2rem;
-    text-align:start;
-    margin-left: 50px;
+.content h1{
+    font-size: 300%;
+
 }
+/* her SLUTER den */
+
 }
 
 
 @media screen and (min-width: 1200px) {
-   
+
     /*header styling START*/
-    
-    header .menu{
+
+    header .menu {
         align-content: center;
         margin-left: 0px;
         width: 50%;
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    header ul a{
+
+    header ul a {
         display: inline;
     }
+
     header ul {
         position: inherit;
     }
 
-    .nav_logo{
+    .nav_logo {
         width: 170px;
         margin-top: auto;
         margin-bottom: auto;
@@ -753,10 +793,10 @@ footer p {
         margin-bottom: auto;
     }
 
-    .menu ul{
+    .menu ul {
         margin-bottom: 10px;
     }
-    
+
 
     .nav_billet_button {
         display: flex;
@@ -768,7 +808,7 @@ footer p {
         justify-content: center;
     }
 
-   
+
 
     /*header styling SLUT*/
 
@@ -797,15 +837,15 @@ footer p {
         margin-bottom: 1px;
     }
 
-    .overskrift{
+    .overskrift {
         font-size: 50px;
     }
 
-    .udnertekst{
+    .udnertekst {
         font-size: 30px;
 
     }
-    
+
 
     /*Styling Frivillig og skuespiller bokse START*/
     .frivilligTekst {
@@ -824,12 +864,49 @@ footer p {
         margin-top: -240px;
     }
 
-     /*Styling Frivillig og skuespiller bokse SLUT*/
+    /*Styling Frivillig og skuespiller bokse SLUT*/
 
-     .column {
+    .column {
         -ms-flex: 25%;
         flex: 25%;
         max-width: 25%;
-      }  
+    }
+
+
+    /* start på style til billeder på tidliger forestilligger */
+.imgGallery{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.imgGallery img {
+    width: 220px;
+    height: 220px;
+}
+
+.container .content{
+width: 140%;
+}
+
+/* her SLUTER den */
+
+
+
+}
+
+@media screen and (min-width: 1920px) {
+    .imgGallery{
+        grid-gap: 30px;
+    }
+    
+    .imgGallery img {
+        width: 360px;
+        height: 360px;
+    }
+    
+    .container .content{
+    width: 233%;
+    }
+    .content h1{
+        font-size: 400%;
+    }
 
 }
