@@ -14,7 +14,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 0%;
     margin-top: 1rem;
 }
 body p h1 h2 h3 {
@@ -176,22 +176,31 @@ footer p {
 /*HER SLUTTER FÆLLES STYLING*/
 
 
-
+.kontaktos-billede {
+    display: block;
+    height: auto;
+    width: 80%;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /*for neden er alt relateret til kontakt os siden*/
 h1 {
-    text-align: center;
-    margin-bottom: 0.2rem;
+    margin-left: 16px;
+    text-align: left;
+    margin-bottom: 5px;
     font-family: Roboto_overskrift;
 }
 .box{
     background-color: #810029;
     height: 3px;
     width: 150px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: 16px; 
     margin-bottom: 3rem;
+    text-align: left;
 }
 .kontakt_container a{
     display: flex;
@@ -209,7 +218,7 @@ h1 {
 /*herunder laves alt vedrørende kontaktformularen*/
 form {
     height: 15rem;
-    margin-left: 2rem;
+    margin-left: 135px;
     margin-bottom: 10rem;
 }
 .formular_button {
@@ -250,11 +259,15 @@ textarea {
 
 /*under er alt vedrørende google maps billedet og linket*/
 h2 {
-    text-align: center;
-    margin-bottom: 0.2rem;
+    margin-left: 16px;
+    margin-bottom: 5px;
+
 }
 iframe {
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     height: 22rem;
     margin-bottom: 3rem;
     border: none;
@@ -315,8 +328,6 @@ iframe {
         padding-left: 0;
         padding-right: 0;
     }
-    
-
     /*Nav SLUT*/
     
     /*Footer styling START*/
@@ -339,7 +350,27 @@ iframe {
 
     /*Footer styling SLUT*/
 }
-
+    h1 {
+        margin-left: 50px;
+    }
+    h2 {
+        margin-left: 50px;
+    }
+    form {
+        margin-left: 50px;
+    }
+    .box {
+        margin-left: 50px;
+    }
+    .findos-box {
+        background-color: #810029;
+        height: 3px;
+        width: 150px;
+        margin-right: auto;
+        margin-left: 16px; 
+        margin-bottom: 3rem;
+        text-align: left;
+    }
 @media screen and (min-width:1200px){
     /*header styling START*/
 
@@ -369,6 +400,22 @@ iframe {
     .nav_billet_button a {
         margin: auto;
     }
-
-    /*header styling SLUT*/
+    h1 {
+        margin-left: 135px;
+    }
+    h2 {
+        margin-left: 135px;
+    }
+    .box {
+        margin-left: 135px;
+    }
+    .findos-box {
+        background-color: #810029;
+        height: 3px;
+        width: 107px;
+        margin-right: auto;
+        margin-left: 135px; 
+        margin-bottom: 3rem;
+        text-align: left;
+    }
 }

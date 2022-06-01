@@ -63,7 +63,7 @@ header ul {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: var(--tertiær-farves);
+    background-color: var(--tertiær-farve);
     position: absolute;
     width: 100%;
     margin-top: 90px;
@@ -177,14 +177,22 @@ footer p {
 .box{
     background-color: var(--tertiær-farve);
     height: 3px;
-    width: 150px;
-    margin-left: auto;
+    width: 350px;
     margin-right: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 16px;
+}
+.box-årets-forestilling{
+    background-color: var(--tertiær-farve);
+    height: 3px;
+    width: 265px;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    margin-left: 282px;
 }
 h1 {
     margin-bottom: 0.2rem;
-    text-align: center;
+    margin-left: 16px;
 }
 .kaos-billede {
     margin-left: 32px;
@@ -193,19 +201,24 @@ h1 {
     margin-left: 32px;
 }
 .tidl-forestillinger_container {
-    background-color:var(--sekundær-farve) ;
-    margin-top: 5rem;
+    background-color:var(--sekundær-farve) ;    
 }
 p {
     margin-left: 16px;
     margin-right: 16px;
     padding-bottom: 16px;
+    font-size: 15px;
 }
 h3 {
     margin-left: 16px;
     margin-right: 16px;
+    font-size: 20px;
 }
-
+.tidl-forestillinger_h1_container {
+    background-color: var(--sekundær-farve);
+    margin-top: 80px;
+    padding-bottom: 20px;
+}
 /*media queries starter her*/
 @media screen and (min-width:760px){
      /*Nav start*/
@@ -252,7 +265,27 @@ h3 {
         padding-left: 0;
         padding-right: 0;
     }
-    
+    p {
+        font-size: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    h1{
+        font-size: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    h3 {
+        font-size: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .box {
+        margin-left: 50px;
+    }
+    .box-årets-forestilling {
+        margin-left: 50px;
+    }
 
     /*Nav SLUT*/
     
@@ -354,16 +387,22 @@ h3 {
         display: flex;
         flex-direction: row-reverse;
         margin-top: 0;
+        margin-bottom: 10rem;
     }
     .tidl-forestillinger_container img {
         margin-right: 282px;
+        margin-bottom: 3rem;
     }
     .tidl-forestillinger_container p {
         margin-left: 282px;
+        margin-right: 0;
     }
     .tidl-forestillinger_h1_container {
         background-color: var(--sekundær-farve);
         padding-bottom: 20px;
         margin-top: 80px;
+    }
+    .box-årets-forestilling {
+        margin-left: 282px;
     }
 }
