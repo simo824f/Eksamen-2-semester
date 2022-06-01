@@ -1,5 +1,5 @@
 @font-face {
-    font-family:Roboto_brød;
+    font-family: Roboto_brød;
     src: url(Font/Roboto/Roboto-Regular.ttf);
 }
 
@@ -9,7 +9,7 @@
 }
 
 /*Dette er generalt for alt på siden*/
-*{
+* {
     font-family: Roboto_brød;
 }
 
@@ -17,7 +17,11 @@ body {
     margin: 0;
 }
 
-p, h1, h2, h3, a {
+p,
+h1,
+h2,
+h3,
+a {
     margin-left: 16px;
     margin-right: 16px;
 }
@@ -29,35 +33,7 @@ p, h1, h2, h3, a {
 header {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 2.5rem;
-}
-.nav_logo img {
-    width: 50%;
-    height: auto;
-}
-.nav_billet_button {
-    border: none;
-    border-radius: 0.2rem;
-    background-color: #810029;
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem;
-    height: 1.5rem;
-    width: 10rem;
-    margin-left: 2rem;
-}
-.nav_billet_button a {
-    text-decoration: none;
-    color: white;
-}
-/*NAV SLUT*/
-
-/*Dropwon menuen på telefon*/
-/*for at lave denne er denne kilde brugt https://www.youtube.com/watch?v=bO9qHAhXbVA*/
-header {
-    display: flex;
-    justify-content: space-evenly;
-    box-shadow: drop-shadow(8px 8px 6px rgba(0,0,0,0.8));
+    box-shadow: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.8));
 }
 
 .nav_logo img {
@@ -89,6 +65,7 @@ header {
 a {
     color: white;
     text-align: center;
+    box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.2)
 }
 
 header ul {
@@ -98,7 +75,7 @@ header ul {
     background-color: #810029;
     position: absolute;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 75px;
     z-index: 2;
 }
 
@@ -109,7 +86,7 @@ header ul a {
 }
 
 header ul a:hover {
-    background-color:#8100294f;
+    background-color: #8100294f;
 }
 
 header .menu {
@@ -169,6 +146,37 @@ header .menu_btn:checked~.menu {
     max-height: 240px;
 }
 
+/*Undermenu*/
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #81002946;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /*Forneden er alt relateret til fooeteren*/
 .facebookIkon {
     width: 70px;
@@ -212,6 +220,7 @@ footer p {
     font-weight: bolder;
     font-size: 20px;
 }
+
 /*FOOTER SLUT*/
 
 /*HER SLUTTER FÆLLES STYLING*/
@@ -219,7 +228,7 @@ footer p {
 
 
 /*Alt med bestyrelsen & Hvem er vi? styles herunder*/
-.hvemervi_container .omos-billede{
+.hvemervi_container .omos-billede {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -227,19 +236,22 @@ footer p {
     margin-top: 20px;
 }
 
-.formand_billede, .kassere_billede, .sygegruppe_billede, .kulisser_billede {
+.formand_billede,
+.kassere_billede,
+.sygegruppe_billede,
+.kulisser_billede {
     width: 50%;
     height: auto;
     filter: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.8));
-    }
+}
 
 .bestyrelsen_container {
-    background-color:#F0E9DA;
+    background-color: #F0E9DA;
     padding-top: 2px;
     margin-top: 30px;
 }
 
-.bestyrelsen_container h1{
+.bestyrelsen_container h1 {
     margin-top: 30px;
 }
 
@@ -259,7 +271,7 @@ footer p {
 
 .sygegruppe_container {
     text-align: center;
-    background-color:#F0E9DA;
+    background-color: #F0E9DA;
     padding-top: 5px;
     padding-bottom: 20px;
 }
@@ -274,7 +286,7 @@ footer p {
 
 /*herunder styles den lille streg der kører under enkelte overskrifter*/
 
-.box_omos{
+.box_omos {
     background-color: #810029;
     height: 3px;
     width: 100px;
@@ -282,7 +294,7 @@ footer p {
     margin-right: auto;
 }
 
-.box_bestyrelse{
+.box_bestyrelse {
     background-color: #810029;
     height: 3px;
     width: 150px;
@@ -291,14 +303,84 @@ footer p {
 }
 
 
-@media screen and (min-width: 760px){
+@media screen and (min-width: 760px) {
 
-    .box_omos, .box_bestyrelse {
+    /*Nav start*/
+    header {
+        justify-content: space-between;
+    }
+
+    header li {
+        float: left;
+    }
+
+    header li a {
+        padding: 20px 30px;
+        color: black;
+    }
+
+    header ul a {
+        display: inline;
+    }
+
+    header .menu {
+        clear: none;
+        max-height: none;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 55%;
+    }
+
+
+    header .menu_icon {
+        display: none;
+    }
+
+    header ul {
+        width: 400px;
+        background-color: rgb(255, 255, 255);
+        position: inherit;
+    }
+
+    .menu {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu a {
+        padding: 10px 5px 10px 5px;
+        font-size: 120%;
+    }
+
+
+    .nav_logo {
+        display: flex;
+        width: 100px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .nav_logo img {
+        width: 70%;
+    }
+
+    .nav_billet_button {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    /*Nav SLUT*/
+
+    .box_omos,
+    .box_bestyrelse {
         margin-left: 50px;
         margin-bottom: 30px;
     }
 
-    .box_one, .box_two {
+    .box_one,
+    .box_two {
         text-align: center;
         display: flex;
         flex-direction: row;
@@ -307,36 +389,46 @@ footer p {
         margin-right: 90px;
     }
 
-    .box_two{
+    .box_two {
         margin-top: 30px;
         padding-bottom: 30px;
     }
 
-    .kassere_container, .kulisser_container {
+    .kassere_container,
+    .kulisser_container {
         background-color: #F0E9DA;
     }
 
-    .forman_container, .kassere_container, .sygegruppe_container, .kulisser_container {
+    .forman_container,
+    .kassere_container,
+    .sygegruppe_container,
+    .kulisser_container {
         margin: 5px;
-    }  
+    }
 
-    .formand_billede, .kassere_billede, .sygegruppe_billede, .kulisser_billede {
+    .formand_billede,
+    .kassere_billede,
+    .sygegruppe_billede,
+    .kulisser_billede {
         width: 50%;
         height: auto;
     }
 
-    p, h1, h2, h3 {
+    p,
+    h1,
+    h2,
+    h3 {
         margin-left: 50px;
         margin-right: 50px;
     }
 
-   .bestyrelsen_container h1 {
-       padding-top: 30px;
-       
-   }
+    .bestyrelsen_container h1 {
+        padding-top: 30px;
 
-     /*Footer styling START*/
-     .footer_container {
+    }
+
+    /*Footer styling START*/
+    .footer_container {
         display: flex;
         justify-content: space-evenly;
     }
@@ -358,21 +450,78 @@ footer p {
 
 @media screen and (min-width: 1200px) {
 
-    p, h1, h2 {
+    /*header styling START*/
+    header .menu {
+        align-content: center;
+        margin-left: 0px;
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    header ul a {
+        display: inline;
+    }
+
+    header ul {
+        position: inherit;
+    }
+
+    .nav_logo {
+        width: 170px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .menu {
+        font-size: 20px;
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu a {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .menu ul {
+        margin-bottom: 10px;
+    }
+
+
+    .nav_billet_button {
+        display: flex;
+        padding: 20px;
+        font-size: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /*header styling SLUT*/
+
+    p,
+    h1,
+    h2 {
         margin-left: 135px;
         margin-right: 135px;
     }
 
 
-    .box_omos, .box_bestyrelse {
+    .box_omos,
+    .box_bestyrelse {
         margin-left: 135px;
         margin-bottom: 35px;
     }
 
-    
-    
-  
-    
+
+
+
+
 
 
 }
