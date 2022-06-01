@@ -15,9 +15,8 @@
 
 body {
     margin: 0%;
-    margin-top: 1rem;
 }
-body p h1 h2 h3 {
+body p, h1, h2, h3 {
     margin-right: 16px;
     margin-left: 16px;
 }
@@ -124,12 +123,11 @@ header .menu_btn:checked~.menu {
 }
 /*BURGER MENU SLUT*/
 
-
 /*FOOTER TIL FÆLLES BRUG*/
 .facebookIkon {
     width: 70px;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 footer {
@@ -172,15 +170,14 @@ footer p {
     font-size: 20px;
 }
 /*FOOTER SLUT*/
-
 /*HER SLUTTER FÆLLES STYLING*/
 
-
+/*Herunder redigeres kontakt os billede*/
 .kontaktos-billede {
     display: block;
     height: auto;
-    width: 80%;
-    margin-bottom: 2rem;
+    width: 92%;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -196,12 +193,13 @@ h1 {
 .box{
     background-color: #810029;
     height: 3px;
-    width: 150px;
+    width: 109px;
     margin-right: auto;
     margin-left: 16px; 
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
     text-align: left;
 }
+/*Herunder laves de sociale links facebook, insta, mail*/
 .kontakt_container a{
     display: flex;
     flex-direction: row;
@@ -214,12 +212,65 @@ h1 {
     font-size: 20px;
     margin-bottom: 3rem;
 }
+.kontakt_mail img {
+    width: 30px;
+    height: 30px;
+}
+.kontakt_insta img {
+    width: 30px;
+    height: 30px;
+}
+.kontakt_facebook img {
+    width: 30px;
+    height: 30px;
+}
+.adresse_pin img {
+    width: 30px;
+    height: 30px;
+}
+
+/*herunder laves alt vedrørende citatteksten og citatet*/
+.tekst-box1 {
+    background-color: #810029;
+    height: 3px;
+    width: 150px;
+    margin-right: auto;
+    margin-left: 240px;
+}
+.tekst-box2 {
+    background-color: #810029;
+    height: 3px;
+    width: 150px;
+    margin-right: auto;
+    margin-left: 16px; 
+}
+.citat1 {
+    width: 30px;
+    height: 30px;
+    margin-left: 16px;
+    margin-top: 30px;
+}
+.citat2 {
+    width: 30px;
+    height: 30px;
+    margin-left: 365px;
+    margin-bottom: 30px;
+}
+.citat-txt {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
 
 /*herunder laves alt vedrørende kontaktformularen*/
 form {
     height: 15rem;
     margin-left: 135px;
     margin-bottom: 10rem;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 30px;
 }
 .formular_button {
     border: none;
@@ -236,6 +287,8 @@ form {
     justify-content: center;
     color: white;
 }
+
+/*Herunder laves alt vedrørende kontaktformularen*/
 input {
     width: 60%;
     height: 2rem;
@@ -256,22 +309,33 @@ textarea {
     padding-top: 0.6rem;
 
 }
+/*Her slutter kontaktformularen*/
 
-/*under er alt vedrørende google maps billedet og linket*/
+/*Herunder redigeres Google Maps lokationen*/
 h2 {
     margin-left: 16px;
     margin-bottom: 5px;
-
+}
+.findos-box {
+    background-color: #810029;
+    height: 3px;
+    width: 107px;
+    margin-right: auto;
+    margin-left: 16px; 
+    margin-bottom: 30px;
 }
 iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 92%;
     height: 22rem;
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
     border: none;
 }
+/*Google maps slutter her*/
+
+/*Adressen og ikon under google maps*/
 .adresse_pin {
     text-align: center;
 }
@@ -280,24 +344,23 @@ iframe {
 }
 .pin_txt2 {
     text-align: center;
-    margin-bottom: 7rem;
+    margin-bottom: 0%;
 }
 
+
+/*herunder redigeres alt til ipad*/
 @media screen and (min-width:760px){
-        /*Nav start*/
+    /*Nav start*/
     header {
         justify-content: space-between;
     }
-
     header li {
         float: left;
     }
-
     header li a {
         padding: 20px 30px;
         color: black;
     }
-
     header .menu {
         clear: none;
         float: center;
@@ -305,24 +368,19 @@ iframe {
         margin-left: 150px;
         margin-top: 32px;
     }
-
     header .menu_icon {
         display: none;
     }
-
     header ul {
         width: 400px;
         background-color: white;
     }
-
     .menu a {
         padding: 15px;
     }
-
     .nav_logo {
         margin-left: 5px;
     }
-
     .nav_billet_button {
         margin-top: 30px;
         padding-left: 0;
@@ -330,6 +388,7 @@ iframe {
     }
     /*Nav SLUT*/
     
+
     /*Footer styling START*/
     .footer_container {
         display: flex;
@@ -347,38 +406,102 @@ iframe {
     .footerLinks {
         text-align: left;
     }
-
     /*Footer styling SLUT*/
-}
+    /*Fælles styling slutter her*/
+
+    .box {
+        margin-left: 50px;
+        width: 105px;
+    }
+    .findos-box {
+        background-color: #810029;
+        height: 3px;
+        width: 105px;
+        margin-right: auto;
+        margin-left: 16px; 
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+    /*Herunder laves de sociale links facebook, insta, mail*/
+    .kontakt_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    /*herunder laves alt med teksten med citeringen*/
+    .tekst-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 40px;
+        margin-right: 40px;
+        height: auto;
+    }
+
+    .tekst-wrapper p {
+        width: 50%;
+    }
+
+    .tekst-box1 {
+        display: flex;
+        background-color: #810029;
+        height: 3px;
+        width: 150px;
+        margin-left: 560px;
+    }
+    .tekst-box2 {
+        background-color: #810029;
+        height: 3px;
+        width: 150px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    .citat1 {
+        height: 50px;
+        width: 50px;
+        margin-left: 70px;
+    }
+    .citat2 {
+        height: 50px;
+        width: 50px;
+        margin-left: 650px;
+    }
+    .citat-txt {
+        font-size: 35px;
+        text-align: center;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    /*herunder redigeres kontakt os billedet til ipad*/
+    .kontaktos-billede {
+        width: 87%;
+    }
+    iframe {
+        width: 87%;
+    }
     h1 {
         margin-left: 50px;
     }
     h2 {
         margin-left: 50px;
     }
+    .findos-box {
+        margin-left: 50px;
+    }
     form {
         margin-left: 50px;
     }
-    .box {
-        margin-left: 50px;
-    }
-    .findos-box {
-        background-color: #810029;
-        height: 3px;
-        width: 150px;
-        margin-right: auto;
-        margin-left: 16px; 
-        margin-bottom: 3rem;
-        text-align: left;
-    }
-@media screen and (min-width:1200px){
-    /*header styling START*/
 
+}
+/*herunder redigeres alt til Desktop*/
+
+@media screen and (min-width:1200px){
+    /*HEADER STARTER HER*/
     header{
         margin-top: 10px;
         margin-bottom: 10px;
     }
-
     .menu {
         font-size: 20px;
         width: 700px;
@@ -386,20 +509,19 @@ iframe {
         justify-content: space-between;
         background-color: none;
     }
-
     .menu ul{
         margin-bottom: 10px;
         margin-top: 10px;
     }
-
     .nav_billet_button {
         padding: 20px;
         font-size: 20px;
     }
-
     .nav_billet_button a {
         margin: auto;
     }
+    /*HEADER SLUTTER HER*/
+
     h1 {
         margin-left: 135px;
     }
@@ -418,4 +540,77 @@ iframe {
         margin-bottom: 3rem;
         text-align: left;
     }
+    iframe {
+        width: 82%;
+    }
+
+    /*herunder ændres kontakt os billedet til desktop*/
+    .kontaktos-billede {
+        width: 82%;
+    }    
+
+    /*Herunder ændres alt vedrørende citatteksten og citatet*/
+    .tekst-box1 {
+        margin-left: 79%;
+    }
+    .tekst-box2 {
+        margin-left: 135px;
+    }
+    .tekst-wrapper {
+        margin-left: 119px;
+        margin-right: 119px;
+    }
+    .citat1 {
+        margin-left: 260px;
+    }
+    .citat2 {
+        margin-left: 79%;
+    }
+
+    /*herunder laves alt vedrørende kontaktformularen til desk*/
+    form {
+        margin-left: 135px;
+    }
+
+    /*herunder laves alt vedrørende google maps lokationen til desk*/
+    iframe {
+        width: 78%;
+    }
+
+}
+
+@media screen and (min-width:1600px){
+        /*herunder ændres kontakt os billedet til desktop*/
+        .kontaktos-billede {
+            width: 82%;
+        }    
+    
+        /*Herunder ændres alt vedrørende citatteksten og citatet*/
+        .tekst-box1 {
+            margin-left: 135px;
+        }
+        .tekst-box2 {
+            margin-left: 90%;
+        }
+        .tekst-wrapper {
+            margin-left: 119px;
+            margin-right: 119px;
+        }
+        .citat1 {
+            margin-left: 260px;
+        }
+        .citat2 {
+            margin-left: 79%;
+        }
+    
+        /*herunder laves alt vedrørende kontaktformularen til desk*/
+        form {
+            margin-left: 135px;
+        }
+    
+        /*herunder laves alt vedrørende google maps lokationen til desk*/
+        iframe {
+            width: 78%;
+        }
+    
 }
