@@ -541,20 +541,20 @@ iframe {
         text-align: left;
     }
     iframe {
-        width: 78%;
+        width: 82%;
     }
 
     /*herunder ændres kontakt os billedet til desktop*/
     .kontaktos-billede {
-        width: 78%;
+        width: 82%;
     }    
 
     /*Herunder ændres alt vedrørende citatteksten og citatet*/
     .tekst-box1 {
-        margin-left: 135px;
+        margin-left: 79%;
     }
     .tekst-box2 {
-        margin-left: 910px;
+        margin-left: 135px;
     }
     .tekst-wrapper {
         margin-left: 119px;
@@ -564,7 +564,7 @@ iframe {
         margin-left: 260px;
     }
     .citat2 {
-        margin-left: 870px;
+        margin-left: 79%;
     }
 
     /*herunder laves alt vedrørende kontaktformularen til desk*/
@@ -577,4 +577,40 @@ iframe {
         width: 78%;
     }
 
+}
+
+@media screen and (min-width:1600px){
+        /*herunder ændres kontakt os billedet til desktop*/
+        .kontaktos-billede {
+            width: 82%;
+        }    
+    
+        /*Herunder ændres alt vedrørende citatteksten og citatet*/
+        .tekst-box1 {
+            margin-left: 135px;
+        }
+        .tekst-box2 {
+            margin-left: 90%;
+        }
+        .tekst-wrapper {
+            margin-left: 119px;
+            margin-right: 119px;
+        }
+        .citat1 {
+            margin-left: 260px;
+        }
+        .citat2 {
+            margin-left: 79%;
+        }
+    
+        /*herunder laves alt vedrørende kontaktformularen til desk*/
+        form {
+            margin-left: 135px;
+        }
+    
+        /*herunder laves alt vedrørende google maps lokationen til desk*/
+        iframe {
+            width: 78%;
+        }
+    
 }
