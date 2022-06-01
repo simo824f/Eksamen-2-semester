@@ -190,11 +190,17 @@ footer p {
 
 .footerBundtekst {
     font-size: 10px;
+    margin: 0%;
+    padding-bottom: 20px;
 }
 
 .overskriftfooter {
     font-weight: bolder;
     font-size: 20px;
+}
+
+.footer_container{
+    margin-bottom: 0%;
 }
 
 /*FÆLLES STYLE SLUT*/
@@ -371,11 +377,11 @@ footer p {
 }
 
 .frivilligimg{
-     box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2)
+     box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.4)
 }
 
 .skuespillerimg{
-    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2)
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.4)
 }
 
 .frivilligimg {
@@ -388,7 +394,7 @@ footer p {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 1550px;
+    top: 1750px;
     font-size: 30px;
     color: #FFFFFF;
     font-family: Roboto_overskrift;
@@ -401,7 +407,7 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    top: 1620px;
+    top: 1820px;
 }
 
 .frivillig_overall,
@@ -426,7 +432,7 @@ footer p {
 
 .skuespillerTekst {
     position: absolute;
-    top: 2056px;
+    top: 2260px;
     font-size: 30px;
     color: #FFFFFF;
     font-family: Roboto_overskrift;
@@ -439,7 +445,7 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    top: 2130px;
+    top: 2330px;
 }
 
 /*Bliv frivillig SLUT*/
@@ -452,7 +458,7 @@ footer p {
     margin-top: 50px;
     margin-left: 0%;
     margin-right: 0%;
-    margin-bottom: 0; 
+    margin-bottom: -10px; 
 }
 
 
