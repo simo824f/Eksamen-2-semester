@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="kontaktos.css">
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="nav_logo"><a href="index-kopi.html"><img src="billeder/logo_mobil.png" alt="Tørningspillets Logo"></a></div>
@@ -28,36 +29,69 @@
         <!--Burger menu - slut-->
         <div class="nav_billet_button"><a href="">Køb Billeter</a></div>
     </header>
-    <main> 
-        <h1>Kontakt os</h1><!--herunder laves de forskellige måder at kontakte siden på-->
+
+    <section><!--herunder laves de forskellige måder at kontakte siden på-->
+        <h1>Kontakt os</h1>
         <div class="box"></div>
-        <img class="kontaktos-billede" src="/billeder/omos-billede.jpeg" alt="">
+        <img class="kontaktos-billede" src="/billeder/tørningspillet.png" alt="">
+    </section>
+
+    <section><!--herunder laves de sociale links facebook,insta, mail-->
         <div class="kontakt_container">
-            <div class="kontakt_mail"><a href="mailto:formand@toerningspillet.dk" target="_blank"><img src="kontakt-billeder/icon-mail.svg" alt="Icon af e-mail"></a></div><p>På Mail</p>
-            <div class="kontakt_facebook"><a href="https://www.facebook.com/teaterogmusikgruppentm" target="_blank"><img src="/kontakt-billeder/icon-facebook.svg" alt="Icon af Facebook"></a></div><p>På Facebook</p>
-            <div class="kontakt_insta"><a href="#" target="_blank"><img src="/kontakt-billeder/icon-instagram.svg" alt="Icon af Instagram"></a></div><p>På Instagram</p>
+            <div class="facebook_wrapper">
+                <div class="kontakt_facebook"><a href="https://www.facebook.com/teaterogmusikgruppentm" target="_blank"><img src="/billeder/facebook-done.png" alt="Icon af Facebook"></a></div>
+                <p>På Facebook</p>
+            </div>
+            <div class="mail-wrapper">
+                <div class="kontakt_mail"><a href="mailto:formand@toerningspillet.dk" target="_blank"><img src="billeder/mail-done.png" alt="Icon af e-mail"></a></div>
+                <p>På Mail</p>
+            </div>
+            <div class="insta_wrapper">
+                <div class="kontakt_insta"><a href="#" target="_blank"><img src="/billeder/instagram1.png" alt="Icon af Instagram"></a></div>
+                <p>På Instagram</p>
+            </div>
         </div>
-            <!--herunder laves kontaktformularen-->
-            <form action="#">
-                <input type="text" name="Fulde-Navn" placeholder="Dit fulde navn her">
-                <input type="text" name="E-mail" placeholder="Din e-mail her">
-                <textarea name="Besked" id="" placeholder="Din besked her"></textarea>
-                <div class="formular_button"><a href="#" onclick="sendFunction()">Send besked</a></div>
-            </form>           
-    </main>
-    <section>   
+    </section>
+
+    <section><!--Herunder laves tekstfeltet med citeringen-->
+        <div class="tekst-box1"></div>
+        <div class="tekst-wrapper">
+            <p>Kunne du godt tænke dig at arbejde som frivillig hos Tørningspillet, og elsker du at arbejde med teater, musik dans og generelt at være med til sjov - så send os en besked via kontaktformularen forneden!</p>
+            <p>Som skuespiller kræver vi ikke noget særligt talent fra dig - det kræver til gengæld at du har lysten og motivationen til at give en god oplevelse for vores publikum. Lyder det som noget for dig, så udfyld kontaktformularen forneden!</p>
+        </div>
+        <div class="tekst-box2"></div>
+    </section>
+
+    <section>
+        <img class="citat1" src="billeder/citat-start.png" alt="Citat der starter">
+        <div>
+            <p class="citat-txt">Fedeste oplevelse, det har været <br> et kæmpe selvtillidsboost.</p>
+        </div>
+        <img class="citat2" src="billeder/citat-slut.png" alt="Citat der slutter">
+    </section>
+
+    <section><!--herunder laves kontaktformularen-->
+        <form action="#">    
+            <input type="text" name="Fulde-Navn" placeholder="Dit fulde navn her">
+            <input type="text" name="E-mail" placeholder="Din e-mail her">
+            <textarea name="Besked" id="" placeholder="Din besked her"></textarea>
+            <div class="formular_button"><a href="#" onclick="sendFunction()">Send besked</a></div>
+        </form>
+    </section> 
+
+    <section><!--herunder laves google mapls med find os-->   
         <h2>Find os her</h2>
         <div class="findos-box"></div>
         <iframe src="https://maps.google.com/maps?q=T%C3%B8rningvej%206,%206500%20Vojens&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe> <!--her er input til google maps: kode fra https://google-map-generator.com/#enter d.25-05/22-->
-        <div class="adresse_pin"><a href="#"><img src="/kontakt-billeder/adresse-pin.svg" alt="Icon af lokation"></a></div><p class="pin_txt1">Sønderjylland</p><p class="pin_txt2">Tørningevej 6, 6500 Vojens</p>
+        <div class="adresse_pin"><a href="#"><img src="/billeder/sted.png" alt="Icon af lokation"></a></div><p class="pin_txt1">Sønderjylland</p><p class="pin_txt2">Tørningevej 6, 6500 Vojens</p>
     </section>
-    <footer>
+
+    <footer><!--herunder laves footeren-->
         <div class="footer_container">
             <div class="social_footer_facebook">
                 <a href="https://www.facebook.com/teaterogmusikgruppentm/"><img src="Billeder/facebook.png"
                         alt="FacebookIcon" class="facebookIkon"></a>
             </div>
-
             <div class="footerAdresse">
                 <p class="overskriftfooter">Tørningspillet</p>
                 <p>Tørningvej 6, 6500 vojns</p>
