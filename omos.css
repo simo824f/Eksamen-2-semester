@@ -22,35 +22,39 @@ p,
 h1,
 h2,
 h3,
-h4,
-a {
+h4 {
     margin-left: 16px;
     margin-right: 16px;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: Roboto_overskrift;
     font-size: 35px;
     margin-top: 15px;
     margin-bottom: 5px;
 }
 
-h2{
+h2 {
     font-size: 25px;
     margin-bottom: 5px;
 }
 
-h3{
+h3 {
     font-size: 20px;
+    margin-bottom: 5px;
 }
 
-h4{
+h4 {
     font-size: 18;
+    margin-top: 5px;
 }
 
-p{
+p {
     font-size: 15px;
 }
+
+
 
 
 /*FÆLLES STYLING STARTER HER*/
@@ -59,7 +63,7 @@ p{
 header {
     display: flex;
     justify-content: space-evenly;
-    box-shadow: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.8));
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
 }
 
 .nav_logo img {
@@ -178,13 +182,13 @@ header .menu_btn:checked~.menu {
 
 /*Forneden er alt relateret til fooeteren*/
 
-.facebookIkon{
+.facebookIkon {
     width: 70px;
     padding: 20px;
     margin-top: 40px;
 }
 
-.instagramicon{
+.instagramicon {
     width: 70px;
     padding: 20px;
 }
@@ -246,6 +250,14 @@ footer p {
     margin-right: auto;
     width: 92%;
     margin-top: 20px;
+}
+
+.hvemervi_container {
+    margin-bottom: 50px;
+}
+
+.hvemervi_container h2{
+    margin-top: 30px;
 }
 
 .formand_billede,
@@ -322,28 +334,29 @@ footer p {
         font-size: 40px;
     }
 
-    h2{
+    h2 {
         font-size: 30px;
     }
 
-    h3{
+    h3 {
         font-size: 25px;
     }
 
-    h4{
+    h4 {
         font-size: 20px;
 
     }
 
-    p{
+    p {
         font-size: 20px;
     }
 
 
-     /*Nav start*/
-     header .menu_icon{
+    /*Nav start*/
+    header .menu_icon {
         padding: 30px 50px;
     }
+
 
     .nav_logo {
         display: flex;
@@ -363,11 +376,13 @@ footer p {
 
     header {
         justify-content: space-between;
+        
     }
 
     .menu_icon {
         margin-left: 350px;
     }
+
     /*Nav SLUT*/
 
     .hvemervi_container .omos-billede {
@@ -376,12 +391,12 @@ footer p {
 
     .box_omos {
         width: 100px;
-        
+
     }
-    
+
     .box_bestyrelse {
         width: 140px;
-    
+
     }
 
     .box_omos,
@@ -400,7 +415,7 @@ footer p {
 
     .box_two {
         margin-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
 
     .kassere_container,
@@ -431,46 +446,50 @@ footer p {
     h1,
     h2,
     h3,
-    h4, 
-    a {
+    h4 {
         margin-left: 50px;
         margin-right: 50px;
     }
-
-
 
     .bestyrelsen_container h1 {
         padding-top: 30px;
 
     }
 
+    .box_one a,
+    .box_two a {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
     /*Footer styling ipad START*/
- .footer_container {
-    display: flex;
-    justify-content: space-evenly;
-}
+    .footer_container {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
-.someikoner{
-    display: flex;
-    justify-content: space-between;
-}
+    .someikoner {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.footerAdresse {
-    display: none;
-}
+    .footerAdresse {
+        display: none;
+    }
 
-.facebookIkon, .instagramicon {
-    width: 80px;
-}
+    .facebookIkon,
+    .instagramicon {
+        width: 80px;
+    }
 
-.instagramicon{
-    padding: 20px;
-    margin-top: 40px;
-}
+    .instagramicon {
+        padding: 20px;
+        margin-top: 40px;
+    }
 
-.footerLinks {
-    text-align: left;
-}
+    .footerLinks {
+        text-align: left;
+    }
 
 
     /*Footer styling SLUT*/
@@ -483,18 +502,19 @@ footer p {
         font-size: 45px;
     }
 
-    h2{
+    h2 {
         font-size: 35px;
     }
 
-    h3{
+    h3 {
         font-size: 30px;
     }
 
-    h4{
+    h4 {
         font-size: 22px;
     }
-    p{
+
+    p {
         font-size: 25px;
     }
 
@@ -615,7 +635,7 @@ footer p {
 
     .dropdown:hover .dropdown-content {
         display: block;
-      }
+    }
 
     .dropdown-content a:hover {
         background-color: #81002946;
@@ -628,19 +648,14 @@ footer p {
 
     /*header styling SLUT*/
 
-
-    /*header styling SLUT*/
-
     p,
     h1,
     h2,
     h3,
-    h4, 
-    a {
+    h4 {
         margin-left: 135px;
         margin-right: 135px;
     }
-
 
 
     .hvemervi_container .omos-billede {
@@ -649,20 +664,17 @@ footer p {
 
     .box_omos {
         width: 110px;
-        
+
     }
-    
-    .box_bestyrelse {
-        width: 160px;
-    
-    }
+
 
     .box_omos,
     .box_bestyrelse {
         margin-left: 135px;
         margin-bottom: 35px;
     }
-      
+
+
     .formand_billede,
     .kassere_billede,
     .sygegruppe_billede,
@@ -671,4 +683,17 @@ footer p {
         margin-right: auto;
     }
 
+    .formand_billede,
+    .kassere_billede,
+    .sygegruppe_billede,
+    .kulisser_billede {
+        width: 45%;
+
+    }
+
+    .box_one a,
+    .box_two a {
+        margin-left: 135px;
+        margin-right: 135px;
+    }
 }
