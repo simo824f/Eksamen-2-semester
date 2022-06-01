@@ -275,8 +275,8 @@ footer p {
     background-color: #810029;
     height: 3px;
     width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 /*styling af intro SLUT*/
@@ -559,6 +559,31 @@ h1 {
 }
 
 /* her slutter koden til 2001 forestillinger */
+
+/* her STARTER sponser styling */
+    .sponserList a{
+        color: black;
+        text-decoration: none;
+    }
+.sponserList li{
+    list-style: none;
+}
+
+.headline {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    width: 100%;
+}
+.headline h1{
+    padding-left: 50px;
+}
+.box{
+    margin-left: 50px;
+}
+
+/* her STARTER sponser styling */
+
 
 
 @media screen and (min-width: 760px) {
