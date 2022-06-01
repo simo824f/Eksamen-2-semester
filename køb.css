@@ -1,0 +1,291 @@
+
+@font-face {
+    font-family: Roboto_brød;
+    src: url(Font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto_overskrift;
+    src: url(Font/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+/*Dette er generalt for alt på siden*/
+* {
+    font-family: Roboto_brød;
+}
+
+/*FÆLLES STYLE START*/
+
+h1 {
+    font-size: 35px;
+}
+
+body {
+    margin: 0%;
+}
+
+body p h1 h2 h3 a {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/*forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
+header {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.8));
+}
+
+.nav_logo img {
+    width: 30%;
+    height: auto;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.nav_billet_button {
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #810029;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    height: 1rem;
+    width: 10rem;
+    margin: 9px;
+    margin-top: 16px;
+}
+
+.nav_billet_button a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Dropwon menuen på telefon*/
+/*for at lave denne er denne kilde brugt https://www.youtube.com/watch?v=bO9qHAhXbVA*/
+a {
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.2)
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #810029;
+    position: absolute;
+    width: 100%;
+    margin-top: 75px;
+    z-index: 2;
+}
+
+header ul a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    background-color: #8100294f;
+}
+
+header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .5s;
+}
+
+header .menu_icon {
+    padding: 28px 20px;
+    position: relative;
+    /*den her skal være relavtiv så vi på barnet kan bruge absolut og på den måde rykke rundt på tingene*/
+    float: right;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/*forneden styler de tre linjer de giver burgermenu iconet*/
+header .menu_icon .nav_icon {
+    background-color: black;
+    display: block;
+    height: 6px;
+    width: 35px;
+    position: absolute;
+}
+
+header .menu_icon .nav_icon:before {
+    background-color: black;
+    content: "";
+    /*Man laver en tom content for at have noget at style på*/
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 12px;
+
+}
+
+header .menu_icon .nav_icon:after {
+    background-color: black;
+    content: "";
+    /*Man laver en tom content for at have noget at style på*/
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: -12px;
+}
+
+header .menu_btn {
+    display: none;
+}
+
+header .menu_btn:checked~.menu {
+    max-height: 350px;
+}
+
+.dropdown-content {
+    background-color: #ffffff2c;
+}
+
+.dropdonw_ipad {
+    display: none;
+}
+
+/*forneden er alt relateret til fooeteren*/
+.facebookIkon{
+    width: 70px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.instagramicon{
+    width: 70px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #F9F6F0;
+    text-align: center;
+}
+
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+    padding-left: 0px;
+}
+
+footer li {
+    padding: 5px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.footerLinks {
+    margin-top: 20px;
+}
+
+.footerBundtekst {
+    font-size: 10px;
+    margin: 0%;
+    padding-bottom: 20px;
+}
+
+.overskriftfooter {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.footer_container {
+    margin-bottom: 0%;
+}
+
+/*FÆLLES STYLE SLUT*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /*
+  ** RESPONSIVE CHECKOUT FORM
+  ** =>
+  */
+  
+  
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+ 
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+ 
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 10px 16px;
+  }
+  
+  .container-checkout {
+    padding: 5px 20px 15px 20px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 3px;
+  
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+
+  
+
+  
+  * {
+    box-sizing: border-box;
+  }
+
+
+  
+ 
+  }
+  
+  
+
+  
