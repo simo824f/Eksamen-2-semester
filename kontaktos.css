@@ -438,11 +438,10 @@ iframe {
         margin-right: 40px;
         height: auto;
     }
-
-    .tekst-wrapper p {
-        width: 50%;
+    .tekst-wrapper h2 {
+        text-align: center;
+        margin-left: 0%;
     }
-
     .tekst-box1 {
         display: flex;
         background-color: #810029;
@@ -547,7 +546,12 @@ iframe {
     /*herunder ændres kontakt os billedet til desktop*/
     .kontaktos-billede {
         width: 82%;
-    }    
+    }
+    
+    /*herunder ændres alle sociale ikoner links facebook instagram og mail*/
+    .kontakt_container {
+        margin-bottom: 30px;
+    }
 
     /*Herunder ændres alt vedrørende citatteksten og citatet*/
     .tekst-box1 {
@@ -559,24 +563,56 @@ iframe {
     .tekst-wrapper {
         margin-left: 119px;
         margin-right: 119px;
+        margin-bottom: 30px;
+    }
+    .tekst-wrapper p {
+        width: 90%;
     }
     .citat1 {
-        margin-left: 260px;
+        margin-left: 0%;
+        margin-right: 135px;
+        margin-top: 200px;
     }
     .citat2 {
-        margin-left: 79%;
+        margin-left: 8.7%;
+        margin-top: 50px;
     }
-
-    /*herunder laves alt vedrørende kontaktformularen til desk*/
-    form {
-        margin-left: 135px;
+    .citat-txt {
+        margin-top: 125px;
+        font-size: 20px;
+    }
+    .skuespiller-wrapper {
+        width: 100%;
     }
 
     /*herunder laves alt vedrørende google maps lokationen til desk*/
     iframe {
-        width: 78%;
+        width: 82%;
     }
 
+    /*herunder ændres sectionen med kontaktformularen og citatet*/
+    .citat-kontakt-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 135px;
+        margin-bottom: 30px;
+    }
+    input {
+        display: flex;
+        width: 600px;
+        border: solid rgba(0, 0, 0, 0.082);
+        border-radius: 0.4rem;
+        padding-left: 0.8rem;
+        margin-bottom: 20px;
+    }
+    textarea {
+        height: 50%;
+    }
+    form {
+        margin-left: 0%;
+        margin-bottom: 100px;
+        width: auto;
+    }
 }
 
 @media screen and (min-width:1600px){
@@ -599,9 +635,6 @@ iframe {
         .citat1 {
             margin-left: 260px;
         }
-        .citat2 {
-            margin-left: 79%;
-        }
     
         /*herunder laves alt vedrørende kontaktformularen til desk*/
         form {
@@ -612,5 +645,4 @@ iframe {
         iframe {
             width: 78%;
         }
-    
 }
