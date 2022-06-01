@@ -584,13 +584,13 @@ footer p {
     .online_ikon,
     .iDøren_ikon, 
     .mail_ikon {
-        width: 200px;
+        width: 100px;
     }
 
     .online,
     .idøren,
     .mail {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .online_beskrivelse,
@@ -607,27 +607,25 @@ footer p {
         margin-top: 40px;
         display: flex;
         justify-content: space-evenly;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     .frivilligTekst {
-        margin-top: 400px;
+        margin-top: -20px;
     }
 
     .box_frivillig {
-        margin-top: 370px;
+        margin-top: -40px;
     }
 
     .skuespillerTekst {
-        margin-top: -105px;
+        margin-top: -530px;
     }
 
     .box_skuespiller {
-        margin-top: -139px;
+        margin-top: -550px;
     }
-
     /*Stylign af frivillige og skuespiller SLUT*/
-
 
     /*Footer styling START*/
     .footer_container {
@@ -646,8 +644,11 @@ footer p {
     .footerLinks {
         text-align: left;
     }
-
     /*Footer styling SLUT*/
+
+    .Sponsorer{
+        margin-top: 0;
+    }
 }
 
 
@@ -770,19 +771,19 @@ footer p {
 
     /*Styling Frivillig og skuespiller bokse START*/
     .frivilligTekst {
-        margin-top: 300px;
+        margin-top: 50px;
     }
 
     .box_frivillig {
-        margin-top: 270px;
+        margin-top: 20px;
     }
 
     .skuespillerTekst {
-        margin-top: -210px;
+        margin-top: -460px;
     }
 
     .box_skuespiller {
-        margin-top: -240px;
+        margin-top: -490px;
     }
 
      /*Styling Frivillig og skuespiller bokse SLUT*/
