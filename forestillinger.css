@@ -13,7 +13,7 @@
     --sekundær-farve: #F0E9DA; 
     --tertiær-farve: #810029;
 }
-/*Dette er generalt for alt på siden*/
+/*Dette tegn * er generalt for alt på siden*/
 *{
     font-family: Roboto_brød;
 }
@@ -134,7 +134,6 @@ header .menu_btn:checked~.menu {
 }
 
 footer {
-    margin-top: 40px;
     background-color: var(--footer-farve);
     text-align: center;
 }
@@ -174,51 +173,44 @@ footer p {
 }
 /*FOOTER SLUT*/
 
-.box{
-    background-color: var(--tertiær-farve);
-    height: 3px;
-    width: 350px;
-    margin-right: auto;
-    margin-bottom: 3rem;
-    margin-left: 16px;
-}
 .box-årets-forestilling{
     background-color: var(--tertiær-farve);
     height: 3px;
-    width: 265px;
+    width: 230px;
     margin-right: auto;
     margin-bottom: 3rem;
-    margin-left: 282px;
+    margin-left: 16px;
 }
 h1 {
     margin-bottom: 0.2rem;
     margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 15px;
+    font-size: 35px
+}
+h2 {
+    font-size: 35px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 .kaos-billede {
     margin-left: 32px;
 }
-.nød-billede {
-    margin-left: 32px;
-}
-.tidl-forestillinger_container {
-    background-color:var(--sekundær-farve) ;    
-}
 p {
     margin-left: 16px;
     margin-right: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 50px;
     font-size: 15px;
+    margin-bottom: 0%;
 }
 h3 {
     margin-left: 16px;
     margin-right: 16px;
     font-size: 20px;
 }
-.tidl-forestillinger_h1_container {
-    background-color: var(--sekundær-farve);
-    margin-top: 80px;
-    padding-bottom: 20px;
-}
+
 /*media queries starter her*/
 @media screen and (min-width:760px){
      /*Nav start*/
@@ -280,9 +272,6 @@ h3 {
         margin-left: 50px;
         margin-right: 50px;
     }
-    .box {
-        margin-left: 50px;
-    }
     .box-årets-forestilling {
         margin-left: 50px;
     }
@@ -308,12 +297,10 @@ h3 {
     }
 
     /*Footer styling SLUT*/
+
     .kaos-billede {
         text-align: center;
     }
-    .nød-billede {
-        text-align: center;
-    }  
     p {
         margin-left: 50px;
         margin-right: 50px;
@@ -322,10 +309,41 @@ h3 {
         margin-left: 50px;
         margin-right: 50px;
     }
+     /*styling til forestillingen om kaos i julen*/
+     .kaos-billede {
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+    h1 {
+        margin-left: 135px;
+        margin-right: 135px;
+    }
+    h2 {
+        margin-left: 135px;
+    }
+    .box {
+        margin-left: 135px;
+    }
+    .box-årets-forestilling {
+        margin-left: 135px;
+    }
+    .billede_container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto 3fr;
+    }
+    .billede_container h2 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        margin-left: 48px ;
+    }
+    .billede_container p {
+        grid-column:2/3;
+        grid-row: 2/3;
+    }
 }
 @media screen and (min-width:1200px){
     /*header styling START*/
-
     header{
         margin-top: 10px;
         margin-bottom: 10px;
@@ -361,11 +379,17 @@ h3 {
         grid-column: 1/2;
     }
     h1 {
-    text-align: left;    
-    margin-left: 282px;
+        margin-left: 135px;
+        margin-right: 135px;
+    }
+    h2 {
+        margin-left: 135px;
     }
     .box {
-        margin-left: 282px;
+        margin-left: 135px;
+    }
+    .box-årets-forestilling {
+        margin-left: 135px;
     }
     .billede_container {
         display: grid;
@@ -381,28 +405,5 @@ h3 {
         grid-column:2/3;
         grid-row: 2/3;
         margin-right: 282px;
-    }
-    /*styling til forestillingen om jul i nød*/
-    .tidl-forestillinger_container {
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: 0;
-        margin-bottom: 10rem;
-    }
-    .tidl-forestillinger_container img {
-        margin-right: 282px;
-        margin-bottom: 3rem;
-    }
-    .tidl-forestillinger_container p {
-        margin-left: 282px;
-        margin-right: 0;
-    }
-    .tidl-forestillinger_h1_container {
-        background-color: var(--sekundær-farve);
-        padding-bottom: 20px;
-        margin-top: 80px;
-    }
-    .box-årets-forestilling {
-        margin-left: 282px;
     }
 }
