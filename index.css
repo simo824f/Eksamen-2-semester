@@ -39,6 +39,7 @@ header {
     width: 30%;
     height: auto;
     margin: 5px;
+    margin-top: 10px;
 }
 
 .nav_billet_button {
@@ -153,10 +154,15 @@ header .menu_btn:checked~.menu {
 }
 
 /*forneden er alt relateret til fooeteren*/
-.facebookIkon {
+.facebookIkon{
     width: 70px;
     padding: 20px;
     margin-top: 40px;
+}
+
+.instagramicon{
+    width: 70px;
+    padding: 20px;
 }
 
 footer {
@@ -264,6 +270,7 @@ footer p {
 .teatermasker {
     width: 150px;
     text-align: center;
+    margin-top: 50px;
 }
 
 .overskrift {
@@ -395,7 +402,7 @@ footer p {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 1750px;
+    top: 1825px;
     font-size: 30px;
     color: #FFFFFF;
     font-family: Roboto_overskrift;
@@ -408,7 +415,7 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    top: 1820px;
+    top: 1895px;
 }
 
 .frivillig_overall,
@@ -433,7 +440,7 @@ footer p {
 
 .skuespillerTekst {
     position: absolute;
-    top: 2260px;
+    top: 2340px;
     font-size: 30px;
     color: #FFFFFF;
     font-family: Roboto_overskrift;
@@ -446,7 +453,7 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    top: 2330px;
+    top: 2410px;
 }
 
 /*Bliv frivillig SLUT*/
@@ -462,6 +469,7 @@ footer p {
     margin-bottom: -10px;
 }
 
+/*Media screen til Ipad - START*/
 
 @media screen and (min-width: 760px) {
     h1 {
@@ -486,6 +494,10 @@ footer p {
     }
 
     /*Nav start*/
+    header .menu_icon{
+        padding: 30px 50px;
+    }
+
     .nav_logo {
         display: flex;
         width: 100px;
@@ -509,8 +521,14 @@ footer p {
     .menu_icon {
         margin-left: 350px;
     }
-
     /*Nav SLUT*/
+
+    img.billede_slide {
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+        bottom: 0;
+    }
 
     /*Styling af afnsittet hvor man køber billetter START*/
     .købIkoner {
@@ -549,19 +567,19 @@ footer p {
     }
 
     .frivilligTekst {
-        margin-top: -20px;
+        margin-top: 110px;
     }
 
     .box_frivillig {
-        margin-top: -40px;
+        margin-top: 85px;
     }
 
     .skuespillerTekst {
-        margin-top: -530px;
+        margin-top: -405px;
     }
 
     .box_skuespiller {
-        margin-top: -550px;
+        margin-top: -430px;
     }
 
     /*Stylign af frivillige og skuespiller SLUT*/
@@ -572,12 +590,22 @@ footer p {
         justify-content: space-evenly;
     }
 
+    .someikoner{
+        display: flex;
+        justify-content: space-between;
+    }
+
     .footerAdresse {
         display: none;
     }
 
-    .facebookIkon {
-        width: 100px;
+    .facebookIkon, .instagramicon {
+        width: 80px;
+    }
+
+    .instagramicon{
+        padding: 20px;
+        margin-top: 40px;
     }
 
     .footerLinks {
@@ -590,6 +618,8 @@ footer p {
         margin-top: 0;
     }
 }
+
+/*Media screen til Ipad - SLUT*/
 
 
 @media screen and (min-width: 1200px) {
@@ -766,7 +796,7 @@ footer p {
     /*Styling slideshow SLUT*/
 
     .teatermasker {
-        width: 150px;
+        width: 200px;
         padding: 0%;
         margin-bottom: -20px;
     }
