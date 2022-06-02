@@ -17,285 +17,286 @@
 
 
 
-h1 {
-    font-size: 30px;
-    margin: 0;
-    font-family: Roboto_overskrift;
-}
+    h1 {
+        font-size: 30px;
+        margin: 0;
+        font-family: Roboto_overskrift;
+    }
 
-h3 {
-    margin: 0;
-    font-family: Roboto_overskrift;
-}
+    h3 {
+        margin: 0;
+        font-family: Roboto_overskrift;
+    }
 
-body {
-    margin: 0%;
-}
-
-
-/*forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
-header {
-    display: flex;
-    justify-content: space-evenly;
-    box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
-}
-
-.nav_logo img {
-    width: 30%;
-    height: auto;
-    margin: 5px;
-    margin-top: 10px;
-}
-
-.nav_billet_button {
-    border: none;
-    border-radius: 0.2rem;
-    background-color: #810029;
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem;
-    height: 1rem;
-    width: 10rem;
-    margin: auto 16px auto 9px;
-
-}
-
-.nav_billet_button a {
-    text-decoration: none;
-    color: white;
-}
-
-/*Dropwon menuen på telefon*/
-/*for at lave denne er denne kilde brugt https://www.youtube.com/watch?v=bO9qHAhXbVA*/
-a {
-    color: white;
-    text-align: center;
-    box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.2)
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #810029;
-    position: absolute;
-    width: 100%;
-    margin-top: 75px;
-    z-index: 2;
-}
-
-header ul a {
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-    box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
-}
-
-header ul a:hover {
-    background-color: #8100294f;
-}
-
-header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .5s;
-}
-
-header .menu_icon {
-    padding: 28px 35px;
-    position: relative;
-    /*den her skal være relavtiv så vi på barnet kan bruge absolut og på den måde rykke rundt på tingene*/
-    float: right;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    body {
+        margin: 0%;
+    }
 
 
-/*forneden styler de tre linjer de giver burgermenu iconet*/
-header .menu_icon .nav_icon {
-    background-color: black;
-    display: block;
-    height: 6px;
-    width: 35px;
-    position: absolute;
-}
+    /*forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
+    }
 
-header .menu_icon .nav_icon:before {
-    background-color: black;
-    content: "";
-    /*Man laver en tom content for at have noget at style på*/
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    top: 12px;
+    .nav_logo img {
+        width: 30%;
+        height: auto;
+        margin: 5px;
+        margin-top: 10px;
+    }
 
-}
+    .nav_billet_button {
+        border: none;
+        border-radius: 0.2rem;
+        background-color: #810029;
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem;
+        height: 1rem;
+        width: 10rem;
+        margin: auto 16px auto 9px;
 
-header .menu_icon .nav_icon:after {
-    background-color: black;
-    content: "";
-    /*Man laver en tom content for at have noget at style på*/
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    top: -12px;
-}
+    }
 
-header .menu_btn {
-    display: none;
-}
+    .nav_billet_button a {
+        text-decoration: none;
+        color: white;
+    }
 
-header .menu_btn:checked~.menu {
-    max-height: 350px;
-}
+    /*Dropwon menuen på telefon*/
+    /*for at lave denne er denne kilde brugt https://www.youtube.com/watch?v=bO9qHAhXbVA*/
+    a {
+        color: white;
+        text-align: center;
+        box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.2)
+    }
 
-.dropdown-content {
-    background-color: #ffffff2c;
-}
+    header ul {
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #810029;
+        position: absolute;
+        width: 100%;
+        margin-top: 75px;
+        z-index: 2;
+    }
 
-/*CSS menu MOBIL - SLUT*/
+    header ul a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
+    }
 
+    header ul a:hover {
+        background-color: #8100294f;
+    }
 
-/*CSS footer mobil - start */
-/*forneden er alt relateret til fooeteren*/
-.facebookIkon {
-    width: 70px;
-    padding: 20px;
-    margin-top: 40px;
-}
+    header .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .5s;
+    }
 
-.instagramicon {
-    width: 70px;
-    padding: 20px;
-}
-
-footer {
-    background-color: #F9F6F0;
-    text-align: center;
-}
-
-
-footer a {
-    color: black;
-    text-decoration: none;
-}
-
-footer ul {
-    list-style-type: none;
-    margin-bottom: 30px;
-    padding-left: 0px;
-}
-
-footer li {
-    padding: 5px;
-}
-
-footer p {
-    text-align: center;
-}
-
-.footerLinks {
-    margin-top: 20px;
-}
-
-.footerBundtekst {
-    font-size: 10px;
-    margin: 0%;
-    padding-bottom: 20px;
-}
-
-.overskriftfooter {
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-.footer_container {
-    margin-bottom: 0%;
-}
+    header .menu_icon {
+        padding: 28px 35px;
+        position: relative;
+        /*den her skal være relavtiv så vi på barnet kan bruge absolut og på den måde rykke rundt på tingene*/
+        float: right;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
-/*CSS footer mobil - SLUT */
+    /*forneden styler de tre linjer de giver burgermenu iconet*/
+    header .menu_icon .nav_icon {
+        background-color: black;
+        display: block;
+        height: 6px;
+        width: 35px;
+        position: absolute;
+    }
 
-/* her starter stil af over skrift */
-.adresse {
-    font-size: 15px;
-    margin-top: 5px;
-}
+    header .menu_icon .nav_icon:before {
+        background-color: black;
+        content: "";
+        /*Man laver en tom content for at have noget at style på*/
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 12px;
 
-/* her STARTER stylen til overskriften og den røde streg under */
-.box {
-    background-color: #810029;
-    height: 3px;
-    width: 310px;
+    }
 
-}
+    header .menu_icon .nav_icon:after {
+        background-color: black;
+        content: "";
+        /*Man laver en tom content for at have noget at style på*/
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: -12px;
+    }
 
-.headline {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    width: 80%;
-    margin: 15px 16px 5px 16px;
-}
+    header .menu_btn {
+        display: none;
+    }
 
-/* her SLUTTER overskrift og rød streg style */
+    header .menu_btn:checked~.menu {
+        max-height: 350px;
+    }
 
-/* starten på tidliger forstillinger (Heino) */
-/* imgGallery er den overodrent af alle min billeder */
-.imgGallery {
-    margin: 30px 16px 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 16px;
-}
-/* her styler jeg specifikt på billedet  */
-.imgGallery img {
-    /* ved at sætte brede og højte til 100% udfylder de grid kasserne
+    .dropdown-content {
+        background-color: #ffffff2c;
+    }
+
+    /*CSS menu MOBIL - SLUT*/
+
+
+    /*CSS footer mobil - start */
+    /*forneden er alt relateret til fooeteren*/
+    .facebookIkon {
+        width: 70px;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .instagramicon {
+        width: 70px;
+        padding: 20px;
+    }
+
+    footer {
+        background-color: #F9F6F0;
+        text-align: center;
+    }
+
+
+    footer a {
+        color: black;
+        text-decoration: none;
+    }
+
+    footer ul {
+        list-style-type: none;
+        margin-bottom: 30px;
+        padding-left: 0px;
+    }
+
+    footer li {
+        padding: 5px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .footerLinks {
+        margin-top: 20px;
+    }
+
+    .footerBundtekst {
+        font-size: 10px;
+        margin: 0%;
+        padding-bottom: 20px;
+    }
+
+    .overskriftfooter {
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .footer_container {
+        margin-bottom: 0%;
+    }
+
+
+    /*CSS footer mobil - SLUT */
+
+    /* her starter stil af over skrift */
+    .adresse {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    /* her STARTER stylen til overskriften og den røde streg under */
+    .box {
+        background-color: #810029;
+        height: 3px;
+        width: 310px;
+
+    }
+
+    .headline {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        width: 80%;
+        margin: 15px 16px 5px 16px;
+    }
+
+    /* her SLUTTER overskrift og rød streg style */
+
+    /* starten på tidliger forstillinger (Heino) */
+    /* imgGallery er den overodrent af alle min billeder */
+    .imgGallery {
+        margin: 30px 16px 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 16px;
+    }
+
+    /* her styler jeg specifikt på billedet  */
+    .imgGallery img {
+        /* ved at sætte brede og højte til 100% udfylder de grid kasserne
      og de bliver responsive så de følger med skærmen*/
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    filter: drop-shadow(8px 8px 6px rgba(34, 34, 34, 0.4));
-}
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        filter: drop-shadow(8px 8px 6px rgba(34, 34, 34, 0.4));
+    }
 
-.container {
-    position: relative;
-    cursor: pointer;
-}
+    .container {
+        position: relative;
+        cursor: pointer;
+    }
 
-.container .content {
-     /* Position absolute gør at kassen og dens indhold kommer over billedet */
-    position: absolute;
-    /* bottom gør at kassen går ned i bunden af billedet */
-    bottom: 0;
-    /* farven på kassen med en transparanthed på 50% */
-    background: rgba(0, 0, 0, 0.5);
-    /* farven på teksten */
-    color: #f1f1f1;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* anden type mus når man kommer over billedet så man kan se det er interactivt */
-    cursor: pointer;
-}
+    .container .content {
+        /* Position absolute gør at kassen og dens indhold kommer over billedet */
+        position: absolute;
+        /* bottom gør at kassen går ned i bunden af billedet */
+        bottom: 0;
+        /* farven på kassen med en transparanthed på 50% */
+        background: rgba(0, 0, 0, 0.5);
+        /* farven på teksten */
+        color: #f1f1f1;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* anden type mus når man kommer over billedet så man kan se det er interactivt */
+        cursor: pointer;
+    }
 
-.content h2 {
-    margin: 0;
-    text-align: center;
-    font-size: 30px;
-}
+    .content h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 30px;
+    }
 
-.content a {
-    text-decoration: none;
-}
+    .content a {
+        text-decoration: none;
+    }
 
-/* her slutter tidlider forstillinger */
+    /* her slutter tidlider forstillinger */
 }
 
 @media screen and (min-width: 760px) {
@@ -372,7 +373,7 @@ footer p {
 
     /*CSS footer ipad - SLUT */
 
-  /* her starter overskrift style på ipad */
+    /* her starter overskrift style på ipad */
     .headline {
         margin-right: 50px;
         margin-left: 50px;
@@ -386,24 +387,27 @@ footer p {
     .box {
         width: 413px;
     }
-/* her slutter style på ipad af overskrift */
-/* start på style til billeder på tidliger forestilligger */
 
-.imgGallery{
-    margin: 30px 50px 50px;
-    grid-gap: 50px;
-}
+    /* her slutter style på ipad af overskrift */
+    /* start på style til billeder på tidliger forestilligger */
+
+    .imgGallery {
+        margin: 30px 50px 50px;
+        grid-gap: 50px;
+    }
 
 
-.container .content{
-    padding: 20px 0;
-}
-.content h2{
-    font-size: 70px;
-    margin: 0;
+    .container .content {
+        padding: 20px 0;
+    }
 
-}
-/* her SLUTER den */
+    .content h2 {
+        font-size: 70px;
+        margin: 0;
+
+    }
+
+    /* her SLUTER den */
 
 
 }
@@ -557,24 +561,27 @@ footer p {
         margin-left: 135px;
         margin-right: 135px;
     }
-/* her slutter overskrift style */
- /* start på style til billeder på tidliger forestilligger */
-.imgGallery{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 30px 135px 50px;
-}
-/* her gemmer jeg indholdet bag billedet */
-.container .content{
-    z-index: -1;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-}
-/* med en hover effekt får jeg indholdt foran billedet */
-.container:hover .content{
-    z-index: 10;
-}
 
-/* her SLUTER den */
+    /* her slutter overskrift style */
+    /* start på style til billeder på tidliger forestilligger */
+    .imgGallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 30px 135px 50px;
+    }
+
+    /* her gemmer jeg indholdet bag billedet */
+    .container .content {
+        z-index: -1;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    /* med en hover effekt får jeg indholdt foran billedet */
+    .container:hover .content {
+        z-index: 10;
+    }
+
+    /* her SLUTER den */
 
 
 }
