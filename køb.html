@@ -8,7 +8,7 @@
     <meta name="description" content="Teater og Musikgruppen Tørning Mølle">
     <meta name="keywords"
         content="Teater og forestillinger, Juleteater, Juleforestillinger, Tørningspillet, Teatergruppe, ">
-    <title>Tørningspillet</title>
+    <title>Køb</title>
     <link rel="stylesheet" href="køb.css">
     <script defer src="script.js"></script>
 </head>
@@ -41,88 +41,96 @@
                 <a href="sponser.html">Sponsorer</a>
             </div>
         </li>
-         <!--Undermneu i dropdown - START-->
+        <!--Undermneu i dropdown - START-->
         <li><a href="kontaktos.html">Kontakt os </a></li>
     </ul>
     <!--Burger menu - SLUT-->
 
     <!--Købskanppen - START-->
-    <div class="nav_billet_button"><a href="">Køb Billeter</a></div>
-     <!--Købskanppen - SLUT-->
+    <div class="nav_billet_button"><a href="køb.html">Køb Billeter</a></div>
+    <!--Købskanppen - SLUT-->
 </header>
 
 <body>
 
-<div class="row">
-    <div class="col-75">
-      <div class="container-checkout">
-        <form action="/action_page.php">
-        
-          <div class="row">
-            <div class="col-50">
-              <h3>Personinfomationer</h3>
-              <label for="fname"><i class="fa fa-user"></i> Fulde Navn</label>
-              <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-              <label for="email"><i class="fa fa-envelope"></i> Email</label>
-              <input type="text" id="email" name="email" placeholder="john@example.com">
-              <label for="adr"><i class="fa fa-address-card-o"></i> Adresse</label>
-              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-              <label for="city"><i class="fa fa-institution"></i> By</label>
-              <input type="text" id="city" name="city" placeholder="New York">
-  
-              <div class="row">
-                <div class="col-50">
-                  <label for="zip">Postnummer</label>
-                  <input type="text" id="zip" name="zip" placeholder="1001">
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-50">
-              <h3>Kortoplysninger</h3>
-              <label for="cname">Kortet navneholder</label>
-              <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-              <label for="ccnum">Kreditkortet nummer</label>
-              <input type="text" id="ccnum" name="cardnumber" placeholder="11-22-33-44">
-              <label for="expmonth">Exp Måned</label>
-              <input type="text" id="expmonth" name="expmonth" placeholder="12">
-              <div class="row">
-                <div class="col-50">
-                  <label for="expyear">Exp År</label>
-                  <input type="text" id="expyear" name="expyear" placeholder="18">
-                </div>
-                <div class="col-50">
-                  <label for="cvv">CVV</label>
-                  <input type="text" id="cvv" name="cvv" placeholder="352">
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          <a href="" class="btn btn-form">Bestil nu</a>
-        </form>
-      </div>
+    <div classs="chekoutTekst">
+        <h1 class="overskriftChekout">Betaling</h1>
+        <P class="betalingBeskrivelse">Her kan du gennemfører dit køb af teaterbiletterne, du skal blot udfylde formenm
+            nedenfor og derefter sender vi dig en bekræftigelse på mail med biletterne </P>
     </div>
 
-    <div class="col-25">
-        <div class="container-checkout">
-          <h4>Kurv <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
-              <p>Jule teater <span class="price">40 kr.</span></p>
-  
-              <p> Moms <span class="price">50 kr.</span></p>
-  
-          
-              <hr>
-              <p>Total <span class="price" style="color:white"><b>50 kr.</b></span></p>
-          </div>
-          </div>
-      </div>
+    <div class="row">
+        <div class="col-75">
+            <div class="container-checkout">
+                <form action="/action_page.php">
 
-      <footer>
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Personinfomationer</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Fulde Navn</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Adresse</label>
+                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                            <label for="city"><i class="fa fa-institution"></i> By</label>
+                            <input type="text" id="city" name="city" placeholder="New York">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="zip">Postnummer</label>
+                                    <input type="text" id="zip" name="zip" placeholder="1001">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Kortoplysninger</h3>
+                            <label for="cname">Kortet navneholder</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Kreditkortet nummer</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="11-22-33-44">
+                            <label for="expmonth">Exp Måned</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="12">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp År</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="18">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="" class="btn btn-form">Bestil nu</a>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-25">
+            <div class="container-checkout">
+                <h4>Kurv </h4>
+                <p class="price">Juleteater 40 kr.</p>
+                <p> Moms <span class="price">50 kr.</span></p>
+                <hr>
+                <p>Total 50 kr.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="nav_videre_button"><a href="">Videre</a></div>
+
+
+    <footer>
         <div class="footer_container">
             <div class="someikoner">
                 <div class="social_footer_facebook">
-                    <a href="https://www.facebook.com/teaterogmusikgruppentm/"><img src="ikoner/Facebook ikon done@1.5x.png" alt="FacebookIcon" class="facebookIkon"></a>
+                    <a href="https://www.facebook.com/teaterogmusikgruppentm/"><img
+                            src="ikoner/Facebook ikon done@1.5x.png" alt="FacebookIcon" class="facebookIkon"></a>
                 </div>
                 <div class="social_footer_instagram">
                     <a href=""><img src="ikoner/instagram done@1.5x.png" alt="InstagramIcon" class="instagramicon"></a>
@@ -151,5 +159,6 @@
         </div>
         <p class="footerBundtekst">ⓒ 2022 Tørningspillet</p>
     </footer>
-    </body>
-    </html>
+</body>
+
+</html>
