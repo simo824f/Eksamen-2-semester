@@ -245,62 +245,63 @@
     /* her SLUTTER overskrift og rød streg style */
 
     /* her starter koden til 2001 forestillinger (heino)*/
-main {
-    margin: 0 6px 50px;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 10px;
-    margin-top: 30px;
-}
+    main {
+        margin: 0 6px 50px;
+    }
 
-/* Create four equal columns that sits next to each other */
-.column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-    padding: 0 4px;
-    box-sizing: border-box;
-}
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        margin-top: 30px;
+    }
 
-.column img {
-    margin-top: 12px;
-    vertical-align: middle;
-    width: 100%;
-    filter: drop-shadow(8px 8px 6px rgba(34, 34, 34, 0.8));
-}
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 4px;
+        box-sizing: border-box;
+    }
 
-.fullImg {
-    width: 100%;
-    height: 100vh;
-    background: rgb(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-}
+    .column img {
+        margin-top: 12px;
+        vertical-align: middle;
+        width: 100%;
+        filter: drop-shadow(8px 8px 6px rgba(34, 34, 34, 0.8));
+    }
 
-.fullImg img {
-    width: 90%;
-    max-width: 300px;
+    .fullImg {
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 0, 0, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+    }
+
+    .fullImg img {
+        width: 90%;
+        max-width: 300px;
 
 
-}
+    }
 
-.fullImg span {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
+    .fullImg span {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
 
-/* her slutter koden til 2001 forestillinger */
+    /* her slutter koden til 2001 forestillinger */
 
 }
 
@@ -396,13 +397,14 @@ main {
     /* her slutter style på ipad af overskrift */
 
 
-     /*style på 2001*/
-     .column {
+    /*style på 2001*/
+    .column {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
     }
-    .row{
+
+    .row {
         padding: 0 44px;
     }
 
@@ -411,7 +413,7 @@ main {
         max-width: 600px;
     }
 
-    .fullImg span{
+    .fullImg span {
         font-size: 60px;
     }
 }
@@ -572,7 +574,8 @@ main {
         flex: 25%;
         max-width: 25%;
     }
-    .row{
+
+    .row {
         padding: 0 129px;
     }
 
