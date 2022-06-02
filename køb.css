@@ -349,18 +349,55 @@ footer p {
     }
     /*Nav SLUT*/
 
+  
+
     div.row{
         margin: 0px;
     }
 
     div.col-75{
-        padding-left: 0px;
+        width: 100%;
         padding-right: 0px;
+        padding-left: 0px;
     }
 
     .container-checkout{
         padding-left: 0px;
         padding-right: 0px;
+    }
+
+    /*Footer styling START*/
+    .footer_container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .someikoner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footerAdresse {
+        display: none;
+    }
+
+    .facebookIkon, .instagramicon {
+        width: 80px;
+    }
+
+    .instagramicon{
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .footerLinks {
+        text-align: left;
+    }
+
+    /*Footer styling SLUT*/
+
+    .Sponsorer {
+        margin-top: 0;
     }
   
  
