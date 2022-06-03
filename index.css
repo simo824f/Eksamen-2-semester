@@ -32,7 +32,7 @@ body p h1 h2 h3 a {
 header {
     display: flex;
     justify-content: space-evenly;
-    
+
 }
 
 .nav_logo img {
@@ -151,13 +151,13 @@ header .menu_btn:checked~.menu {
 
 
 /*forneden er alt relateret til fooeteren*/
-.facebookIkon{
+.facebookIkon {
     width: 70px;
     padding: 20px;
     margin-top: 40px;
 }
 
-.instagramicon{
+.instagramicon {
     width: 70px;
     padding: 20px;
 }
@@ -491,7 +491,7 @@ footer p {
     }
 
     /*Nav start*/
-    header .menu_icon{
+    header .menu_icon {
         padding: 30px 50px;
     }
 
@@ -518,6 +518,7 @@ footer p {
     .menu_icon {
         margin-left: 350px;
     }
+
     /*Nav SLUT*/
 
     img.billede_slide {
@@ -587,7 +588,7 @@ footer p {
         justify-content: space-evenly;
     }
 
-    .someikoner{
+    .someikoner {
         display: flex;
         justify-content: space-between;
     }
@@ -596,11 +597,12 @@ footer p {
         display: none;
     }
 
-    .facebookIkon, .instagramicon {
+    .facebookIkon,
+    .instagramicon {
         width: 80px;
     }
 
-    .instagramicon{
+    .instagramicon {
         padding: 20px;
         margin-top: 40px;
     }
@@ -760,7 +762,7 @@ footer p {
 
     .dropdown:hover .dropdown-content {
         display: block;
-      }
+    }
 
     .dropdown-content a:hover {
         background-color: #81002946;
