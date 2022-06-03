@@ -8,56 +8,107 @@
     <meta name="keywords" content="Kontakt Tørningspillet, Kontaktformular, Facebook, Instagram, E-mail, Tørningspillet Google Maps">
     <title>Kontakt - Tørningspillet</title>
     <link rel="stylesheet" href="kontaktos.css">
+    <link rel="icon" type="image/icon" href="/favicon/favicon.png">
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <header>
-        <div class="nav_logo"><a href="index-kopi.html"><img src="billeder/logo_mobil.png" alt="Tørningspillets Logo"></a></div>
-        <!--Burger menu - start-->
+        <div class="nav_logo">
+            <a href="index-kopi.html"><img src="billeder/logo_mobil.png" alt="Tørningspillets Logo"></a>
+        </div>
+        <!--Logo - SLUT-->
+        
+        <!--Burger menu - START-->
         <!--for at lave menuen er denne kilde brugt https://www.youtube.com/watch?v=sjrp1FEHnyA-->
         <input type="checkbox" class="menu_btn" id="menu_btn">
         <!--dette er det der gør man kan åbe og lukke menuen-->
-        <label for="menu_btn" class="menu_icon"><span class="nav_icon"></span> </label>
+        <label for="menu_btn" class="menu_icon"><span class="nav_icon"></span></label>
         <!--Span er det man designer de tre burgermenu linjer på-->
         <ul class="menu">
             <li><a href="index.html">Forside</a></li>
-            <li><a href="forestillinger.html">Forestillinger</a></li>
-            <li><a href="omos.html">Om os</a></li>
+            <!--Undermneu i dropdown - START-->
+            <li class="dropdown">
+                <a href="forestillinger.html" class="dropbtn">Forestillinger</a>
+                <div class="dropdown-content">
+                    <a href="tidliger-forestilinger.html">Tideligere forestillinger</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="omos.html" class="dropbtn">Om os</a>
+                <div class="dropdown-content">
+                    <a href="sponser.html">Sponsorer</a>
+                </div>
+            </li>
+             <!--Undermneu i dropdown - START-->
             <li><a href="kontaktos.html">Kontakt os </a></li>
         </ul>
-        <!--Burger menu - slut-->
+        <!--Burger menu - SLUT-->
+        
+        <!--Købskanppen - START-->
         <div class="nav_billet_button"><a href="">Køb Billeter</a></div>
+         <!--Købskanppen - SLUT-->
     </header>
-    <main> 
-        <h1>Kontakt os</h1><!--herunder laves de forskellige måder at kontakte siden på-->
+
+    <section><!--herunder laves de forskellige måder at kontakte siden på-->
+        <h1>Kontakt os</h1>
         <div class="box"></div>
-        <img class="kontaktos-billede" src="billeder/omos-billede.jpeg" alt="">
+        <img class="kontaktos-billede" src="/billeder/omos-billede.jpeg" alt="">
         <div class="kontakt_container">
             <div class="kontakt_mail"><a href="mailto:formand@toerningspillet.dk" target="_blank"><img src="kontakt-billeder/icon-mail.svg" alt="Icon af e-mail"></a></div><p>På Mail</p>
-            <div class="kontakt_facebook"><a href="https://www.facebook.com/teaterogmusikgruppentm" target="_blank"><img src="kontakt-billeder/icon-facebook.svg" alt="Icon af Facebook"></a></div><p>På Facebook</p>
-            <div class="kontakt_insta"><a href="#" target="_blank"><img src="kontakt-billeder/icon-instagram.svg" alt="Icon af Instagram"></a></div><p>På Instagram</p>
+            <div class="kontakt_facebook"><a href="https://www.facebook.com/teaterogmusikgruppentm" target="_blank"><img src="/kontakt-billeder/icon-facebook.svg" alt="Icon af Facebook"></a></div><p>På Facebook</p>
+            <div class="kontakt_insta"><a href="#" target="_blank"><img src="/kontakt-billeder/icon-instagram.svg" alt="Icon af Instagram"></a></div><p>På Instagram</p>
         </div>
-            <!--herunder laves kontaktformularen-->
-            <form action="#">
-                <input type="text" name="Fulde-Navn" placeholder="Dit fulde navn her">
-                <input type="text" name="E-mail" placeholder="Din e-mail her">
-                <textarea name="Besked" id="" placeholder="Din besked her"></textarea>
-                <div class="formular_button"><a href="#" onclick="sendFunction()">Send besked</a></div>
-            </form>           
-    </main>
-    <section>   
+    </section>
+
+    <section><!--Herunder laves tekstfeltet med citeringen-->
+        <div class="tekst-box1"></div>
+        <div class="tekst-wrapper">
+            <div class="frivillig-wrapper">
+                <h2>Bliv frivillig</h2>
+                <p>Kunne du godt tænke dig at arbejde som frivillig hos Tørningspillet, og elsker du at arbejde med teater, musik dans og generelt at være med til sjov - så send os en besked via kontaktformularen forneden!</p>
+            </div>
+            <div class="skuespiller-wrapper">
+                <h2>Bliv Skuespiller</h2>
+                <p>Som skuespiller kræver vi ikke noget særligt talent fra dig - det kræver til gengæld at du har lysten og motivationen til at give en god oplevelse for vores publikum. Lyder det som noget for dig, så udfyld kontaktformularen forneden!</p>
+            </div>
+        </div>
+        <div class="tekst-box2"></div>
+    </section>
+
+    <section class="citat-kontakt-wrapper"><!--herunder laves citatet-->
+        <img class="citat1" src="billeder/citat-start.png" alt="Citat der starter">
+        <div>
+            <p class="citat-txt">Fedeste oplevelse, det har været <br> et kæmpe selvtillidsboost.</p>
+        </div>
+        <img class="citat2" src="billeder/citat-slut.png" alt="Citat der slutter">
+    <!--herunder laves kontaktformularen-->
+        <form action="#">    
+            <input type="text" name="Fulde-Navn" placeholder="Dit fulde navn her">
+            <input type="text" name="E-mail" placeholder="Din e-mail her">
+            <textarea name="Besked" id="input" placeholder="Din besked her"></textarea>
+            <div class="formular_button"><a href="#" onclick="sendFunction()">Send besked</a></div>
+        </form>
+    </section> 
+
+    <section><!--herunder laves google mapls med find os-->   
         <h2>Find os her</h2>
         <div class="findos-box"></div>
         <iframe src="https://maps.google.com/maps?q=T%C3%B8rningvej%206,%206500%20Vojens&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe> <!--her er input til google maps: kode fra https://google-map-generator.com/#enter d.25-05/22-->
-        <div class="adresse_pin"><a href="#"><img src="kontakt-billeder/adresse-pin.svg" alt="Icon af lokation"></a></div><p class="pin_txt1">Sønderjylland</p><p class="pin_txt2">Tørningevej 6, 6500 Vojens</p>
+        <div class="adresse_pin"><a href="#"><img src="/kontakt-billeder/adresse-pin.svg" alt="Icon af lokation"></a></div><p class="pin_txt1">Sønderjylland</p><p class="pin_txt2">Tørningevej 6, 6500 Vojens</p>
     </section>
+
+<!--FOOTER START-->
     <footer>
         <div class="footer_container">
-            <div class="social_footer_facebook">
-                <a href="https://www.facebook.com/teaterogmusikgruppentm/"><img src="Billeder/facebook.png"
-                        alt="FacebookIcon" class="facebookIkon"></a>
+            <div class="someikoner">
+                <div class="social_footer_facebook">
+                    <a href="https://www.facebook.com/teaterogmusikgruppentm/"><img src="billeder/facebook-done.png" alt="FacebookIcon" class="facebookIkon"></a>
+                </div>
+                <div class="social_footer_instagram">
+                    <a href=""><img src="billeder/instagram1.png" alt="InstagramIcon" class="instagramicon"></a>
+                </div>
             </div>
-
             <div class="footerAdresse">
                 <p class="overskriftfooter">Tørningspillet</p>
                 <p>Tørningvej 6, 6500 vojns</p>
@@ -73,13 +124,14 @@
             <div class="footerLinks">
                 <ul>
                     <li class="overskriftfooter">Links:</li>
-                    <li><a href="">Bestyrelsen</a></li>
-                    <li><a href="">Sponsor</a></li>
+                    <li><a href="bestyrelsen.html">Bestyrelsen</a></li>
+                    <li><a href="sponser.html">Sponsor</a></li>
                     <li><a href="">Tørning Mølle</a></li>
                 </ul>
             </div>
         </div>
         <p class="footerBundtekst">ⓒ 2022 Tørningspillet</p>
     </footer>
+<!--FOOTER SLUT-->
 </body>
 </html>

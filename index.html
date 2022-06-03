@@ -11,8 +11,10 @@
     <title>Tørningspillet</title>
     <link rel="stylesheet" href="index.css">
     <script defer src="script.js"></script>
+    <link rel="shortcut icon" href="favicon/favicon.png">
 </head>
 
+<body>
 <header>
     <!--Logo - START-->
     <div class="nav_logo">
@@ -41,42 +43,43 @@
                 <a href="sponser.html">Sponsorer</a>
             </div>
         </li>
-         <!--Undermneu i dropdown - START-->
+        <!--Undermneu i dropdown - START-->
         <li><a href="kontaktos.html">Kontakt os </a></li>
     </ul>
     <!--Burger menu - SLUT-->
 
     <!--Købskanppen - START-->
-    <div class="nav_billet_button"><a href="">Køb Billeter</a></div>
-     <!--Købskanppen - SLUT-->
+    <div class="nav_billet_button"><a href="køb.html">Køb Billeter</a></div>
+    <!--Købskanppen - SLUT-->
 </header>
 
-<body>
-    <!--slideshow-->
+    <!--slideshow - START-->
     <div class="slideshowBeholder">
         <!--Billederne i slide -->
         <div class="slide">
             <div class="nummertekst">1 / 3</div>
-            <img class="billede_slide" src="billeder/slide_1.jpg">
+            <img class="billede_slide" alt="hold billede" src="billeder/slide_1.jpg">
         </div>
 
         <div class="slide">
             <div class="nummertekst">2 / 3</div>
-            <img class="billede_slide" src="billeder/slide_2.jpg">
+            <img class="billede_slide" alt="hold billede" src="billeder/slide_2.jpg">
         </div>
 
         <div class="slide">
             <div class="nummertekst">3 / 3</div>
-            <img class="billede_slide" src="Billeder/slide_3.jpg">
+            <img class="billede_slide" alt="hold billede" src="Billeder/slide_3.jpg">
         </div>
 
         <!--frem og tilbage knapperne på billederne i slide -->
         <a class="tilbage" onclick="plusSlides(-1)">&#10094;</a>
         <a class="næste" onclick="plusSlides(1)">&#10095;</a>
     </div>
+    <!--slideshow - SLUT-->
 
+    <!--Intro - START-->
     <div class="intro">
-        <img class="teatermasker" src="ikoner/Teater done@1.5x.png" alt="teatermasker">
+        <img class="teatermasker" src="ikoner/teater.png" alt="teatermasker">
 
         <div class="tekst_intro">
             <h1 class="overskrift">Velkommen til</h1>
@@ -86,31 +89,36 @@
 
         <div class="box"></div>
     </div>
+    <!--Intro - SLUT-->
 
+    <!--Måder du kan købe billet - START-->
     <div class="købBillet">
-        <h2 class="overskrift_købBillet"> Køb din billet</h2> 
+        <h2 class="overskrift_købBillet"> Køb din billet</h2>
 
         <div class="købIkoner">
             <div class="Købonline">
-                <img class="online_ikon" src="ikoner/online done@1.5x.png" alt="Køb online">
+                <img class="online_ikon" src="ikoner/online.png" alt="Køb online">
                 <h2 class="online">Online</h2>
                 <p class="online_beskrivelse">Nem og hurtig betjening gennem vores hjemmeside</p>
             </div>
 
             <div class="Købmail">
-                <img class="mail_ikon" src="ikoner/Mail done@1.5x.png" alt="Køb via mail">
+                <img class="mail_ikon" src="ikoner/mail.png" alt="Køb via mail">
                 <h2 class="mail">Mail</h2>
                 <p class="mail_beskrivelse">Køb via mail, vi besværer hurtigts muligt</p>
             </div>
 
             <div class="KøbiDøren">
-                <img class="iDøren_ikon" src="ikoner/telefon done@1.5x.png" alt="Køb i døren">
+                <img class="iDøren_ikon" src="ikoner/telefon.png" alt="Køb i døren">
                 <h2 class="idøren">I døren</h2>
                 <p class="idøren_beskrivelse">Køb og køb din billet i døren når du skal til forstillingen</p>
             </div>
         </div>
     </div>
+      <!--Måder du kan købe billet - SLUT-->
 
+
+    <!--Bliv enten frivillig eller skuespiller - START-->
     <div class="forsidebokse">
         <div class="blivFrivillig">
             <a href=""> <img class="frivilligimg" src="Billeder/blivfrivillig.jpg" alt="Bliv frivillig"></a>
@@ -132,20 +140,23 @@
             </div>
         </div>
     </div>
+    <!--Bliv enten frivillig eller skuespiller - SLUT-->
 
-    <section>
+    <!--Sponsorer - START-->
+    <div>
         <img class="Sponsorer" src="Billeder/sponsorer.png" alt="Sponsorer">
-    </section>
-
+    </div>
+    <!--Sponsorer - SLUT-->
 
     <footer>
         <div class="footer_container">
             <div class="someikoner">
                 <div class="social_footer_facebook">
-                    <a href="https://www.facebook.com/teaterogmusikgruppentm/"><img src="ikoner/Facebook ikon done@1.5x.png" alt="FacebookIcon" class="facebookIkon"></a>
+                    <a href="https://www.facebook.com/teaterogmusikgruppentm/"><img
+                            src="ikoner/facebook.png" alt="FacebookIcon" class="facebookIkon"></a>
                 </div>
                 <div class="social_footer_instagram">
-                    <a href=""><img src="ikoner/instagram done@1.5x.png" alt="InstagramIcon" class="instagramicon"></a>
+                    <a href=""><img src="ikoner/indtagram.png" alt="InstagramIcon" class="instagramicon"></a>
                 </div>
             </div>
             <div class="footerAdresse">

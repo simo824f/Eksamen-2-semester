@@ -1,169 +1,244 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Teater og Musikgruppen Tørning Mølle">
-    <meta name="keywords" content="Teater og forestillinger, Juleteater, Juleforestillinger, Tørningspillet, Teatergruppe, ">
-    <title>Tørningspillet</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Teater og Musikgruppen Tørning Mølle">
+  <meta name="keywords"
+    content="Teater og forestillinger, Juleteater, Juleforestillinger, Tørningspillet, Teatergruppe, ">
+  <title>Tørningspillet</title>
+  <link rel="stylesheet" href="tidlFore.css">
+  <script defer src="script.js"></script>
+  <link rel="shortcut icon" href="favicon/favicon.png">
 </head>
+
 <body>
   <header>
-    <div class="nav_logo"><a href="index-kopi.html"><img src="billeder/logo_mobil.png" alt="Tørningspillets Logo"></a></div>
-    <!--Burger menu - start-->
+    <!--Logo - START-->
+    <div class="nav_logo">
+      <a href="index-kopi.html"><img src="billeder/logo_mobil.png" alt="Tørningspillets Logo"></a>
+    </div>
+    <!--Logo - SLUT-->
+
+    <!--Burger menu - START-->
     <!--for at lave menuen er denne kilde brugt https://www.youtube.com/watch?v=sjrp1FEHnyA-->
     <input type="checkbox" class="menu_btn" id="menu_btn">
     <!--dette er det der gør man kan åbe og lukke menuen-->
-    <label for="menu_btn" class="menu_icon"><span class="nav_icon"></span> </label>
+    <label for="menu_btn" class="menu_icon"><span class="nav_icon"></span></label>
     <!--Span er det man designer de tre burgermenu linjer på-->
     <ul class="menu">
-        <li><a href="index.html">Forside</a></li>
-        <li><a href="forestillinger.html">Forestillinger</a></li>
-        <li><a href="omos.html">Om os</a></li>
-        <li><a href="kontaktos.html">Kontakt os </a></li>
+      <li><a href="index.html">Forside</a></li>
+      <!--Undermneu i dropdown - START-->
+      <li class="dropdown">
+        <a href="forestillinger.html" class="dropbtn">Forestillinger</a>
+        <div class="dropdown-content">
+          <a href="tidliger-forestilinger.html">Tideligere forestillinger</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="omos.html" class="dropbtn">Om os</a>
+        <div class="dropdown-content">
+          <a href="sponser.html">Sponsorer</a>
+        </div>
+      </li>
+      <!--Undermneu i dropdown - START-->
+      <li><a href="kontaktos.html">Kontakt os </a></li>
     </ul>
-    <!--Burger menu - slut-->
+    <!--Burger menu - SLUT-->
+
+    <!--Købskanppen - START-->
     <div class="nav_billet_button"><a href="">Køb Billeter</a></div>
-</header>
+    <!--Købskanppen - SLUT-->
+  </header>
 
 
-<section class="headline">
-    <h1>Tidliger forestillinger</h1>
-        <div class="box"></div>
-</section>
-
+  <!-- det her er overskrivten på siden og den røde streg der ligger under overskriften -->
+  <section class="headline">
+    <h1>Tideliger Forestillinger</h1>
+    <!-- den røde streg under oveskriften -->
+    <div class="box"></div>
+  </section>
+  <!-- her starter img galleriet over de tidliger års forestillinger -->
   <main class="imgGallery">
+    <!-- container er den der har den overordnet style på været billede og den kassse med tekst der er over billedet -->
     <div class="container">
-        <a href="2001-forstilling.html"><img src="img/2001.jpg" alt="kejserens nye klæder"></a>
-        <div class="content">
-            <a href="#"><h1>2001</h1></a>
-        </div>
+      <a href="2001-forstilling.html"><img src="img/2001.jpg" alt="Kejserens nye bukser og Klodshans"></a>
+      <!-- content er det indhold der er i den sorte kasse der er over billedet og ligeledes kassen selv -->
+      <div class="content">
+        <a href="2001-forstilling.html">
+          <h2>2001</h2>
+        </a>
       </div>
-      <div class="container">
-        <a href="#"><img src="img/2002-101.jpg" alt="kejserens nye klæder"></a>
-        <div class="content">
-            <a href="#"><h1>2002</h1></a>
-        </div>
-      </div>
-      <div class="container">
-        <a href="#"><img src="img/2003-099.jpg" alt="kejserens nye klæder"></a>
-        <div class="content">
-            <a href="#"><h1>2003</h1></a>
-        </div>
-      </div>
-      <div class="container">
-        <a href="#"><img src="img/2004-110.jpg" alt="kejserens nye klæder"></a>
-        <div class="content">
-            <a href="#"><h1>2004</h1></a>
-        </div>
-      </div>
-      <div class="container">
-        <a href="#"><img src="img/2005-039.jpg" alt="kejserens nye klæder"></a>
-        <div class="content">
-            <a href="#"><h1>2005</h1></a>
-        </div>
-      </div>
-      <div class="container">
-        <a href="#"><img src="img/2006-093.jpg" alt="kejserens nye klæder"></a>
-        <div class="content">
-            <a href="#"><h1>2006</h1></a>
-        </div>
-      </div>
-      <div class="container">
-        <a href="#"><img src="img/2007-179.jpg" alt="kejserens nye klæder"></a>
-        <div class="content">
-            <a href="#"><h1>2007</h1></a>
-        </div>
+      <!-- herfra og ned til 167 er der de samme elementer som i linje 64-69 dog er indholdet ikke det samme -->
     </div>
     <div class="container">
-      <a href="#"><img src="img/2008-017.jpg" alt="kejserens nye klæder"></a>
+      <a href="#"><img src="img/2002-101.jpg" alt="Svinedrengen"></a>
       <div class="content">
-          <a href="#"><h1>2008</h1></a>
+        <a href="#">
+          <h2>2002</h2>
+        </a>
       </div>
     </div>
     <div class="container">
-      <a href="#"><img src="img/2009-066.jpg" alt="kejserens nye klæder"></a>
+      <a href="#"><img src="img/2003-099.jpg" alt="lighteren"></a>
       <div class="content">
-          <a href="#"><h1>2009</h1></a>
+        <a href="#">
+          <h2>2003</h2>
+        </a>
       </div>
     </div>
     <div class="container">
-      <a href="#"><img src="img/2010-094.jpg" alt="kejserens nye klæder"></a>
+      <a href="#"><img src="img/2004-110.jpg" alt="Dyrne i hakkebakkeskoven"></a>
       <div class="content">
-          <a href="#"><h1>2010</h1></a>
+        <a href="#">
+          <h2>2004</h2>
+        </a>
       </div>
     </div>
     <div class="container">
-      <a href="#"><img src="img/2011-074.jpg" alt="kejserens nye klæder"></a>
+      <a href="#"><img src="img/2005-039.jpg" alt="Der var engang en digter, sådan en god gammel digter"></a>
       <div class="content">
-          <a href="#"><h1>2011</h1></a>
+        <a href="#">
+          <h2>2005</h2>
+        </a>
       </div>
     </div>
     <div class="container">
-      <a href="#"><img src="img/2012-192.jpg" alt="kejserens nye klæder"></a>
+      <a href="#"><img src="img/2006-093.jpg" alt="kejserens nye klæder"></a>
       <div class="content">
-          <a href="#"><h1>2012</h1></a>
+        <a href="#">
+          <h2>2006</h2>
+        </a>
       </div>
     </div>
     <div class="container">
-      <a href="#"><img src="img/2013-073.jpg" alt="kejserens nye klæder"></a>
+      <a href="#"><img src="img/2007-179.jpg" alt="Lyv aldrig for en pruthest"></a>
       <div class="content">
-          <a href="#"><h1>2013</h1></a>
+        <a href="#">
+          <h2>2007</h2>
+        </a>
       </div>
     </div>
     <div class="container">
-      <a href="#"><img src="img/s_187.jpg" alt="kejserens nye klæder"></a>
+      <a href="#"><img src="img/2008-017.jpg" alt="Dyrene i Hakkebakkeskoven"></a>
       <div class="content">
-          <a href="#"><h1>2014</h1></a>
+        <a href="#">
+          <h2>2008</h2>
+        </a>
       </div>
     </div>
     <div class="container">
-      <a href="#"><img src="img/Bøllebob.web003.jpg" alt="kejserens nye klæder"></a>
+      <a href="#"><img src="img/2009-066.jpg" alt="En historie om Robin Hood"></a>
       <div class="content">
-          <a href="#"><h1>2015</h1></a>
+        <a href="#">
+          <h2>2009</h2>
+        </a>
       </div>
     </div>
     <div class="container">
-      <a href="#"><img src="img/web008.jpg" alt="kejserens nye klæder"></a>
+      <a href="#"><img src="img/2010-094.jpg" alt="Albert - en rigtig røverhistorie"></a>
       <div class="content">
-          <a href="#"><h1>2016</h1></a>
+        <a href="#">
+          <h2>2010</h2>
+        </a>
       </div>
     </div>
     <div class="container">
-      <a href="#"><img src="img/småtørningspil2017-218.jpg" alt="kejserens nye klæder"></a>
+      <a href="#"><img src="img/2011-074.jpg" alt="Orla Frøsnapper"></a>
       <div class="content">
-          <a href="#"><h1>2017</h1></a>
+        <a href="#">
+          <h2>2011</h2>
+        </a>
       </div>
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/2012-192.jpg" alt="Skatteøen"></a>
+      <div class="content">
+        <a href="#">
+          <h2>2012</h2>
+        </a>
       </div>
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/2013-073.jpg" alt="Folk og Røvere i Kardemommeby"></a>
+      <div class="content">
+        <a href="#">
+          <h2>2013</h2>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/s_187.jpg" alt="Lyv aldrig for en pruthest"></a>
+      <div class="content">
+        <a href="#">
+          <h2>2014</h2>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Bøllebob.web003.jpg" alt="Bølle-Bob"></a>
+      <div class="content">
+        <a href="#">
+          <h2>2015</h2>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/web008.jpg" alt="Texas Walker Ranger"></a>
+      <div class="content">
+        <a href="#">
+          <h2>2016</h2>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/småtørningspil2017-218.jpg" alt="Frode og alle de andre rødder"></a>
+      <div class="content">
+        <a href="#">
+          <h2>2017</h2>
+        </a>
+      </div>
+    </div>
 
   </main>
 
 
-    <footer>
-        <div class="footer_container">
-            <div class="social_footer_facebook"><a href="https://www.facebook.com/teaterogmusikgruppentm/"><img src="billeder/icon_facebook.png" alt="FacebookIcon"></a></div>
-    
-            <ul>
-                <li>
-                    <div>Andre scener:</div>
-                    <div><a href="">Forsøgsscenen</a></div>
-                    <div><a href="">DATS</a></div>
-                    <div><a href="">Gram Friluftsspil</a></div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div>Links:</div>
-                    <div><a href="">Bestyrelsen</a></div>
-                    <div><a href="">Sponsor</a></div>
-                    <div><a href="">Tørning Mølle</a></div>
-                </li>
-            </ul>
+  <footer>
+    <div class="footer_container">
+      <div class="someikoner">
+        <div class="social_footer_facebook">
+          <a href="https://www.facebook.com/teaterogmusikgruppentm/"><img src="ikoner/facebook.png" alt="FacebookIcon"
+              class="facebookIkon"></a>
         </div>
-        <p>Copyright 2022</p>
-    </footer>
+        <div class="social_footer_instagram">
+          <a href=""><img src="ikoner/instagram.png" alt="InstagramIcon" class="instagramicon"></a>
+        </div>
+      </div>
+      <div class="footerAdresse">
+        <p class="overskriftfooter">Tørningspillet</p>
+        <p>Tørningvej 6, 6500 vojns</p>
+      </div>
+      <div class="footerLinks">
+        <ul>
+          <li class="overskriftfooter">Andre scener:</li>
+          <li><a href="">Forsøgsscenen</a></li>
+          <li><a href="">DATS</a></li>
+          <li><a href="">Gram Friluftsspil</a></li>
+        </ul>
+      </div>
+      <div class="footerLinks">
+        <ul>
+          <li class="overskriftfooter">Links:</li>
+          <li><a href="">Bestyrelsen</a></li>
+          <li><a href="">Sponsor</a></li>
+          <li><a href="">Tørning Mølle</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footerBundtekst">ⓒ 2022 Tørningspillet</p>
+  </footer>
 </body>
+
 </html>
