@@ -22,12 +22,15 @@
         margin: 0;
         font-family: Roboto_overskrift;
     }
-    h2{
+
+    h2 {
         font-size: 25px;
     }
-    p{
+
+    p {
         font-size: 15px;
     }
+
     h3 {
         font-size: 20px;
         margin: 0;
@@ -251,16 +254,19 @@
     /* her SLUTTER overskrift og rød streg style */
 
     /* her starter forestillinger styling */
-   
+
     .årFore {
         margin: 30px 16px 50px;
     }
- /* årets plaktat billede stylen */
+
+    /* årets plaktat billede stylen */
     .kaos {
         display: flex;
         width: 100%;
+        height: auto;
     }
-/* her starter styl til info om årets stykke */
+
+    /* her starter styl til info om årets stykke */
     .infoFore {
         display: flex;
         flex-direction: column;
@@ -281,60 +287,65 @@
         margin-left: 15px;
     }
 
-/* her er stylen til teksten for årets stykke */
+    /* her er stylen til teksten for årets stykke */
 
-    .årFore p{
+    .årFore p {
         margin-top: 0;
     }
+
     /* style på køb billet knap så den kommer over i højere side */
 
-    .årFore .nav_billet_button{
+    .årFore .nav_billet_button {
         margin-left: 190px;
     }
 
-/* her starter stylen for skuespiller section */
-  .skuespiller {
+    /* her starter stylen for skuespiller section */
+    .skuespiller {
         display: flex;
         flex-direction: column;
         background-color: #F0E9DA;
     }
-    .skuespillerSamlet{
+
+    .skuespillerSamlet {
         margin: 30px 16px 50px;
     }
 
-.actor img{
-    width: 100%;
-}
-.actor{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    
-}
-.actor img{
-    grid-column: 1/2;
-    grid-row: 1/3;
-}
-.actor p{
-    margin: 0;
-    text-align: justify;
-    padding-top: 20px;
-}
-.actor h3{
-    display: flex;
-    align-items: center;
-}
+    .actor img {
+        width: 100%;
+    }
 
-/* her starter stylen til tidliger forestillinger section */
-.tidlFore{
-    margin: 30px 16px 50px;
-}
-.tidlFore .nav_billet_button{
+    .actor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+
+    }
+
+    .actor img {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .actor p {
+        margin: 0;
+        text-align: justify;
+        padding-top: 20px;
+    }
+
+    .actor h3 {
+        display: flex;
+        align-items: center;
+    }
+
+    /* her starter stylen til tidliger forestillinger section */
+    .tidlFore {
+        margin: 30px 16px 50px;
+    }
+
+    .tidlFore .nav_billet_button {
         margin-left: 190px;
     }
 }
-
-    
 
 @media screen and (min-width: 760px) {
     /*CSS menu Ipad - START*/
@@ -420,12 +431,76 @@
     h1 {
         font-size: 40px;
     }
+    h2{
+        font-size: 30px;
+        margin: 0;
+    }
 
     .box {
         width: 234px;
     }
+    .skuespiller .box{
+        width: 161px;
+    }
 
     /* her slutter style på ipad af overskrift */
+     /* her starter styl til info om årets stykke ipad */
+    .årFore{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 1fr;
+        margin: 30px 50px 50px;
+        grid-column-gap: 10px;
+    }
+    .kaos{
+        grid-row: 1/4;
+        grid-column: 1/2;
+    }
+    .ikonFore{
+        width: 17%;
+
+    }
+    .ikonText{
+        padding: 0;
+    }
+    .årFore p{
+        margin-bottom: 0;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    
+    .årFore .nav_billet_button {
+        margin-left: 140px;
+        margin-right: 0;
+    }
+ /* info om årets stykke ipad slutter her */
+/* her starter stylen for skuespiller section */
+.skuespillerSamlet{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 50px 50px;
+}
+
+.actor{
+    padding: 10px 0;
+}
+/* her slutter skuespiller style ipad */
+/* her starter tidl. fore. section ipad */
+    .tidlFore{
+        margin: 30px 50px 50px; 
+    }
+    .tidlFore .nav_billet_button {
+        margin-left: 468px;
+    }
+    .tidlFore p{
+        margin-bottom: 0;
+    }
+
+
+
+
+/* her slutter tidl. fore. section ipad */
+
 
 }
 
@@ -569,18 +644,66 @@
     h1 {
         font-size: 45px;
     }
+    h2{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 30px;
+    }
 
     .box {
-        width: 465px;
+        width: 264px;
     }
 
     .headline {
         margin-left: 135px;
         margin-right: 135px;
     }
+    .skuespiller .box{
+        width: 188px;
+    }
 
     /* her slutter overskrift style */
+     /* her starter style til info om årets stykke desktop */
+     .årFore{
+        margin: 30px 135px 50px;
+        grid-column-gap: 20px;
+
+     }
+     .årFore p{
+        font-size: 25px;
+        line-height: 1.4;
+    }
+    .ikonFore{
+        width: 15%;
+
+    }
+    .årFore .nav_billet_button {
+        margin-left: 255px;
+        margin-right: 0;
+    }
+
+     /* her slutter style til info om årets stykke desktop */
+
+     /* her starter stylen for skuespiller section */
+     .skuespillerSamlet{
+        margin: 30px 135px 50px;
+     }
 
 
+     /* her slutter stylen for skuespiller section */
 
+     /* her starter tidl. fore. section desktop */
+     .tidlFore{
+        margin: 30px 135px 50px;
+     }
+     .tidlFore .nav_billet_button {
+        margin-left: 730px;
+    }
+    .tidlFore p{
+        margin-right: 100px;
+    }
+
+
+     /* her starter tidl. fore. section desktop */
 }
