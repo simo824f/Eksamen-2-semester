@@ -63,7 +63,7 @@ p {
 header {
     display: flex;
     justify-content: space-evenly;
-    box-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
 }
 
 .nav_logo img {
@@ -83,7 +83,7 @@ header {
     height: 1rem;
     width: 10rem;
     margin: 9px;
-    margin-top: 16px;
+    margin-top: auto 16px auto 9px;
 }
 
 .nav_billet_button a {
@@ -127,13 +127,14 @@ header .menu {
 }
 
 header .menu_icon {
-    padding: 28px 20px;
+    padding: 28px 35px;
     position: relative;
     /*den her skal være relavtiv så vi på barnet kan bruge absolut og på den måde rykke rundt på tingene*/
     float: right;
     cursor: pointer;
-    margin-right: 20px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*forneden styler de tre linjer de giver burgermenu iconet*/
@@ -256,7 +257,7 @@ footer p {
     margin-bottom: 50px;
 }
 
-.hvemervi_container h2{
+.hvemervi_container h2 {
     margin-top: 30px;
 }
 
@@ -376,7 +377,7 @@ footer p {
 
     header {
         justify-content: space-between;
-        
+
     }
 
     .menu_icon {
