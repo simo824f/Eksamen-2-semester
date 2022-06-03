@@ -1,53 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Denne side indeholder tidligere afholdte forestillinger">
-    <meta name="keywords" content="Forestillinger, Tidligere forestillinger, Juleforestilling, Plakater, Kaos ved juletid, Jul i nød">
-    <title>Forestillinger - Tørningspillet</title>
-    <link rel="stylesheet" href="forestillinger.css">
+    <meta name="description" content="Teater og Musikgruppen Tørning Mølle">
+    <meta name="keywords"
+        content="Teater og forestillinger, Juleteater, Juleforestillinger, Tørningspillet, Teatergruppe, ">
+    <title>Tørningspillet</title>
+    <link rel="stylesheet" href="forestillingerStyle.css">
+    <script defer src="2001script.js"></script>
+    <link rel="shortcut icon" href="favicon/favicon.png">
 </head>
+
 <body>
     <header>
-        <div class="nav_logo"><a href="http://www.toerningspillet.dk/"><img src="billeder/logo_mobil.png" alt="Tørningspillets Logo"></a></div>
-            <!--Burger menu - start-->
-            <!--for at lave menuen er denne kilde brugt https://www.youtube.com/watch?v=sjrp1FEHnyA-->
+        <!--Logo - START-->
+        <div class="nav_logo">
+            <a href="index-kopi.html"><img src="billeder/logo_mobil.png" alt="Tørningspillets Logo"></a>
+        </div>
+        <!--Logo - SLUT-->
+
+        <!--Burger menu - START-->
+        <!--for at lave menuen er denne kilde brugt https://www.youtube.com/watch?v=sjrp1FEHnyA-->
         <input type="checkbox" class="menu_btn" id="menu_btn">
-            <!--dette er det der gør man kan åbe og lukke menuen-->
-        <label for="menu_btn" class="menu_icon"><span class="nav_icon"></span> </label>
-            <!--Span er det man designer de tre burgermenu linjer på-->
+        <!--dette er det der gør man kan åbe og lukke menuen-->
+        <label for="menu_btn" class="menu_icon"><span class="nav_icon"></span></label>
+        <!--Span er det man designer de tre burgermenu linjer på-->
         <ul class="menu">
             <li><a href="index.html">Forside</a></li>
-            <li><a href="forestillinger.html">Forestillinger</a></li>
-            <li><a href="omos.html">Om os</a></li>
+            <!--Undermneu i dropdown - START-->
+            <li class="dropdown">
+                <a href="forestillinger.html" class="dropbtn">Forestillinger</a>
+                <div class="dropdown-content">
+                    <a href="tidliger-forestilinger.html">Tideligere forestillinger</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="omos.html" class="dropbtn">Om os</a>
+                <div class="dropdown-content">
+                    <a href="sponser.html">Sponsorer</a>
+                </div>
+            </li>
+            <!--Undermneu i dropdown - START-->
             <li><a href="kontaktos.html">Kontakt os </a></li>
         </ul>
-            <!--Burger menu - slut-->
+        <!--Burger menu - SLUT-->
+
+        <!--Købskanppen - START-->
         <div class="nav_billet_button"><a href="">Køb Billeter</a></div>
+        <!--Købskanppen - SLUT-->
     </header>
+    <!-- det her er overskrivten på siden og den røde streg der ligger under overskriften -->
+
     <main>
-        <h1>Årets forestilling</h1>
-        <div class="box-årets-forestilling"></div>
-        <div class="billede_container">
-            <div class="kaos-billede"><img src="billeder/kaos.png" alt="Plakat af årets forestilling Kaos ved juletid"></div>
-            <h2>Om nuværende forestilling</h2>
-            <p>Årets årets forstilling er endnu ikke bestemt, men vi håber at kunne løfte sløret når vi kommer lidt tætter på julen.</p>
-        </div>
-        <div class="skuespiller-container">
-            <h2>Skuespiller</h2>
-            <div class="skuespiller-billede"></div>
-        </div>
+        <section class="headline">
+            <h1>Forestillinger</h1>
+            <!-- den røde streg under oveskriften -->
+            <div class="box"></div>
+        </section>
+            <section class="årFore">
+                <img class="kaos" src="billeder/kaos.png" alt="Plakat af årets forestilling Kaos ved juletid">
+                <div class="infoFore">
+                    <div class="ikonText">
+                        <img class="ikonFore" src="ikoner/teater.png" alt="komedie og tragedie">
+                        <h3>Kaos ved juletid</h3>
+                    </div>
+                    <div class="ikonText">
+                        <img class="ikonFore" src="ikoner/ur.png" alt="ur">
+                        <h3>kl: 19:00 - 21:30</h3>
+                    </div>
+                    <div class="ikonText">
+                        <img class="ikonFore" src="ikoner/dato.png" alt="dato">
+                        <h3>d. 02/12/2022 - 04/12/2022</h3>
+                    </div>
+                    <div class="ikonText">
+                        <img class="ikonFore" src="ikoner/sted.png" alt="adresse">
+                        <h3>På Tørning Mølle</h3>
+                    </div>
+                </div>
+                <p>I år præsentere teater- og musikgruppen Tørning Mlle "Kaos ved Juletid". Stykket er skrevet af
+                    vores fantastiske instruktør Annika Elver Jensen.
+                    Stykket handler om 10 Nisser der skal nå at få alt klart til den store dag, men pludseligt sker
+                    der noget ingen havde regnet med.
+                    så kom ind og se stykket og find ud af hvordan nisserne klare de store problemer </p>
+                <div class="nav_billet_button">
+                    <a href="">Køb Billeter</a>
+                </div>
+            </section>
+            <section class="skuespiller">
+                <div class="headline">
+                    <h2>Skuespillerne</h2>
+                    <!-- den røde streg under oveskriften -->
+                    <div class="box"></div>
+                </div>
+                <div class="skuespillerSamlet">
+                    <div class="actor">
+                        <img src="ikoner/person.png" alt="tom person">
+                        <h3>Leder Nis</h3>
+                        <p>Leder af alle nisser, manden der skal holde alt overblikket. har måske også et godt øje til
+                            smukke nis.</p>
+                    </div>
+                    <div class="actor">
+                        <img src="ikoner/person.png" alt="tom person">
+                        <h3>Smukke Nis</h3>
+                        <p>Den flotteste af alle nisser, men også den der kun har øje for sig selv. hvilket hurtigt kan
+                            volde problemer.</p>
+                    </div>
+                    <div class="actor">
+                        <img src="ikoner/person.png" alt="tom person">
+                        <h3>Nervøse Nis</h3>
+                        <p>Der skal ikke så meget til at skræmme nervøse nis. Mon han kommer sikkert gennem julen?</p>
+                    </div>
+                    <div class="actor">
+                        <img src="ikoner/person.png" alt="tom person">
+                        <h3>Trætte Nis</h3>
+                        <p>Hvis man ikke ved hvor han er henne skal man blot lede efter et blødt sted så finder man
+                            sikkert
+                            trætte nis.</p>
+                    </div>
+                    <div class="actor">
+                        <img src="ikoner/person.png" alt="tom person">
+                        <h3>Stærke Nis</h3>
+                        <p>har man brug for en til at flytte på de tunge til er det stærke nis du skal have fat i. </p>
+                    </div>
+                    <div class="actor">
+                        <img src="ikoner/person.png" alt="tom person">
+                        <h3>Frække Nis</h3>
+                        <p>leder man efter et problem skal man ikke kigge langt for frække nis står altid klar til at
+                            have
+                            det sjovt og rode sig ud i problemer.</p>
+                    </div>
+                    <div class="actor">
+                        <img src="ikoner/person.png" alt="tom person">
+                        <h3>Hurtig Nis</h3>
+                        <p>hvis tingende skal gå stærkt er det hurtig nis du skal have fat i, men kan det også komme til
+                            at
+                            gå for stærkt?</p>
+                    </div>
+                    <div class="actor">
+                        <img src="ikoner/person.png" alt="tom person">
+                        <h3>Langsom Nis</h3>
+                        <p>jeg håber ikke du har travlt for med langsom nis skal du ikke forvente tingende bliver klart
+                            i
+                            dag.</p>
+                    </div>
+                    <div class="actor">
+                        <img src="ikoner/person.png" alt="tom person">
+                        <h3>Julle</h3>
+                        <p>hvis du ikke ved hvem han er så har du hvis ikke været på den rigtig side af artig listen,
+                            men
+                            har masser af kul til pejsen.</p>
+                    </div>
+                    <div class="actor">
+                        <img src="ikoner/person.png" alt="tom person">
+                        <h3>Julle Mor</h3>
+                        <p>julle mor er ikke blot julles kone, men også kvinden der søger for at alle nisser har hvad de
+                            skal bruge.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="tidlFore">
+                <h2>Tidliger forestilliger</h2>
+                <p>Det er ikke det første år vi har spillet et spænde forestilling. Du kan også gå ind og se vores
+                    tideliger forestillinger ved at klikke på knappen</p>
+                <div class="nav_billet_button"><a href="tidliger-forestilinger.html">Tideliger forestilliger</a></div>
+            </section>
     </main>
 
     <footer>
-        <div class="footer_container">  
-            <div class="social_footer_facebook">
-                <a href="https://www.facebook.com/teaterogmusikgruppentm/"><img src="Billeder/facebook.png"
-                        alt="FacebookIcon" class="facebookIkon"></a>
+        <div class="footer_container">
+            <div class="someikoner">
+                <div class="social_footer_facebook">
+                    <a href="https://www.facebook.com/teaterogmusikgruppentm/"><img src="ikoner/facebook.png"
+                            alt="FacebookIcon" class="facebookIkon"></a>
+                </div>
+                <div class="social_footer_instagram">
+                    <a href=""><img src="ikoner/instagram.png" alt="InstagramIcon" class="instagramicon"></a>
+                </div>
             </div>
-
             <div class="footerAdresse">
                 <p class="overskriftfooter">Tørningspillet</p>
                 <p>Tørningvej 6, 6500 vojns</p>
@@ -72,4 +204,5 @@
         <p class="footerBundtekst">ⓒ 2022 Tørningspillet</p>
     </footer>
 </body>
+
 </html>

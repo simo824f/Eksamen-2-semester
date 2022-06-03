@@ -13,53 +13,23 @@
     font-family: Roboto_brød;
 }
 
-
-body {
-    margin: 0;
-}
-
-p,
-h1,
-h2,
-h3,
-h4 {
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-h1,
-h2 {
-    font-family: Roboto_overskrift;
+h1 {
     font-size: 35px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-h2 {
-    font-size: 25px;
-    margin-bottom: 5px;
+    margin: 0;
+    font-family: Roboto_overskrift;
 }
 
 h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
+    margin: 0;
+    font-family: Roboto_overskrift;
 }
 
-h4 {
-    font-size: 18;
-    margin-top: 5px;
-}
-
-p {
-    font-size: 15px;
+body {
+    margin: 0%;
 }
 
 
-
-
-/*FÆLLES STYLING STARTER HER*/
-
-/*Forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
+/*forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
 header {
     display: flex;
     justify-content: space-evenly;
@@ -82,8 +52,8 @@ header {
     padding: 1rem;
     height: 1rem;
     width: 10rem;
-    margin: 9px;
-    margin-top: auto 16px auto 9px;
+    margin: auto 16px auto 9px;
+
 }
 
 .nav_billet_button a {
@@ -114,6 +84,7 @@ header ul a {
     display: block;
     padding: 20px;
     text-decoration: none;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
 }
 
 header ul a:hover {
@@ -136,6 +107,7 @@ header .menu_icon {
     justify-content: center;
     align-items: center;
 }
+
 
 /*forneden styler de tre linjer de giver burgermenu iconet*/
 header .menu_icon .nav_icon {
@@ -181,8 +153,11 @@ header .menu_btn:checked~.menu {
     background-color: #ffffff2c;
 }
 
-/*Forneden er alt relateret til fooeteren*/
+/*CSS menu MOBIL - SLUT*/
 
+
+/*CSS footer mobil - start */
+/*forneden er alt relateret til fooeteren*/
 .facebookIkon {
     width: 70px;
     padding: 20px;
@@ -238,118 +213,75 @@ footer p {
     margin-bottom: 0%;
 }
 
-/*FOOTER SLUT*/
 
-/*HER SLUTTER FÆLLES STYLING*/
+/*CSS footer mobil - SLUT */
 
-
-
-/*Alt med bestyrelsen & Hvem er vi? styles herunder*/
-.hvemervi_container .omos-billede {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 92%;
-    margin-top: 20px;
+/* her starter stil af over skrift */
+.adresse {
+    font-size: 15px;
+    margin-top: 5px;
 }
 
-.hvemervi_container {
+/* her STARTER stylen til overskriften og den røde streg under */
+.box {
+    background-color: #810029;
+    height: 3px;
+    width: 115px;
+
+}
+
+.headline {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    width: 80%;
+    margin: 15px 16px 5px 16px;
+}
+
+/* her SLUTTER overskrift og rød streg style */
+
+/* sponser billede STARTER */
+
+.sponser img {
+    width: 100%;
+    margin: 30px 0;
+}
+
+/* sponser billede SLUTTER */
+
+/*Sponsorer liste START*/
+.sponserList a {
+    color: black;
+
+}
+
+.sponserList li {
+    margin-top: 7px;
+}
+
+.letterBox {
+    background-color: #810029;
+    height: 3px;
+    width: 115px;
+
+}
+
+main {
     margin-bottom: 50px;
 }
 
-.hvemervi_container h2 {
-    margin-top: 30px;
+.alphaList {
+    margin: 0 16px;
 }
 
-.formand_billede,
-.kassere_billede,
-.sygegruppe_billede,
-.kulisser_billede {
-    width: 50%;
-    height: auto;
-    filter: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.4));
-}
-
-.bestyrelsen_container {
-    background-color: #F0E9DA;
-    padding-top: 2px;
-    margin-top: 30px;
-}
-
-.bestyrelsen_container h2 {
-    margin-top: 30px;
-}
-
-.forman_container {
-    text-align: center;
-    background-color: #F0E9DA;
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
-
-.kassere_container {
-    text-align: center;
-    background-color: white;
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
-
-.sygegruppe_container {
-    text-align: center;
-    background-color: #F0E9DA;
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
-
-.kulisser_container {
-    text-align: center;
-    background-color: white;
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
-
-
-/*herunder styles den lille streg der kører under enkelte overskrifter*/
-
-.box_omos {
-    background-color: #810029;
-    height: 3px;
-    width: 90px;
-    margin-left: 16px;
-    margin-right: auto;
-}
-
-.box_bestyrelse {
-    background-color: #810029;
-    height: 3px;
-    width: 120px;
-    margin-left: 16px;
-    margin-right: auto;
-
-}
-
+/* sponser list SLUTTER */
 
 @media screen and (min-width: 760px) {
+    /*CSS menu Ipad - START*/
 
-    h1 {
-        font-size: 40px;
-    }
 
-    h2 {
-        font-size: 30px;
-    }
-
-    h3 {
-        font-size: 25px;
-    }
-
-    h4 {
-        font-size: 20px;
-
-    }
-
-    p {
-        font-size: 20px;
+    header ul {
+        margin-top: 90px;
     }
 
 
@@ -357,7 +289,6 @@ footer p {
     header .menu_icon {
         padding: 30px 50px;
     }
-
 
     .nav_logo {
         display: flex;
@@ -377,7 +308,6 @@ footer p {
 
     header {
         justify-content: space-between;
-
     }
 
     .menu_icon {
@@ -386,84 +316,9 @@ footer p {
 
     /*Nav SLUT*/
 
-    .hvemervi_container .omos-billede {
-        width: 87%;
-    }
+    /*CSS menu ipad - SLUT*/
 
-    .box_omos {
-        width: 100px;
-
-    }
-
-    .box_bestyrelse {
-        width: 140px;
-
-    }
-
-    .box_omos,
-    .box_bestyrelse {
-        margin-left: 50px;
-        margin-bottom: 30px;
-    }
-
-    .box_one,
-    .box_two {
-        display: flex;
-        flex-direction: row;
-        background-color: #F0E9DA;
-
-    }
-
-    .box_two {
-        margin-top: 30px;
-        padding-bottom: 50px;
-    }
-
-    .kassere_container,
-    .kulisser_container {
-        background-color: #F0E9DA;
-    }
-
-    .forman_container,
-    .kassere_container,
-    .sygegruppe_container,
-    .kulisser_container {
-        margin: 5px;
-        text-align: left;
-    }
-
-    .formand_billede,
-    .kassere_billede,
-    .sygegruppe_billede,
-    .kulisser_billede {
-        width: 60%;
-        height: auto;
-        display: block;
-        margin-left: 12%;
-        margin-right: auto;
-    }
-
-    p,
-    h1,
-    h2,
-    h3,
-    h4 {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    .bestyrelsen_container h1 {
-        padding-top: 30px;
-
-    }
-
-    .box_one a,
-    .box_two a {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    /*Footer styling ipad START*/
+    /*CSS footer ipad - start */
     .footer_container {
         display: flex;
         justify-content: space-evenly;
@@ -493,31 +348,45 @@ footer p {
     }
 
 
-    /*Footer styling SLUT*/
+    /*CSS footer ipad - SLUT */
+
+    .headline {
+        margin-right: 50px;
+        margin-left: 50px;
+
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .box {
+        width: 133px;
+    }
+
+
+    /* her STARTER sponser list style */
+
+    .alphaList {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto 50px;
+
+    }
+
+    .alfaBox {
+        width: 210px;
+        padding: 5px;
+    }
+
+
+
 }
 
 
+
 @media screen and (min-width: 1200px) {
-
-    h1 {
-        font-size: 45px;
-    }
-
-    h2 {
-        font-size: 35px;
-    }
-
-    h3 {
-        font-size: 30px;
-    }
-
-    h4 {
-        font-size: 22px;
-    }
-
-    p {
-        font-size: 25px;
-    }
+    /*CSS menu desktop - start*/
 
     /*header styling START*/
     header .menu {
@@ -558,6 +427,7 @@ footer p {
         font-size: 20px;
         margin-top: auto;
         margin-bottom: auto;
+        margin-right: 50px;
         align-items: center;
         justify-content: center;
     }
@@ -578,6 +448,8 @@ footer p {
 
     header ul a {
         display: inline;
+        box-shadow: none;
+
     }
 
     header .menu {
@@ -648,53 +520,28 @@ footer p {
     }
 
     /*header styling SLUT*/
+    /*CSS menu desktop - SLUT*/
 
-    p,
-    h1,
-    h2,
-    h3,
-    h4 {
+    h1 {
+        font-size: 45px;
+    }
+
+    .box {
+        width: 148px;
+    }
+
+    .headline {
         margin-left: 135px;
         margin-right: 135px;
     }
 
-
-    .hvemervi_container .omos-billede {
-        width: 78%;
-    }
-
-    .box_omos {
-        width: 110px;
-
-    }
-
-
-    .box_omos,
-    .box_bestyrelse {
-        margin-left: 135px;
-        margin-bottom: 35px;
-    }
-
-
-    .formand_billede,
-    .kassere_billede,
-    .sygegruppe_billede,
-    .kulisser_billede {
-        margin-left: 19%;
-        margin-right: auto;
-    }
-
-    .formand_billede,
-    .kassere_billede,
-    .sygegruppe_billede,
-    .kulisser_billede {
-        width: 45%;
-
-    }
-
-    .box_one a,
-    .box_two a {
+    .alphaList {
         margin-left: 135px;
         margin-right: 135px;
     }
+
+    .alfaBox {
+        width: 222px;
+    }
+
 }
