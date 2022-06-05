@@ -32,7 +32,7 @@ body p h1 h2 h3 a {
 header {
     display: flex;
     justify-content: space-evenly;
-
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
 }
 
 .nav_logo img {
@@ -51,8 +51,7 @@ header {
     padding: 1rem;
     height: 1rem;
     width: 10rem;
-    margin: 9px;
-    margin-top: 16px;
+    margin: auto 16px auto 9px;
 }
 
 .nav_billet_button a {
@@ -83,6 +82,7 @@ header ul a {
     display: block;
     padding: 20px;
     text-decoration: none;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
 }
 
 header ul a:hover {
@@ -96,13 +96,14 @@ header .menu {
 }
 
 header .menu_icon {
-    padding: 28px 20px;
+    padding: 28px 35px;
     position: relative;
     /*den her skal være relavtiv så vi på barnet kan bruge absolut og på den måde rykke rundt på tingene*/
     float: right;
     cursor: pointer;
-    margin-right: 20px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*forneden styler de tre linjer de giver burgermenu iconet*/
@@ -491,6 +492,10 @@ footer p {
     }
 
     /*Nav start*/
+    header ul {
+        margin-top: 90px;
+    }
+
     header .menu_icon {
         padding: 30px 50px;
     }
@@ -684,6 +689,7 @@ footer p {
         font-size: 20px;
         margin-top: auto;
         margin-bottom: auto;
+        margin-right: 50px;
         align-items: center;
         justify-content: center;
     }
@@ -704,6 +710,7 @@ footer p {
 
     header ul a {
         display: inline;
+        box-shadow: none;
     }
 
     header .menu {
