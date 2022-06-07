@@ -1,7 +1,7 @@
 // her STARTER javascript til billede galleriet på 2001-forestilinger siden
 
-var fullImgBox = document.getElementById("fullImgBox");
-var fullImages = document.getElementById("fullimages");
+let fullImgBox = document.getElementById("fullImgBox");
+let fullImages = document.getElementById("fullimages");
 
 function openFullImg(pic) {
   fullImgBox.style.display = "flex";
