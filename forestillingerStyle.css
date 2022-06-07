@@ -497,8 +497,6 @@
     }
 
 
-
-
 /* her slutter tidl. fore. section ipad */
 
 
@@ -698,12 +696,18 @@
         margin: 30px 135px 50px;
      }
      .tidlFore .nav_billet_button {
-        margin-left: 730px;
+       margin-right: 0;
+       margin-left: 0;
     }
     .tidlFore p{
         margin-right: 100px;
     }
-
+    
+    .tidlForeBox {
+        display: flex;
+        flex-direction: row;
+    }
+    
 
      /* her starter tidl. fore. section desktop */
 }
