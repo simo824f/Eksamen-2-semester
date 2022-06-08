@@ -840,3 +840,24 @@ iframe {
             width: 78%;
         }
 }
+
+@media screen and (min-width:1920px){
+    .kontaktos-billede {
+        width: 87%;
+    }
+    .tekst-box2 {
+        margin-left: 81%;
+    }
+    form {
+        margin-left: 0%;
+    }
+    .citat-kontakt-wrapper {
+        justify-content: flex-end;
+    }
+    .citat1 {
+        margin-left: 1%;
+    }
+    .citat2 {
+        margin-left: 350px;
+    }
+}
