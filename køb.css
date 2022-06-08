@@ -591,4 +591,14 @@ p,
         .betal{
             margin-right: 135px;
         }
+
+        /*ændringer til købsknappen*/
+        .nav_køb_button {
+            width: 192px;
+            height: 62px;
+            padding: 20px;
+        }
+        .nav_køb_button a {
+            font-size: 20px;
+        }
     }
