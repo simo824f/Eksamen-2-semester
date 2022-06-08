@@ -431,7 +431,8 @@
     h1 {
         font-size: 40px;
     }
-    h2{
+
+    h2 {
         font-size: 30px;
         margin: 0;
     }
@@ -439,65 +440,74 @@
     .box {
         width: 234px;
     }
-    .skuespiller .box{
+
+    .skuespiller .box {
         width: 161px;
     }
 
     /* her slutter style på ipad af overskrift */
-     /* her starter styl til info om årets stykke ipad */
-    .årFore{
+    /* her starter styl til info om årets stykke ipad */
+    .årFore {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 1fr;
         margin: 30px 50px 50px;
         grid-column-gap: 10px;
     }
-    .kaos{
+
+    .kaos {
         grid-row: 1/4;
         grid-column: 1/2;
     }
-    .ikonFore{
+
+    .ikonFore {
         width: 17%;
 
     }
-    .ikonText{
+
+    .ikonText {
         padding: 0;
     }
-    .årFore p{
+
+    .årFore p {
         margin-bottom: 0;
         text-align: justify;
         line-height: 1.5;
     }
-    
+
     .årFore .nav_billet_button {
         margin-left: 140px;
         margin-right: 0;
     }
- /* info om årets stykke ipad slutter her */
-/* her starter stylen for skuespiller section */
-.skuespillerSamlet{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 30px 50px 50px;
-}
 
-.actor{
-    padding: 10px 0;
-}
-/* her slutter skuespiller style ipad */
-/* her starter tidl. fore. section ipad */
-    .tidlFore{
-        margin: 30px 50px 50px; 
+    /* info om årets stykke ipad slutter her */
+    /* her starter stylen for skuespiller section */
+    .skuespillerSamlet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 30px 50px 50px;
     }
+
+    .actor {
+        padding: 10px 0;
+    }
+
+    /* her slutter skuespiller style ipad */
+    /* her starter tidl. fore. section ipad */
+    .tidlFore {
+        margin: 30px 50px 50px;
+    }
+
     .tidlFore .nav_billet_button {
         margin-left: 468px;
     }
-    .tidlFore p{
+
+    .tidlFore p {
         margin-bottom: 0;
     }
 
 
-/* her slutter tidl. fore. section ipad */
+    /* her slutter tidl. fore. section ipad */
 
 
 }
@@ -642,10 +652,12 @@
     h1 {
         font-size: 45px;
     }
-    h2{
+
+    h2 {
         font-size: 35px;
     }
-    h3{
+
+    h3 {
         font-size: 30px;
     }
 
@@ -657,57 +669,63 @@
         margin-left: 135px;
         margin-right: 135px;
     }
-    .skuespiller .box{
+
+    .skuespiller .box {
         width: 188px;
     }
 
     /* her slutter overskrift style */
-     /* her starter style til info om årets stykke desktop */
-     .årFore{
+    /* her starter style til info om årets stykke desktop */
+    .årFore {
         margin: 30px 135px 50px;
         grid-column-gap: 20px;
 
-     }
-     .årFore p{
+    }
+
+    .årFore p {
         font-size: 25px;
         line-height: 1.4;
     }
-    .ikonFore{
+
+    .ikonFore {
         width: 15%;
 
     }
+
     .årFore .nav_billet_button {
         margin-left: 255px;
         margin-right: 0;
     }
 
-     /* her slutter style til info om årets stykke desktop */
+    /* her slutter style til info om årets stykke desktop */
 
-     /* her starter stylen for skuespiller section */
-     .skuespillerSamlet{
+    /* her starter stylen for skuespiller section */
+    .skuespillerSamlet {
         margin: 30px 135px 50px;
-     }
-
-
-     /* her slutter stylen for skuespiller section */
-
-     /* her starter tidl. fore. section desktop */
-     .tidlFore{
-        margin: 30px 135px 50px;
-     }
-     .tidlFore .nav_billet_button {
-       margin-right: 0;
-       margin-left: 0;
     }
-    .tidlFore p{
+
+
+    /* her slutter stylen for skuespiller section */
+
+    /* her starter tidl. fore. section desktop */
+    .tidlFore {
+        margin: 30px 135px 50px;
+    }
+
+    .tidlFore .nav_billet_button {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .tidlFore p {
         margin-right: 100px;
     }
-    
+
     .tidlForeBox {
         display: flex;
         flex-direction: row;
     }
-    
 
-     /* her starter tidl. fore. section desktop */
+
+    /* her starter tidl. fore. section desktop */
 }

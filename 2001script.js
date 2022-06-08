@@ -1,4 +1,4 @@
-// her STARTER javascript til billede galleriet på 2001-forestilinger siden
+// her STARTER javascript til billede galleriet på 2001-forestilinger siden der er brugt denne video som hjælp https://www.youtube.com/watch?v=sHG3Sf6XN9g
 
 let fullImgBox = document.getElementById("fullImgBox");
 let fullImages = document.getElementById("fullimages");
