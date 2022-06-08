@@ -17,25 +17,20 @@
 /*FÆLLES STYLE START*/
 
 h1 {
-    font-size: 35px;
+    font-size: 45px;
 }
 
 body {
     margin: 0%;
 }
 
-body p h1 h2 h3 a {
-    margin-left: 16px;
-    margin-right: 16px;
-}
 
 /*forneden er alt relateret til navigationsbaren i headeren inkl. logo, knap og dropdown menu*/
 header {
     display: flex;
     justify-content: space-evenly;
-    box-shadow: 0px 4px 5px rgb(0 0 0 / 40%);
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
 }
-
 
 .nav_logo img {
     width: 30%;
@@ -54,7 +49,7 @@ header {
     height: 1rem;
     width: 10rem;
     margin: auto 16px auto 9px;
-    padding-bottom: 30px;
+
 }
 
 .nav_billet_button a {
@@ -109,6 +104,7 @@ header .menu_icon {
     align-items: center;
 }
 
+
 /*forneden styler de tre linjer de giver burgermenu iconet*/
 header .menu_icon .nav_icon {
     background-color: black;
@@ -153,10 +149,10 @@ header .menu_btn:checked~.menu {
     background-color: #ffffff2c;
 }
 
-.dropdonw_ipad {
-    display: none;
-}
+/*CSS menu MOBIL - SLUT*/
 
+
+/*CSS footer mobil - start */
 /*forneden er alt relateret til fooeteren*/
 .facebookIkon {
     width: 70px;
@@ -213,41 +209,60 @@ footer p {
     margin-bottom: 0%;
 }
 
+
+/*CSS footer mobil - SLUT */
 /*FÆLLES STYLE SLUT*/
 
 
 
 /*CHekout - START*/
-
-.row {
-    display: -ms-flexbox;
+.perInfo, .kortOp{
+    padding: 10px;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0 -16px;
+    flex-direction: column;
+    width: 400px;
 }
 
-.col-50 {
-    -ms-flex: 50%;
-    flex: 50%;
-    margin-left: 0%;
-    margin-right: 0%;
-    background-color: #F0E9DA;
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
 }
 
+.exår{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    
+}
 
-h4 {
+#exdate{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    
+}
+#exdatebox{
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+}
+#cvv{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#cvvbox{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+h2 {
     font-size: 30px;
-}
-
-.col-25,
-.col-50,
-.col-75 {
-    padding: 10px 16px;
 }
 
 .container-checkout {
     padding: 0px 20px 15px 20px;
+    margin-left: 16px;
 }
 
 input[type=text] {
@@ -272,7 +287,13 @@ p,
 .overskriftChekout {
     font-family: Roboto_overskrift
 }
+.betal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 16px;
 
+}
 .nav_videre_button {
     border: none;
     border-radius: 0.2rem;
@@ -294,6 +315,19 @@ p,
     color: white;
 }
 
+
+.box_one{
+    display: flex;
+    flex-direction: row;
+    background-color: #F0E9DA;
+
+}
+
+/* .box_one a,
+    .box_two a {
+        margin-left: 50px;
+        margin-right: 50px;
+    } */
 
 @media screen and (min-width: 760px) {
     h1 {
@@ -322,6 +356,8 @@ p,
         margin-top: 90px;
     }
 
+
+    /*Nav start*/
     header .menu_icon {
         padding: 30px 50px;
     }
@@ -340,7 +376,6 @@ p,
     .nav_billet_button {
         margin-top: auto;
         margin-bottom: auto;
-        margin-right: 20px;
     }
 
     header {
@@ -353,24 +388,9 @@ p,
 
     /*Nav SLUT*/
 
+    /*CSS menu ipad - SLUT*/
 
-
-    div.row {
-        margin: 0px;
-    }
-
-    div.col-75 {
-        width: 100%;
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
-    .container-checkout {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    /*Footer styling START*/
+    /*CSS footer ipad - start */
     .footer_container {
         display: flex;
         justify-content: space-evenly;
@@ -398,13 +418,22 @@ p,
     .footerLinks {
         text-align: left;
     }
-
     /*Footer styling SLUT*/
 
-    .Sponsorer {
-        margin-top: 0;
-    }
+    .container-checkout {
 
+        margin-left: 50px;
+    }
+    .perInfo{
+        margin-left: 50px;
+    }
+    .kortOp{
+        margin-right: 50px;
+    }
+    .betal{
+        margin-right: 50px;
+    }
+}
 
     @media screen and (min-width: 1200px) {
 
@@ -424,10 +453,7 @@ p,
             font-size: 25px;
         }
 
-        body p h1 h2 h3 a {
-            margin-left: 135px;
-            margin-right: 135px;
-        }
+    
 
 
         /*header styling START*/
@@ -438,13 +464,13 @@ p,
             margin-top: 20px;
             margin-bottom: 20px;
         }
-
+    
         .nav_logo {
             width: 170px;
             margin-top: auto;
             margin-bottom: auto;
         }
-
+    
         .menu {
             font-size: 20px;
             width: 700px;
@@ -452,21 +478,20 @@ p,
             justify-content: space-between;
             align-items: center;
         }
-
+    
         .menu a {
             margin-top: auto;
             margin-bottom: auto;
         }
-
+    
         .menu ul {
             margin-bottom: 10px;
         }
-
-
+    
+    
         .nav_billet_button {
             display: flex;
-            padding: 30px;
-            padding-left: 10px;
+            padding: 20px;
             font-size: 20px;
             margin-top: auto;
             margin-bottom: auto;
@@ -474,26 +499,27 @@ p,
             align-items: center;
             justify-content: center;
         }
-
-
+    
+    
         header {
             justify-content: space-between;
         }
-
+    
         header li {
             float: left;
         }
-
+    
         header li a {
             padding: 20px 30px;
             color: black;
         }
-
+    
         header ul a {
             display: inline;
             box-shadow: none;
+    
         }
-
+    
         header .menu {
             clear: none;
             max-height: none;
@@ -501,36 +527,36 @@ p,
             margin-bottom: auto;
             width: 55%;
         }
-
-
+    
+    
         header .menu_icon {
             display: none;
         }
-
+    
         header ul {
             width: 400px;
             background-color: rgb(255, 255, 255);
             position: inherit;
         }
-
+    
         .menu {
             display: flex;
             align-content: center;
             align-items: center;
             justify-content: space-between;
         }
-
+    
         .menu a {
             padding: 10px 5px 10px 5px;
             font-size: 120%;
         }
-
-
+    
+    
         /*Dropdown undermenu*/
         li.dropdown {
             display: inline-block;
         }
-
+    
         .dropdown-content {
             display: none;
             position: absolute;
@@ -539,7 +565,7 @@ p,
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
-
+    
         .dropdown-content a {
             color: black;
             padding: 12px 16px;
@@ -547,15 +573,15 @@ p,
             display: block;
             text-align: left;
         }
-
+    
         .dropdown:hover .dropdown-content {
             display: block;
         }
-
+    
         .dropdown-content a:hover {
             background-color: #81002946;
         }
-
+    
         .dropdown {
             float: left;
             overflow: hidden;
@@ -563,19 +589,12 @@ p,
 
         /*header styling SLUT*/
 
-        .col-25  {
-            margin-left: 150%;
-        }
+        .container-checkout {
 
-        .col-25 .container-checkout{
-            width: 130%;
+            margin-left: 135px;
         }
-
-        .row {
-            flex-wrap: inherit;
-            width: 400px;
+       
+        .betal{
+            margin-right: 135px;
         }
-
     }
-
-}
