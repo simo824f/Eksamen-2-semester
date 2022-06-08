@@ -230,6 +230,7 @@ footer p {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 10%);
 }
 
 
@@ -394,7 +395,7 @@ iframe {
 }
 .pin_txt2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 
@@ -557,6 +558,7 @@ iframe {
     /*herunder redigeres kontakt os billedet til ipad*/
     .kontaktos-billede {
         width: 87%;
+        height: 50%;
     }
     iframe {
         width: 87%;
@@ -740,6 +742,8 @@ iframe {
     /*herunder ændres kontakt os billedet til desktop*/
     .kontaktos-billede {
         width: 82%;
+        height: 600px;
+        object-fit: cover;
     }
     
     /*herunder ændres alle sociale ikoner links facebook instagram og mail*/
@@ -788,7 +792,6 @@ iframe {
     .citat-kontakt-wrapper {
         display: flex;
         flex-direction: row-reverse;
-        margin-left: 135px;
         margin-bottom: 30px;
     }
     input {
@@ -813,6 +816,7 @@ iframe {
         /*herunder ændres kontakt os billedet til desktop*/
         .kontaktos-billede {
             width: 82%;
+            height: 50%;
         }    
     
         /*Herunder ændres alt vedrørende citatteksten og citatet*/
