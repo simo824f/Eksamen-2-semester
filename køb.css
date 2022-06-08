@@ -294,7 +294,7 @@ p,
     margin-right: 16px;
 
 }
-.nav_videre_button {
+.nav_køb_button {
     border: none;
     border-radius: 0.2rem;
     background-color: #810029;
@@ -310,7 +310,7 @@ p,
 
 }
 
-.nav_videre_button a {
+.nav_køb_button a {
     text-decoration: none;
     color: white;
 }
@@ -323,11 +323,6 @@ p,
 
 }
 
-/* .box_one a,
-    .box_two a {
-        margin-left: 50px;
-        margin-right: 50px;
-    } */
 
 @media screen and (min-width: 760px) {
     h1 {
@@ -346,10 +341,7 @@ p,
         font-size: 20px;
     }
 
-    body p h1 h2 h3 a {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
+  
 
     /*Nav start*/
     header ul {
